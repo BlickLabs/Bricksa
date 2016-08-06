@@ -17,3 +17,7 @@ DATABASES = {
 }
 
 STATIC_URL = '/static/'
+
+MEDIA_ROOT = str(PROJECT_DIR('media'))
+
+MEDIA_URL = '/media/'
