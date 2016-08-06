@@ -33,7 +33,7 @@ class Project(models.Model):
     category = models.CharField(
         _('Category'),
         choices=(
-            (('departament'),_('Departamento')),
+            (('departament'),_('Departament')),
             (('office'),_('Office')),
             (('house - room'),_('House - Room')),
         ),
@@ -42,7 +42,7 @@ class Project(models.Model):
         max_length=30,
     )
     status = models.CharField(
-        _('Category'),
+        _('Status'),
         choices=(
             (('sale'), _('Sale')),
             (('pre-sale'), _('Pre-sale')),
@@ -84,15 +84,9 @@ class Project(models.Model):
 
 
 class ProjectBanner(models.Model):
-    project = models.ForeignKey(
+    project = models.OneToOneField(
         Project,
         verbose_name=_('Project')
-    )
-    name = models.CharField(
-        _('Name'),
-        max_length=50,
-        blank=False,
-        null=False
     )
     photo = models.ImageField(
         _('Photo'),
@@ -127,9 +121,36 @@ class ProjectPhoto(models.Model):
         upload_to='project_banner_photos'
     )
 
+    def preview(self):
+        return """
+        <img src="%s" width='100px' />
+        """ % self.photo.url
+
+    preview.allow_tags = True
+
     class Meta:
         verbose_name = _('Project Photo')
         verbose_name_plural = _('Project Photos')
 
     def __unicode__(self):
         return self.project.name
+
+
+class Brochure(models.Model):
+    project = models.OneToOneField(
+        Project,
+        verbose_name=_('Project')
+    )
+    file = models.FileField(
+        _('File'),
+        blank=False,
+        null=False,
+        upload_to='project_brochures',
+    )
+
+    class Meta:
+        verbose_name = _('Brochure')
+        verbose_name_plural = _('Brochures')
+
+    def __unicode__(self):
+        return 'Brochure - %s' % self.project.name
