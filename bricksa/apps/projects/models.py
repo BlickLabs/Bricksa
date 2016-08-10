@@ -12,6 +12,12 @@ class Project(models.Model):
         blank=False,
         null=False
     )
+    logo = models.ImageField(
+        _('Logo'),
+        blank=False,
+        null=False,
+        upload_to='project_logos'
+    )
     photo = models.ImageField(
         _('Photo'),
         blank=False,
@@ -65,7 +71,7 @@ class Project(models.Model):
         null=False,
     )
     construction_m2 = models.CharField(
-        _('M2 Ground'),
+        _('M2 Construction'),
         max_length=50,
         blank=False,
         null=False,
