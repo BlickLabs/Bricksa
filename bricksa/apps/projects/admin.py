@@ -2,6 +2,8 @@
 # -*- coding: utf-8 -*-
 
 from django.contrib import admin
+from django.utils.translation import ugettext_lazy as _
+
 
 from . import models
 
@@ -10,6 +12,19 @@ from . import models
 class ProjectAdmin(admin.ModelAdmin):
     list_display = ('name', 'category', 'status')
     list_filter = ('category', 'status')
+    fieldsets = (
+        (_('Thumbnail information'), {
+            'fields': (
+                'name', 'photo', 'brief_description', 'category', 'status'
+           )
+        }),
+        (_('Detail Information'), {
+            'fields': (
+                'description', 'google_maps_link', 'video', 'ground_m2',
+                'construction_m2'
+            )
+        }),
+    )
 
 
 @admin.register(models.ProjectBanner)
