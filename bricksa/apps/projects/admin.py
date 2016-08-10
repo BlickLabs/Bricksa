@@ -15,13 +15,14 @@ class ProjectAdmin(admin.ModelAdmin):
     fieldsets = (
         (_('Thumbnail information'), {
             'fields': (
-                'name', 'photo', 'brief_description', 'category', 'status'
+                'name', 'photo', 'logo', 'brief_description', 'category',
+                'status'
            )
         }),
         (_('Detail Information'), {
             'fields': (
                 'description', 'google_maps_link', 'video', 'ground_m2',
-                'construction_m2'
+                'construction_m2', 'status_2'
             )
         }),
     )

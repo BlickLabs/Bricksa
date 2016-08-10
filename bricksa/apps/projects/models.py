@@ -42,6 +42,8 @@ class Project(models.Model):
             (('departament'),_('Departament')),
             (('office'),_('Office')),
             (('house - room'),_('House - Room')),
+            (('commercial'),_('Commercial')),
+            (('fractionation'),_('Fractionation')),
         ),
         blank=False,
         null=False,
@@ -60,6 +62,17 @@ class Project(models.Model):
         null=False,
         max_length=30,
     )
+    status_2 = models.CharField(
+        _('Status 2'),
+        choices=(
+            (('current projects'), _('Current projects')),
+            (('completed projects'), _('Completed projects')),
+        ),
+        blank=False,
+        null=False,
+        max_length=30,
+    )
+
     google_maps_link = models.URLField(
         blank=False,
         null=False,
