@@ -10,6 +10,8 @@ https://docs.djangoproject.com/en/dev/ref/settings/
 
 from __future__ import absolute_import, unicode_literals
 
+from django.utils.translation import ugettext_lazy as _
+
 import environ
 
 # DIRS
@@ -77,13 +79,16 @@ FIXTURE_DIRS = (
 # -----------------------------------------------------------------------------
 TIME_ZONE = 'America/Mexico_City'
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'es'
 
-USE_I18N = True
+LANGUAGES = (
+    ('en', _('English')),
+    ('es', _('Spanish')),
+)
 
-USE_L10N = True
-
-USE_TZ = True
+LOCALE_PATHS = (
+    str(PROJECT_DIR.path('locale')),
+)
 
 # TEMPLATE CONFIGURATION
 # -----------------------------------------------------------------------------

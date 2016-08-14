@@ -1,0 +1,248 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-08-10 10:05-0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: bricksa/apps/departments/models.py:13 bricksa/apps/projects/models.py:98
+#: bricksa/apps/projects/models.py:108 bricksa/apps/projects/models.py:134
+#: bricksa/apps/projects/models.py:161
+msgid "Project"
+msgstr "Proyecto"
+
+#: bricksa/apps/departments/models.py:16
+msgid "Bedrooms with dress"
+msgstr "Recamara con vestido"
+
+#: bricksa/apps/departments/models.py:22
+msgid "Bedrooms with closet"
+msgstr "Recamara con closet"
+
+#: bricksa/apps/departments/models.py:28
+msgid "Complete bathrooms"
+msgstr "Baños completos"
+
+#: bricksa/apps/departments/models.py:34
+msgid "Half bathrooms"
+msgstr "Medios baños"
+
+#: bricksa/apps/departments/models.py:40
+msgid "Living room"
+msgstr "Sala"
+
+#: bricksa/apps/departments/models.py:46
+msgid "Dinning room"
+msgstr "Comedor"
+
+#: bricksa/apps/departments/models.py:52
+msgid "Kitchen"
+msgstr "Cocina"
+
+#: bricksa/apps/departments/models.py:58
+msgid "Linen closet"
+msgstr "Closet de blancos"
+
+#: bricksa/apps/departments/models.py:64
+msgid "Service yard"
+msgstr "Patio de servicio"
+
+#: bricksa/apps/departments/models.py:70
+msgid "Garden"
+msgstr "Jardin"
+
+#: bricksa/apps/departments/models.py:76
+msgid "Roof garden"
+msgstr "Roof garden"
+
+#: bricksa/apps/departments/models.py:82
+msgid "Terrace"
+msgstr "Terraza"
+
+#: bricksa/apps/departments/models.py:88
+msgid "Parking places"
+msgstr "Lugares de estacionamiento"
+
+#: bricksa/apps/departments/models.py:94 bricksa/apps/departments/models.py:100
+#: bricksa/apps/projects/models.py:81
+msgid "M2 Ground"
+msgstr "M2 Terreno"
+
+#: bricksa/apps/departments/models.py:107 bricksa/apps/projects/models.py:42
+msgid "Departament"
+msgstr "Departamento"
+
+#: bricksa/apps/departments/models.py:108
+msgid "Departaments"
+msgstr "Departamentos"
+
+#: bricksa/apps/projects/admin.py:16
+msgid "Thumbnail information"
+msgstr "Información del Thumbnail"
+
+#: bricksa/apps/projects/admin.py:22
+msgid "Detail Information"
+msgstr "Información detallada"
+
+#: bricksa/apps/projects/models.py:10
+msgid "Name"
+msgstr "Nombre"
+
+#: bricksa/apps/projects/models.py:16
+msgid "Logo"
+msgstr "Logo"
+
+#: bricksa/apps/projects/models.py:22 bricksa/apps/projects/models.py:111
+#: bricksa/apps/projects/models.py:137
+msgid "Photo"
+msgstr "Foto"
+
+#: bricksa/apps/projects/models.py:28
+msgid "Brief description"
+msgstr "Descripción breve"
+
+#: bricksa/apps/projects/models.py:34 bricksa/apps/projects/models.py:117
+msgid "Description"
+msgstr "Descripción"
+
+#: bricksa/apps/projects/models.py:40
+msgid "Category"
+msgstr "Categoria"
+
+#: bricksa/apps/projects/models.py:43
+msgid "Office"
+msgstr "Oficina"
+
+#: bricksa/apps/projects/models.py:44
+msgid "House - Room"
+msgstr "Casa - Habitacion"
+
+#: bricksa/apps/projects/models.py:45
+msgid "Commercial"
+msgstr "Comercial"
+
+#: bricksa/apps/projects/models.py:46
+msgid "Fractionation"
+msgstr "Fraccionamiento"
+
+#: bricksa/apps/projects/models.py:53
+msgid "Status"
+msgstr "Status"
+
+#: bricksa/apps/projects/models.py:55
+msgid "Sale"
+msgstr "En venta"
+
+#: bricksa/apps/projects/models.py:56
+msgid "Pre-sale"
+msgstr "Pre-venta"
+
+#: bricksa/apps/projects/models.py:57
+msgid "Sold"
+msgstr "Vendido"
+
+#: bricksa/apps/projects/models.py:58
+msgid "In construction"
+msgstr "En construcción"
+
+#: bricksa/apps/projects/models.py:59
+msgid "Finished"
+msgstr "Terminado"
+
+#: bricksa/apps/projects/models.py:66
+msgid "Status 2"
+msgstr "Status 2"
+
+#: bricksa/apps/projects/models.py:68
+msgid "Current projects"
+msgstr "Proyectos Actuales"
+
+#: bricksa/apps/projects/models.py:69
+msgid "Completed projects"
+msgstr "Proyectos terminados"
+
+#: bricksa/apps/projects/models.py:87
+msgid "M2 Construction"
+msgstr "M2 Construcción"
+
+#: bricksa/apps/projects/models.py:99
+msgid "Projects"
+msgstr "Proyectos"
+
+#: bricksa/apps/projects/models.py:124
+msgid "Project Banner"
+msgstr "Banner de proyecto"
+
+#: bricksa/apps/projects/models.py:125
+msgid "Project Banners"
+msgstr "Banners de proyecto"
+
+#: bricksa/apps/projects/models.py:151
+msgid "Project Photo"
+msgstr "Foto de lproyecto"
+
+#: bricksa/apps/projects/models.py:152
+msgid "Project Photos"
+msgstr "Fotos del proyecto"
+
+#: bricksa/apps/projects/models.py:164
+msgid "File"
+msgstr "Archivo"
+
+#: bricksa/apps/projects/models.py:171
+msgid "Brochure"
+msgstr "Brochure"
+
+#: bricksa/apps/projects/models.py:172
+msgid "Brochures"
+msgstr "Brochures"
+
+#: bricksa/core/messages.py:9
+msgid "This field can not be blank"
+msgstr "Este campo no puede estar en blanco"
+
+#: bricksa/core/messages.py:10
+#, python-format
+msgid "There is a %(model_name)s with this %(field_label)s already registred"
+msgstr "Hay un %(model_name)s con este %(field_label)s ya registrado"
+
+#: bricksa/core/messages.py:11
+msgid "The data do not match"
+msgstr "La informacion no concuerda"
+
+#: bricksa/core/messages.py:12
+msgid "The username or password are incorrect"
+msgstr "Password o contraseña incorrecta"
+
+#: bricksa/core/messages.py:13
+msgid "This account is inactive"
+msgstr "Esta cuenta esta inactiva"
+
+#: bricksa/core/messages.py:14
+msgid "The password is incorrect"
+msgstr "La contraseña es incorrecta"
+
+#: bricksa/core/messages.py:18
+msgid "Profile updated"
+msgstr "Perfil Actualizado"
+
+#: config/settings/base.py:85
+msgid "English"
+msgstr "Ingles"
+
+#: config/settings/base.py:86
+msgid "Spanish"
+msgstr "Español"
