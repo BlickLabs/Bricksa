@@ -22,7 +22,7 @@ class ProjectAdmin(admin.ModelAdmin):
         (_('Detail Information'), {
             'fields': (
                 'description', 'google_maps_link', 'video', 'ground_m2',
-                'construction_m2', 'status_2'
+                'construction_m2', 'project_status'
             )
         }),
     )
