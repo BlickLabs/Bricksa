@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-10 10:05-0500\n"
+"POT-Creation-Date: 2016-08-23 20:08-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -163,8 +163,8 @@ msgid "Finished"
 msgstr "Terminado"
 
 #: bricksa/apps/projects/models.py:66
-msgid "Status 2"
-msgstr "Status 2"
+msgid "Project status"
+msgstr "Status de Proyecto"
 
 #: bricksa/apps/projects/models.py:68
 msgid "Current projects"
@@ -246,3 +246,6 @@ msgstr "Ingles"
 #: config/settings/base.py:86
 msgid "Spanish"
 msgstr "Español"
+
+#~ msgid "Project category"
+#~ msgstr "Banner de proyecto"
