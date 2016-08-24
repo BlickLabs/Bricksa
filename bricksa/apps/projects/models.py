@@ -62,8 +62,8 @@ class Project(models.Model):
         null=False,
         max_length=30,
     )
-    status_2 = models.CharField(
-        _('Status 2'),
+    project_status = models.CharField(
+        _('Project status'),
         choices=(
             (('current projects'), _('Current projects')),
             (('completed projects'), _('Completed projects')),
