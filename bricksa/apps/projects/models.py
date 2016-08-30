@@ -62,8 +62,8 @@ class Project(models.Model):
         null=False,
         max_length=30,
     )
-    project_status = models.CharField(
-        _('Project status'),
+    project_type = models.CharField(
+        _('Project type'),
         choices=(
             (('current projects'), _('Current projects')),
             (('completed projects'), _('Completed projects')),
@@ -90,6 +90,7 @@ class Project(models.Model):
         null=False,
     )
     video = models.URLField(
+        _('Video'),
         blank=False,
         null=False,
     )
