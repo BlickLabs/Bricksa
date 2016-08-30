@@ -11,7 +11,7 @@ from . import models
 @admin.register(models.Project)
 class ProjectAdmin(admin.ModelAdmin):
     list_display = ('name', 'category', 'status')
-    list_filter = ('category', 'status')
+    list_filter = ('category', 'status', 'project_type')
     fieldsets = (
         (_('Thumbnail information'), {
             'fields': (
