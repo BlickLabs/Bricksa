@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-23 20:08-0500\n"
+"POT-Creation-Date: 2016-08-25 18:41-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,15 +18,15 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: bricksa/apps/departments/models.py:13 bricksa/apps/projects/models.py:98
-#: bricksa/apps/projects/models.py:108 bricksa/apps/projects/models.py:134
-#: bricksa/apps/projects/models.py:161
+#: bricksa/apps/departments/models.py:13 bricksa/apps/projects/models.py:99
+#: bricksa/apps/projects/models.py:109 bricksa/apps/projects/models.py:135
+#: bricksa/apps/projects/models.py:162
 msgid "Project"
 msgstr "Proyecto"
 
 #: bricksa/apps/departments/models.py:16
 msgid "Bedrooms with dress"
-msgstr "Recamara con vestido"
+msgstr "Recamara con vestidor"
 
 #: bricksa/apps/departments/models.py:22
 msgid "Bedrooms with closet"
@@ -105,8 +105,8 @@ msgstr "Nombre"
 msgid "Logo"
 msgstr "Logo"
 
-#: bricksa/apps/projects/models.py:22 bricksa/apps/projects/models.py:111
-#: bricksa/apps/projects/models.py:137
+#: bricksa/apps/projects/models.py:22 bricksa/apps/projects/models.py:112
+#: bricksa/apps/projects/models.py:138
 msgid "Photo"
 msgstr "Foto"
 
@@ -114,7 +114,7 @@ msgstr "Foto"
 msgid "Brief description"
 msgstr "Descripción breve"
 
-#: bricksa/apps/projects/models.py:34 bricksa/apps/projects/models.py:117
+#: bricksa/apps/projects/models.py:34 bricksa/apps/projects/models.py:118
 msgid "Description"
 msgstr "Descripción"
 
@@ -163,8 +163,10 @@ msgid "Finished"
 msgstr "Terminado"
 
 #: bricksa/apps/projects/models.py:66
-msgid "Project status"
-msgstr "Status de Proyecto"
+#, fuzzy
+#| msgid "Project"
+msgid "Project type"
+msgstr "Tipo de proyecto"
 
 #: bricksa/apps/projects/models.py:68
 msgid "Current projects"
@@ -178,35 +180,39 @@ msgstr "Proyectos terminados"
 msgid "M2 Construction"
 msgstr "M2 Construcción"
 
-#: bricksa/apps/projects/models.py:99
+#: bricksa/apps/projects/models.py:93
+msgid "Video"
+msgstr "Video (YouTube)"
+
+#: bricksa/apps/projects/models.py:100
 msgid "Projects"
 msgstr "Proyectos"
 
-#: bricksa/apps/projects/models.py:124
+#: bricksa/apps/projects/models.py:125
 msgid "Project Banner"
 msgstr "Banner de proyecto"
 
-#: bricksa/apps/projects/models.py:125
+#: bricksa/apps/projects/models.py:126
 msgid "Project Banners"
 msgstr "Banners de proyecto"
 
-#: bricksa/apps/projects/models.py:151
+#: bricksa/apps/projects/models.py:152
 msgid "Project Photo"
 msgstr "Foto de lproyecto"
 
-#: bricksa/apps/projects/models.py:152
+#: bricksa/apps/projects/models.py:153
 msgid "Project Photos"
 msgstr "Fotos del proyecto"
 
-#: bricksa/apps/projects/models.py:164
+#: bricksa/apps/projects/models.py:165
 msgid "File"
 msgstr "Archivo"
 
-#: bricksa/apps/projects/models.py:171
+#: bricksa/apps/projects/models.py:172
 msgid "Brochure"
 msgstr "Brochure"
 
-#: bricksa/apps/projects/models.py:172
+#: bricksa/apps/projects/models.py:173
 msgid "Brochures"
 msgstr "Brochures"
 
@@ -246,6 +252,9 @@ msgstr "Ingles"
 #: config/settings/base.py:86
 msgid "Spanish"
 msgstr "Español"
+
+#~ msgid "Project status"
+#~ msgstr "Status de Proyecto"
 
 #~ msgid "Project category"
 #~ msgstr "Banner de proyecto"
