@@ -16,7 +16,7 @@ class ProjectAdmin(admin.ModelAdmin):
         (_('Thumbnail information'), {
             'fields': (
                 'name', 'photo', 'logo', 'brief_description', 'category',
-                'status'
+                'status', 'thumbnail_1', 'thumbnail_2'
            )
         }),
         (_('Detail Information'), {
