@@ -9,19 +9,26 @@
 	{% for project in projects %}
 		<hr>
 		<p>
-			{{ project.name }}
+			Nombre: {{ project.name }}
 		</p>
 		<p>
-			{{ project.project_type }}
+			Tipo de Proyecto: {{ project.project_type }}
 		</p>
 		<p>
-			{{ project.description }}
+			Breve descripcion: {{ project.brief_description }}
 		</p>
 		<p>
-			{{ project.category }}
+			Categoria: {{ project.category }}
 		</p>
 		<p>
-			{{ project.status }}
+			Status: {{ project.status }}
+		</p>
+		<p>Thumbnails</p>
+		<p>
+			<img src="{{ project.thumbnail_1.url }}" width="200px">
+		</p>
+		<p>
+			<img src="{{ project.thumbnail_2.url }}" width="200px">
 		</p>
 		<hr>
 	{% endfor %}
