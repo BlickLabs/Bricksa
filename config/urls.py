@@ -4,17 +4,19 @@
 from __future__ import unicode_literals
 
 from django.conf import settings
-from django.conf.urls import include, url
+from django.conf.urls import url, include
 from django.conf.urls.static import static
 from django.contrib import admin
 from django.views import defaults as error_views
+
+from bricksa.apps.landing import urls as landing_urls
 
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
 
     # Custom urls
-    # url(r'', include(module_urls, namespace='module')),
+    url(r'', include(landing_urls, namespace='landing')),
 ]
 
 if settings.DEBUG:
