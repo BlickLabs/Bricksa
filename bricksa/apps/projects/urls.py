@@ -10,4 +10,8 @@ urlpatterns = [
     url(regex='^proyectos/$',
         view=views.ProjectListView.as_view(),
         name='project_list'),
+
+    url(regex='^proyectos/(?P<id>.*)/$',
+        view=views.ProjectDetailView.as_view(),
+        name='project_list'),
 ]
