@@ -9,4 +9,4 @@ from bricksa.apps.projects.models import Project
 class ProjectListView(ListView):
     template_name = 'projects/project_list.html'
     model = Project
-    context_object_name = 'project'
+    context_object_name = 'projects'
