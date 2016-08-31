@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Lista de proyectos</title>
+</head>
+<body>
+	<h1>Lista de proyectos</h1>
+	{% for project in projects %}
+		<hr>
+		<p>
+			{{ project.name }}
+		</p>
+		<p>
+			{{ project.project_type }}
+		</p>
+		<p>
+			{{ project.description }}
+		</p>
+		<p>
+			{{ project.category }}
+		</p>
+		<p>
+			{{ project.status }}
+		</p>
+		<hr>
+	{% endfor %}
+</body>
+</html>
