@@ -10,6 +10,7 @@ from django.contrib import admin
 from django.views import defaults as error_views
 
 from bricksa.apps.landing import urls as landing_urls
+from bricksa.apps.projects import urls as project_urls
 
 
 urlpatterns = [
@@ -17,6 +18,7 @@ urlpatterns = [
 
     # Custom urls
     url(r'', include(landing_urls, namespace='landing')),
+    url(r'', include(project_urls, namespace='projects')),
 ]
 
 if settings.DEBUG:
