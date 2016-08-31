@@ -39,11 +39,11 @@ class Project(models.Model):
     category = models.CharField(
         _('Category'),
         choices=(
-            (('departament'),_('Departament')),
-            (('office'),_('Office')),
-            (('house - room'),_('House - Room')),
-            (('commercial'),_('Commercial')),
-            (('fractionation'),_('Fractionation')),
+            (_('Departament'),_('Departament')),
+            (_('Office'),_('Office')),
+            (_('House - Room'),_('House - Room')),
+            (_('commercial'),_('Commercial')),
+            (_('Fractionation'),_('Fractionation')),
         ),
         blank=False,
         null=False,
@@ -52,11 +52,11 @@ class Project(models.Model):
     status = models.CharField(
         _('Status'),
         choices=(
-            (('sale'), _('Sale')),
-            (('pre-sale'), _('Pre-sale')),
-            (('sold'), _('Sold')),
-            (('in construction'), _('In construction')),
-            (('finished'), _('Finished')),
+            (_('Sale'), _('Sale')),
+            (_('Pre-sale'), _('Pre-sale')),
+            (_('Sold'), _('Sold')),
+            (_('In construction'), _('In construction')),
+            (_('Finished'), _('Finished')),
         ),
         blank=False,
         null=False,
@@ -65,8 +65,8 @@ class Project(models.Model):
     project_type = models.CharField(
         _('Project type'),
         choices=(
-            (('current projects'), _('Current projects')),
-            (('completed projects'), _('Completed projects')),
+            (_('Current projects'), _('Current projects')),
+            (_('Completed projects'), _('Completed projects')),
         ),
         blank=False,
         null=False,
