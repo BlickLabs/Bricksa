@@ -1,3 +1,5 @@
+{% load static from staticfiles%}
+{% load i18n %}
 <!doctype html>
 <html lang="en">
 <head>
@@ -5,6 +7,17 @@
 	<title>Homepage</title>
 </head>
 <body>
+	<h1>Banners</h1>
+
+	{% for banner in banners %}
+		<hr>
+		<p>{{ banner.project.name }}</p>
+		<p>{{ banner.description }}</p>
+		<p>{% trans banner.project.category %}</p>
+		<img src="{{ banner.photo.url }}" width="200px">
+		<hr>
+	{% endfor %}
+
 
 </body>
 </html>

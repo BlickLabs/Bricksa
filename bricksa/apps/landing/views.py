@@ -4,7 +4,13 @@
 from django.template.response import TemplateResponse
 from django.views.generic import View
 
+from bricksa.apps.projects.models import ProjectBanner
+
 
 class HomepageView(View):
     def get(self, request):
-        return TemplateResponse(request, 'landing/index.html')
+        banners = ProjectBanner.objects.all()
+        ctx = {
+            'banners': banners
+        }
+        return TemplateResponse(request, 'landing/index.html', ctx)
