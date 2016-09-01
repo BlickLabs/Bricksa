@@ -15,13 +15,26 @@
     width 100%
     
     .banner-white-box-container
-      width 290px
+      width 255px
       
       .banner-white-box
         background rgba(white, 80%)
         margin-top calc(50vh - 95px)
-        padding 25px
+        padding 30px
         transform translateY(-50%)
+        
+        p
+          line-height 33px
+          margin-bottom 0
+          
+          &::before
+            background $darkBlue
+            content ' '
+            display block
+            height 3px
+            margin-bottom 15px
+            margin-top 5px
+            width 30px
       
     .banner-info-container
       flex-grow 1
