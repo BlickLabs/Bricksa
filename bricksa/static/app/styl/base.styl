@@ -20,4 +20,31 @@ a:focus
   margin-top 70px
 
   &.homepage-main
-    margin-top 95px    
+    margin-top 95px
+    
+.bricksa-button
+  background transparent
+  simple-border 'all', 2px, white
+  color white
+  display inline-block
+  font-variant small-caps
+  font-weight $fontMedium
+  padding 10px 30px
+  transition all 0.2s
+  
+  &:hover,
+  &:active,
+  &:focus
+    background white
+    color $darkBlue
+  
+  &.inverse
+    border-color $darkBlue
+    color $darkBlue
+    
+    &:hover,
+    &:active,
+    &:focus
+      background $darkBlue
+      color white
+  
