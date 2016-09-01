@@ -8,20 +8,21 @@
     width 100%
   
   .homepage-banner
-    align-items stretch
-    display flex
     height 100%
+    padding-top calc(50vh - 95px)
     position relative
     width 100%
     
-    .banner-white-box-container
-      width 255px
+    .banner-text-container
+      align-items flex-end
+      display flex
+      height auto
+      transform translateY(-50%)
       
       .banner-white-box
         background rgba(white, 80%)
-        margin-top calc(50vh - 95px)
         padding 30px
-        transform translateY(-50%)
+        width 255px
         
         p
           line-height 33px
@@ -35,27 +36,26 @@
             margin-bottom 15px
             margin-top 5px
             width 30px
-      
-    .banner-info-container
-      flex-grow 1
-      
-      .banner-info
-        color white
-        font-variant small-caps
-        font-weight $fontBlack
-        -center-block()
-        margin-top calc(50vh - 95px)
-        transform translateY(-50%)
-        width 200px
+            
+      .banner-info-container
+        flex-grow 1
         
-        .banner-title
-          font-size 54px
-          font-weight inherit
-          line-height 1
-          margin 0
+        .banner-info
+          color white
+          flex-grow 1
+          font-variant small-caps
+          font-weight $fontBlack
+          -center-block()
+          width 200px
         
-        .banner-motto
-          display inline-block
-          r-font-size 'semibig'
-          line-height 1
+          .banner-title
+            font-size 54px
+            font-weight inherit
+            line-height 1
+            margin 0
+          
+          .banner-motto
+            display inline-block
+            r-font-size 'semibig'
+            line-height 1
       
