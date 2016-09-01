@@ -1,0 +1,47 @@
+#navbar
+  background $darkBlue
+  height 70px
+  left 0
+  position fixed
+  top 0
+  width 100%
+  
+  .logo-container
+    display inline-block
+    margin 8px 45px
+    height 54px
+    
+    img
+      height 100%
+      width auto
+
+  .menu-container
+    float right
+    height 100%
+    margin-right 70px
+
+    .menu-list
+      background transparent
+      font-variant small-caps
+      font-weight $fontBlack
+      height 100%
+      
+      li
+        display inline-block
+        height 100%
+        
+        &:not(:first-child)
+          margin-left -4px
+        
+        a
+          color white
+          display block
+          height 100%
+          line-height 70px
+          padding 0 15px
+          
+          &:hover
+            background $darkGray
+
+        &.active a
+          background $darkGray
