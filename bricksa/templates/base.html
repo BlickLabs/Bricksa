@@ -1,0 +1,30 @@
+{% load static from staticfiles %}
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <link href="{% static "css/bower_dependencies.min.css" %}"
+      rel="stylesheet"/>
+  <link href="{% static "css/main.min.css" %}"
+      rel="stylesheet"/>
+  <link rel="shortcut icon" type="image/x-icon"
+      href="{% static "favicon.png" %}"/>
+  <title>{% if request.path == '/' %}Bricksa{% else %}{% block title %}{% endblock %} | Bricksa{% endif %}</title>
+  </head>
+<body>
+  {% include "base/navbar.html" %}
+  <div id="page-wrapper">
+    <main>
+      {% block content %}
+      {% endblock %}
+    </main>
+  </div>
+  {% include "base/footer.html" %}
+  {% block before_scripts %}
+  {% endblock %}
+  <script src="{% static "js/bower_dependencies.min.js" %}"></script>
+  <script src="{% static "js/app.min.js" %}"></script>
+  {% block after_scripts %}
+  {% endblock %}
+</body>
