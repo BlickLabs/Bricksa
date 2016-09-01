@@ -5,6 +5,7 @@
   position fixed
   top 0
   width 100%
+  z-index 10
   
   .logo-container
     display inline-block
@@ -25,10 +26,12 @@
       font-variant small-caps
       font-weight $fontBlack
       height 100%
+      text-align center
       
       li
         display inline-block
         height 100%
+        position relative
         
         &:not(:first-child)
           margin-left -4px
@@ -45,3 +48,32 @@
 
         &.active a
           background $darkGray
+        
+      .submenu-container
+        min-width 119px
+        width auto
+        
+        &:hover
+          ul
+            display inline-block
+            
+          >a
+            background $darkGray
+
+        ul
+          display none
+          left 0
+          padding-left 0
+          position absolute
+          top 70px
+          
+          li
+            display block
+            margin 0
+          
+          a
+            background $darkGray
+            line-height 50px
+            
+            &:hover
+              background $gray
