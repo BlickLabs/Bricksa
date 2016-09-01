@@ -140,7 +140,7 @@ SUIT_CONFIG = {
 # STATIC CONFIGURATION
 # -----------------------------------------------------------------------------
 STATICFILES_DIRS = (
-    str(PROJECT_DIR.path('static')),
+    str(PROJECT_DIR.path('static/dist')),
 )
 
 STATICFILES_FINDERS = (
