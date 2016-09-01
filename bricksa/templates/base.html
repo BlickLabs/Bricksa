@@ -15,7 +15,7 @@
 <body>
   {% include "base/navbar.html" %}
   <div id="page-wrapper">
-    <main>
+    <main id="main" {%if request.path == '/' %}class="homepage-main"{%endif%}>
     {% block content %}
     {% endblock %}
     </main>
