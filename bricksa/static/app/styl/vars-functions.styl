@@ -1,0 +1,98 @@
+/* ====INFO: NOMENCLATURE====
+   Variables: $nameOfVariable
+   Functions: -name-of-function
+   Mixins: name-of-mixin
+*/
+
+// VARIABLES
+// Colours
+$blue = #44637F
+$darkBlue = #2A4166
+$lighterGray = #EBEBEB
+$gray = #58595B
+$darkGray = #2C2C2C
+
+// Media queries strings
+$windowMedium = "screen and (max-width: 1200px)"
+$windowSmall = "screen and (max-width: 768px)"
+$landscape = "screen and (max-width: 768px) and (orientation: landscape)"
+$portrait = "screen and (max-width: 768px) and (orientation: portrait)"
+$windowXSmall = "screen and (max-width: 481px)"
+$hybridMobileTablet = "screen and (max-width: 773px) and (orientation: landscape), screen and (max-width: 767px) and (orientation: portrait)"
+$multiSmall = $smallBase + "," + $hybridMobileTablet
+
+// Font weights
+$fontLight = 300
+$fontNormal = 400
+$fontSemiBold = 600
+$fontBold = 700
+$fontExtraBold = 800
+
+// FUNCTIONS
+-center-block()
+  margin-left auto
+  margin-right auto
+
+// Mixins
+//Responsive fonts
+r-font-size(sizeName)
+  if sizeName == 'base'
+    font-size 18px
+  else if sizeName == 'title'
+    font-size 22px
+  else if sizeName == 'title-2'
+    font-size 25px
+  
+  @media $windowSmall
+    if sizeName == 'base'
+      font-size 16px
+    else if sizeName == 'title'
+      font-size 20px
+    else if sizeName == 'title-2'
+      font-size 23px
+  
+  @media $windowXSmall
+    if sizeName == 'base'
+      font-size 14px
+    else if sizeName == 'title'
+      font-size 18px
+    else if sizeName == 'title-2'
+      font-size 21px
+
+rc-font-size(base, small, extraSmall = small)
+  font-size base
+  
+  @media $windowSmall
+    font-size small
+  
+  @media $windowXSmall
+    font-size extraSmall
+
+// Other mixins
+simple-border(side, width, colour, style = solid)
+  border-color colour
+  border-style style
+  if side == 'top'
+    border-width width 0 0 0
+  else if side == 'right'
+    border-width 0 width 0 0
+  else if side == 'bottom'
+    border-width 0 0 width 0
+  else if side == 'left'
+    border-width 0 0 0 width
+  else if side == 'topbottom'
+    border-width width 0
+  else if side == 'leftright'
+    border-width 0 width
+  else if side == 'notop'
+    border-width 0 width width width
+  else if side == 'noright'
+    border-width width 0 width width
+  else if side == 'nobottom'
+    border-width width width 0 width
+  else if side == 'notop'
+    border-width width width width 0
+  else if side == 'all'
+    border-width width
+  else
+    border-width width
