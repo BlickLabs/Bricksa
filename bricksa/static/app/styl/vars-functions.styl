@@ -42,26 +42,26 @@ $fontBlack = 900
 r-font-size(sizeName)
   if sizeName == 'base'
     font-size 18px
-  else if sizeName == 'title'
-    font-size 22px
-  else if sizeName == 'title-2'
-    font-size 25px
+  else if sizeName == 'semibig'
+    font-size 20px
+  else
+    font-size 18px
   
   @media $windowSmall
     if sizeName == 'base'
       font-size 16px
-    else if sizeName == 'title'
-      font-size 20px
-    else if sizeName == 'title-2'
-      font-size 23px
+    else if sizeName == 'semibig'
+      font-size 18px
+    else 
+      font-size 16px
   
   @media $windowXSmall
     if sizeName == 'base'
       font-size 14px
-    else if sizeName == 'title'
-      font-size 18px
-    else if sizeName == 'title-2'
-      font-size 21px
+    else if sizeName == 'semibig'
+      font-size 16px
+    else
+      font-size 14px
 
 rc-font-size(base, small, extraSmall = small)
   font-size base
