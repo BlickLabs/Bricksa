@@ -36,16 +36,14 @@ module.exports = function (grunt) {
       }
     },
     jshint: {
-      client: {
-        all: ['Gruntfile.js', 'app/js/*.js'],
-        options: {
-          browser: true,
-          indent: 2,
-          devel: true,
-          globals: {
-            '$': true,
-            'jQuery': true
-          }
+      all: ['Gruntfile.js', 'app/js/*.js'],
+      options: {
+        browser: true,
+        indent: 2,
+        devel: true,
+        globals: {
+          '$': true,
+          'jQuery': true
         }
       }
     },
