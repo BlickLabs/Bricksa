@@ -12,6 +12,7 @@ from . import models
 class ProjectAdmin(admin.ModelAdmin):
     list_display = ('name', 'category', 'status')
     list_filter = ('category', 'status', 'project_type')
+
     fieldsets = (
         (_('General Information'), {
             'fields': (
@@ -21,6 +22,12 @@ class ProjectAdmin(admin.ModelAdmin):
         }),
         (_('Detail Information'), {
             'fields': ('photo', 'logo', 'description', 'video','google_maps_link'
+            )
+        }),
+        (_('Specific information'), {
+            'fields': (
+            'construction_m2', 'number_departaments', 'parking_places', 'guardhouse',
+            'waiting_area', 'common_area', 'dumpster_area', 'roof_garden'
             )
         }),
     )
