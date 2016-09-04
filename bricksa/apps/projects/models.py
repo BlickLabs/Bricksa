@@ -84,8 +84,12 @@ class Project(models.Model):
         null=False,
         max_length=30,
     )
-
     google_maps_link = models.URLField(
+        blank=False,
+        null=False,
+    )
+    video = models.URLField(
+        _('Video'),
         blank=False,
         null=False,
     )
@@ -101,10 +105,45 @@ class Project(models.Model):
         blank=False,
         null=False,
     )
-    video = models.URLField(
-        _('Video'),
+    number_departaments = models.IntegerField(
+        _('Number of departaments'),
         blank=False,
         null=False,
+    )
+    parking_places = models.IntegerField(
+        _('Parking places'),
+        blank=False,
+        null=False,
+    )
+    guardhouse = models.BooleanField(
+        _('Guarhouse'),
+        blank=False,
+        null=False,
+        default=False,
+    )
+    waiting_area = models.BooleanField(
+        _('Waiting area'),
+        blank=False,
+        null=False,
+        default=False,
+    )
+    common_area = models.BooleanField(
+        _('Common area'),
+        blank=False,
+        null=False,
+        default=False,
+    )
+    dumpster_area = models.BooleanField(
+        _('Dumpster area'),
+        blank=False,
+        null=False,
+        default=False,
+    )
+    roof_garden = models.BooleanField(
+        _('Roof garden'),
+        blank=False,
+        null=False,
+        default=False,
     )
 
     class Meta:
