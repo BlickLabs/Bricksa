@@ -4,7 +4,7 @@
 from django.contrib import admin
 from django.utils.translation import ugettext_lazy as _
 
-
+from bricksa.apps.projects.forms import ProjectForm
 from . import models
 
 
@@ -12,7 +12,7 @@ from . import models
 class ProjectAdmin(admin.ModelAdmin):
     list_display = ('name', 'category', 'status')
     list_filter = ('category', 'status', 'project_type')
-
+    form = ProjectForm
     fieldsets = (
         (_('General Information'), {
             'fields': (
