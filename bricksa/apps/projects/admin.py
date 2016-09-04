@@ -13,16 +13,14 @@ class ProjectAdmin(admin.ModelAdmin):
     list_display = ('name', 'category', 'status')
     list_filter = ('category', 'status', 'project_type')
     fieldsets = (
-        (_('Thumbnail information'), {
+        (_('General Information'), {
             'fields': (
-                'name', 'photo', 'logo', 'brief_description', 'category',
+                'name', 'brief_description', 'project_type', 'category',
                 'status', 'thumbnail_1', 'thumbnail_2'
            )
         }),
         (_('Detail Information'), {
-            'fields': (
-                'description', 'google_maps_link', 'video', 'ground_m2',
-                'construction_m2', 'project_type'
+            'fields': ('photo', 'logo', 'description', 'video','google_maps_link'
             )
         }),
     )
