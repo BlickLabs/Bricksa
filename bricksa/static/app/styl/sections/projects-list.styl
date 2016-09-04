@@ -1,7 +1,7 @@
 .projects-section
   .project-type-title
     -center-block()
-    width 80%
+    width 88%
     
     span
       background $darkGray
@@ -14,20 +14,40 @@
       padding-left 50px
       
   &.finished-projects
-    .project-type-title span,
-    .project-item-container .project-item .big-row .project-thumbnail
+    .project-type-title span
       width 400px
       
     .project-item-container .project-item .big-row
-      min-height 480px
+      .project-thumbnail
+        flex-basis 400px
+        height 500px
+      
+      .project-text
+        max-width calc(100% - 400px)
+        
+        .project-title::after
+          margin-top 26px
+      
+        .project-description
+          margin-top 70px
     
   &.current-projects
-    .project-type-title span,
-    .project-item-container .project-item .big-row .project-thumbnail
-      width 330px
+    .project-type-title span
+      width 340px
       
     .project-item-container .project-item .big-row
-      min-height 400px
+      .project-thumbnail
+        flex-basis 340px
+        height 370px
+        
+      .project-text
+        max-width calc(100% - 340px)
+        
+        .project-title::after
+          margin-top 12px
+        
+        .project-description
+          margin-top 45px
       
   .project-item-container
     background white
@@ -38,10 +58,10 @@
     .project-item
       color white
       -center-block()
-      width 80%
+      width 88%
       
       &-row
-        align-items stretch
+        align-items center
         display flex
         
         &.big-row
@@ -54,21 +74,20 @@
               font-size 64px
               font-variant small-caps
               font-weight $fontBlack
-              letter-spacing 4px
+              letter-spacing 3px
+              line-height 50px
               margin 0
               
               &::after
                 background white
                 content ' '
                 display block
-                height 3px
-                margin-top -3px
+                height 4px
                 width 32px
               
             .project-description
               font-weight $fontBook
-              line-height 23px
-              margin-top 35px
+              line-height 33px
           
         &.small-row
           background $darkBlue
