@@ -1,8 +1,10 @@
-{% extends "base.html" %}
+{% extends "projects/project_list_base.html" %}
 {% block title %}
 Proyectos
 {% endblock %}
-{% block content %}
+{% block projects-class-name %}finished-projects{% endblock %}
+{% block projects-type %}proyectos terminados{% endblock %}
+{% block list-content %}
 	<h1>Lista de proyectos</h1>
 	{% for project in projects %}
 		<hr>
