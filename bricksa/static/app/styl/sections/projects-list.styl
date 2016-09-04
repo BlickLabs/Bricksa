@@ -1,0 +1,80 @@
+.projects-section
+  .project-type-title
+    -center-block()
+    width 80%
+    
+    span
+      background $darkGray
+      color white
+      display inline-block
+      font-size 27px
+      font-variant small-caps
+      font-weight $fontBlack
+      line-height 70px
+      padding-left 50px
+      
+  &.finished-projects
+    .project-type-title span,
+    .project-item-container .project-item .big-row .project-thumbnail
+      width 400px
+      
+    .project-item-container .project-item .big-row
+      min-height 480px
+    
+  &.current-projects
+    .project-type-title span,
+    .project-item-container .project-item .big-row .project-thumbnail
+      width 330px
+      
+    .project-item-container .project-item .big-row
+      min-height 400px
+      
+  .project-item-container
+    background white
+    
+    &:not(:first-child)
+      margin-top 30px
+    
+    .project-item
+      color white
+      -center-block()
+      width 80%
+      
+      &-row
+        align-items stretch
+        display flex
+        
+        &.big-row
+          background $blue
+          
+          .project-text
+            padding 30px 80px
+
+            .project-title
+              font-size 64px
+              font-variant small-caps
+              font-weight $fontBlack
+              letter-spacing 4px
+              margin 0
+              
+              &::after
+                background white
+                content ' '
+                display block
+                height 3px
+                margin-top -3px
+                width 32px
+              
+            .project-description
+              font-weight $fontBook
+              line-height 23px
+              margin-top 35px
+          
+        &.small-row
+          background $darkBlue
+          
+          .project-thumbnail
+            width 280px
+          
+        >div:not(.project-thumbnail)
+          flex-grow 1

@@ -5,31 +5,33 @@ Proyectos
 {% block projects-class-name %}finished-projects{% endblock %}
 {% block projects-type %}proyectos terminados{% endblock %}
 {% block list-content %}
-	<h1>Lista de proyectos</h1>
 	{% for project in projects %}
-		<hr>
-		<p>
-			Nombre: {{ project.name }}
-		</p>
-		<p>
-			Tipo de Proyecto: {{ project.project_type }}
-		</p>
-		<p>
-			Breve descripcion: {{ project.brief_description }}
-		</p>
-		<p>
-			Categoria: {{ project.category }}
-		</p>
-		<p>
-			Status: {{ project.status }}
-		</p>
-		<p>Thumbnails</p>
-		<p>
-			<img src="{{ project.thumbnail_1.url }}" width="200px">
-		</p>
-		<p>
-			<img src="{{ project.thumbnail_2.url }}" width="200px">
-		</p>
-		<hr>
+	<div class="project-item-container">
+		<div class="project-item">
+			<div class="project-item-row big-row">
+				<div class="project-thumbnail cover" style="background-image: url('{{ project.thumbnail_1.url }}')"></div>
+				<div class="project-text">
+					<h3 class="project-title">{{ project.name|lower }}</h3>
+					<p class="project-description">{{ project.brief_description }}</p>
+				</div>
+			</div>
+			<div class="project-item-row small-row">
+				<div class="project-additional-info">
+					<div>
+						<div class="project-characteristics">
+							<p>
+								Categoria: {{ project.category }}
+							</p>
+							<p>
+								Status: {{ project.status }}
+							</p>
+						</div>
+						<a href="#" class="bricksa-button">ver proyecto</a>
+					</div>
+				</div>
+				<div class="project-thumbnail cover" style="background-image: url('{{ project.thumbnail_2.url }}')"></div>
+			</div>
+		</div>
+	</div>
 	{% endfor %}
 {% endblock %}
