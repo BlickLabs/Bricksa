@@ -54,12 +54,15 @@
     
     &:not(:first-child)
       margin-top 30px
+
+    &:nth-child(even) .project-item-row
+      flex-direction row-reverse
     
     .project-item
       color white
       -center-block()
       width 88%
-      
+
       &-row
         align-items center
         display flex
@@ -93,7 +96,31 @@
           background $darkBlue
           
           .project-thumbnail
-            width 280px
+            min-height 265px
+            width 360px
+            
+          .project-additional-info
+            padding 80px 90px 80px 60px
+            max-width calc(100% - 360px)
+            
+            >div
+              align-items center
+              display flex
+            
+            .project-characteristics
+              flex-grow 1
+              font-weight $fontBook
+              letter-spacing 1px
+              
+              &::before
+                background white
+                content ' '
+                display block
+                height 4px
+                margin-bottom 20px
+                width 32px
+                
           
         >div:not(.project-thumbnail)
-          flex-grow 1
+            flex-grow 1
+          
