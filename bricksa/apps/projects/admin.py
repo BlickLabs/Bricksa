@@ -10,7 +10,7 @@ from . import models
 
 @admin.register(models.Project)
 class ProjectAdmin(admin.ModelAdmin):
-    list_display = ('name', 'category', 'status')
+    list_display = ('name', 'category', 'status', 'order')
     list_filter = ('category', 'status', 'project_type')
     form = ProjectForm
     fieldsets = (
@@ -31,6 +31,8 @@ class ProjectAdmin(admin.ModelAdmin):
             )
         }),
     )
+    list_editable = ('order',)
+    show_full_result_count = True
 
 
 @admin.register(models.ProjectBanner)

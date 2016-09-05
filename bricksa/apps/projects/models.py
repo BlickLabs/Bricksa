@@ -145,6 +145,12 @@ class Project(models.Model):
         null=False,
         default=False,
     )
+    order = models.IntegerField(
+        _('Order'),
+        blank=False,
+        null=False,
+        default=1,
+    )
 
     class Meta:
         verbose_name = _('Project')
