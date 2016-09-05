@@ -13,5 +13,5 @@ urlpatterns = [
 
     url(regex='^proyectos/(?P<id>.*)/$',
         view=views.ProjectDetailView.as_view(),
-        name='project_list'),
+        name='project_detail'),
 ]
