@@ -77,8 +77,8 @@ class Project(models.Model):
     project_type = models.CharField(
         _('Project type'),
         choices=(
-            (_('Current projects'), _('Current projects')),
-            (_('Completed projects'), _('Completed projects')),
+            ('current projects', _('Current projects')),
+            ('completed projects', _('Completed projects')),
         ),
         blank=False,
         null=False,
