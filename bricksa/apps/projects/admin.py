@@ -4,28 +4,35 @@
 from django.contrib import admin
 from django.utils.translation import ugettext_lazy as _
 
-
+from bricksa.apps.projects.forms import ProjectForm
 from . import models
 
 
 @admin.register(models.Project)
 class ProjectAdmin(admin.ModelAdmin):
-    list_display = ('name', 'category', 'status')
+    list_display = ('name', 'category', 'status', 'order')
     list_filter = ('category', 'status', 'project_type')
+    form = ProjectForm
     fieldsets = (
-        (_('Thumbnail information'), {
+        (_('General Information'), {
             'fields': (
-                'name', 'photo', 'logo', 'brief_description', 'category',
+                'name', 'brief_description', 'project_type', 'category',
                 'status', 'thumbnail_1', 'thumbnail_2'
            )
         }),
         (_('Detail Information'), {
+            'fields': ('photo', 'logo', 'description', 'video','google_maps_link'
+            )
+        }),
+        (_('Specific information'), {
             'fields': (
-                'description', 'google_maps_link', 'video', 'ground_m2',
-                'construction_m2', 'project_type'
+            'construction_m2', 'number_departaments', 'parking_places', 'guardhouse',
+            'waiting_area', 'common_area', 'dumpster_area', 'roof_garden'
             )
         }),
     )
+    list_editable = ('order',)
+    show_full_result_count = True
 
 
 @admin.register(models.ProjectBanner)

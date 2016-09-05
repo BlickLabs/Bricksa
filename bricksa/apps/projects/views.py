@@ -8,8 +8,17 @@ from bricksa.apps.projects.models import Project
 
 class ProjectListView(ListView):
     template_name = 'projects/project_list.html'
-    model = Project
     context_object_name = 'projects'
+    model = Project
+
+    def get_queryset(self,):
+        arg = self.request.GET.get('u')
+        print arg
+        if arg:
+            queryset = Project.objects.filter(project_type=arg)
+        else:
+            queryset = super(ProjectListView, self).get_queryset()
+        return queryset
 
 
 class ProjectDetailView(DetailView):

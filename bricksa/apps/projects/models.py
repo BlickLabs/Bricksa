@@ -77,15 +77,19 @@ class Project(models.Model):
     project_type = models.CharField(
         _('Project type'),
         choices=(
-            (_('Current projects'), _('Current projects')),
-            (_('Completed projects'), _('Completed projects')),
+            ('current projects', _('Current projects')),
+            ('completed projects', _('Completed projects')),
         ),
         blank=False,
         null=False,
         max_length=30,
     )
-
     google_maps_link = models.URLField(
+        blank=False,
+        null=False,
+    )
+    video = models.URLField(
+        _('Video'),
         blank=False,
         null=False,
     )
@@ -101,10 +105,51 @@ class Project(models.Model):
         blank=False,
         null=False,
     )
-    video = models.URLField(
-        _('Video'),
+    number_departaments = models.IntegerField(
+        _('Number of departaments'),
         blank=False,
         null=False,
+    )
+    parking_places = models.IntegerField(
+        _('Parking places'),
+        blank=False,
+        null=False,
+    )
+    guardhouse = models.BooleanField(
+        _('Guarhouse'),
+        blank=False,
+        null=False,
+        default=False,
+    )
+    waiting_area = models.BooleanField(
+        _('Waiting area'),
+        blank=False,
+        null=False,
+        default=False,
+    )
+    common_area = models.BooleanField(
+        _('Common area'),
+        blank=False,
+        null=False,
+        default=False,
+    )
+    dumpster_area = models.BooleanField(
+        _('Dumpster area'),
+        blank=False,
+        null=False,
+        default=False,
+    )
+    roof_garden = models.BooleanField(
+        _('Roof garden'),
+        blank=False,
+        null=False,
+        default=False,
+    )
+    order = models.IntegerField(
+        _('Order'),
+        blank=False,
+        null=False,
+        default=1,
     )
 
     class Meta:
@@ -128,7 +173,7 @@ class ProjectBanner(models.Model):
     )
     description = models.TextField(
         _('Description'),
-        max_length=140,
+        max_length=40,
         blank=False,
         null=False,
     )
