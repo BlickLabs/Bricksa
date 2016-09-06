@@ -20,10 +20,32 @@ Proyectos
 					<div>
 						<div class="project-characteristics">
 							<p>
-								{{ project.category }}
+								{% if project.category == "Casa - Habitacion" %}
+								<span class="icons icon-house-room"></span>
+								{% elif project.category == "Departamento" %}
+								<span class="icons icon-department"></span>
+								{% elif project.category == "Oficina" %}
+								<span class="icons icon-office"></span>
+								{% elif project.category == "Comercial" %}
+								<span class="icons icon-comercial-area"></span>
+								{% elif project.category == "Fraccionamiento" %}
+								<span class="icons icon-residential"></span>
+								{% endif %}
+								<span class="characteristic-text">{{project.category}}</span>
 							</p>
 							<p>
-								{{ project.status }}
+								{% if project.status == "En venta" %}
+								<span class="icons icon-on-sale"></span>
+								{% elif project.status == "Pre-venta" %}
+								<span class="icons icon-presale"></span>
+								{% elif project.status == "Vendido" %}
+								<span class="icons icon-sold"></span>
+								{% elif project.status == "En construcción" %}
+								<span class="icons icon-in-construction"></span>
+								{% elif project.status == "Terminado" %}
+								<span class="icons icon-finished"></span>
+								{% endif %}
+								<span class="characteristic-text">{{project.status}}</span>
 							</p>
 						</div>
 						<a href="{% url 'projects:project_detail' project.id %}" class="bricksa-button">ver proyecto</a>
