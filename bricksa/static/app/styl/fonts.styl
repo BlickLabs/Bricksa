@@ -13,3 +13,65 @@
   src url('../fonts/AvenirLTStd-Medium.otf')
   font-weight $fontMedium
   font-style normal
+
+
+@font-face
+  font-family 'Bricksa Icons'
+  src  url('../fonts/icomoon.eot?zeeh0f')
+  src  url('../fonts/icomoon.eot?zeeh0f#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?zeeh0f') format('truetype'),
+    url('../fonts/icomoon.woff?zeeh0f') format('woff'),
+    url('../fonts/icomoon.svg?zeeh0f#icomoon') format('svg')
+  font-weight normal
+  font-style normal
+
+.icons::before
+  font-family 'Bricksa Icons' !important
+  speak none
+  font-style normal
+  font-weight normal
+  font-variant normal
+  text-transform none
+  line-height 1
+  -webkit-font-smoothing antialiased
+  -moz-osx-font-smoothing grayscale
+  
+.icon
+  &-building-size::before 
+    content "\e900"
+
+  &-commercial-space::before
+    content "\e901"
+    
+  &-department::before
+    content "\e902"
+    
+  &-dustbin-area::before
+    content "\e903"
+    
+  &-guardhouse::before
+    content "\e904"
+
+  &-house-room::before
+    content "\e905"
+
+  &-illumination::before
+    content "\e906"
+
+  &-living-room::before
+    content "\e907"
+
+  &-office::before
+    content "\e908"
+
+  &-on-sale::before
+    content "\e909"
+
+  &-parking-lot::before
+    content "\e90a"
+
+  &-presale::before
+    content "\e90b"
+
+  &-sold::before
+    content "\e90c"
