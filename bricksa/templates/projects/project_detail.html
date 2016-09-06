@@ -4,7 +4,7 @@
 {% endblock %}
 {% block content %}
 	<div class="project-detail-section">
-		<div class="project-cover cover" style="background-image: url('{{ project.photo }}')">
+		<div class="project-cover cover" style="background-image: url('{{ project.photo.url }}')">
 			<span class="project-name">
 				{{ project.name|lower }}
 			</span>
@@ -12,7 +12,7 @@
 		<div class="project-overview">
 			<div class="project-logo">
 				{% if project.logo %}
-				<img src="{{ project.logo }}" alt="">
+				<img src="{{ project.logo.url }}" alt="">
 				{% endif %}
 			</div>
 			<div class="project-text">
