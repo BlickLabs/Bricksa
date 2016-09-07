@@ -14,7 +14,7 @@ module.exports = function (grunt) {
         tasks: ['compileJavascript']
       },
       etc: {
-        files: ['app/favicon.png', 'app/fonts/*.*', 'app/img/*.*', 'app/img/icons/*.*', 'app/img/logos/*.*'],
+        files: ['app/favicon.png', 'app/fonts/*.*', 'app/img/*.*', 'app/img/icons/*.*', 'app/img/icons/*/*.*', 'app/img/logos/*.*'],
         tasks: ['copy']
       },
     },

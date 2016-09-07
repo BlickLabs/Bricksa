@@ -1,36 +1,59 @@
-<!doctype html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Lista de proyectos</title>
-</head>
-<body>
-	<h1>Lista de proyectos</h1>
+{% extends "projects/project_list_base.html" %}
+{% block title %}
+Proyectos
+{% endblock %}
+{% block projects-class-name %}finished-projects{% endblock %}
+{% block projects-type %}proyectos terminados{% endblock %}
+{% block list-content %}
 	{% for project in projects %}
-		<hr>
-		<p>
-			Nombre: {{ project.name }}
-		</p>
-		<p>
-			Tipo de Proyecto: {{ project.get_project_type_display }}
-		</p>
-		<p>
-			Breve descripcion: {{ project.brief_description }}
-		</p>
-		<p>
-			Categoria: {{ project.category }}
-		</p>
-		<p>
-			Status: {{ project.status }}
-		</p>
-		<p>Thumbnails</p>
-		<p>
-			<img src="{{ project.thumbnail_1.url }}" width="200px">
-		</p>
-		<p>
-			<img src="{{ project.thumbnail_2.url }}" width="200px">
-		</p>
-		<hr>
+	<div class="project-item-container">
+		<div class="project-item">
+			<div class="project-item-row big-row">
+				<div class="project-thumbnail cover" style="background-image: url('{{ project.thumbnail_1.url }}')"></div>
+				<div class="project-text">
+					<h3 class="project-title">{{ project.name|lower }}</h3>
+					<p class="project-description">{{ project.brief_description }}</p>
+				</div>
+			</div>
+			<div class="project-item-row small-row">
+				<div class="project-additional-info">
+					<div>
+						<div class="project-characteristics">
+							<p>
+								{% if project.category == "Casa - Habitacion" %}
+								<span class="icons icon-house-room"></span>
+								{% elif project.category == "Departamento" %}
+								<span class="icons icon-department"></span>
+								{% elif project.category == "Oficina" %}
+								<span class="icons icon-office"></span>
+								{% elif project.category == "Comercial" %}
+								<span class="icons icon-comercial-area"></span>
+								{% elif project.category == "Fraccionamiento" %}
+								<span class="icons icon-residential"></span>
+								{% endif %}
+								<span class="characteristic-text">{{project.category}}</span>
+							</p>
+							<p>
+								{% if project.status == "En venta" %}
+								<span class="icons icon-on-sale"></span>
+								{% elif project.status == "Pre-venta" %}
+								<span class="icons icon-presale"></span>
+								{% elif project.status == "Vendido" %}
+								<span class="icons icon-sold"></span>
+								{% elif project.status == "En construcción" %}
+								<span class="icons icon-in-construction"></span>
+								{% elif project.status == "Terminado" %}
+								<span class="icons icon-finished"></span>
+								{% endif %}
+								<span class="characteristic-text">{{project.status}}</span>
+							</p>
+						</div>
+						<a href="{% url 'projects:project_detail' project.id %}" class="bricksa-button">ver proyecto</a>
+					</div>
+				</div>
+				<div class="project-thumbnail cover" style="background-image: url('{{ project.thumbnail_2.url }}')"></div>
+			</div>
+		</div>
+	</div>
 	{% endfor %}
-</body>
-</html>
+{% endblock %}

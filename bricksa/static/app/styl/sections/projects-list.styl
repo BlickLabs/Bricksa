@@ -1,0 +1,140 @@
+.projects-section
+  .project-type-title
+    -center-block()
+    width 88%
+    
+    span
+      background $darkGray
+      color white
+      display inline-block
+      font-size 27px
+      font-variant small-caps
+      font-weight $fontBlack
+      line-height 70px
+      padding-left 50px
+      
+  &.finished-projects
+    .project-type-title span
+      width 400px
+      
+    .project-item-container .project-item .big-row
+      .project-thumbnail
+        flex-basis 400px
+        height 500px
+      
+      .project-text
+        max-width calc(100% - 400px)
+        
+        .project-title::after
+          margin-top 26px
+      
+        .project-description
+          margin-top 70px
+    
+  &.current-projects
+    .project-type-title span
+      width 340px
+      
+    .project-item-container .project-item .big-row
+      .project-thumbnail
+        flex-basis 340px
+        height 370px
+        
+      .project-text
+        max-width calc(100% - 340px)
+        
+        .project-title::after
+          margin-top 12px
+        
+        .project-description
+          margin-top 45px
+      
+  .project-item-container
+    background white
+    
+    &:not(:first-child)
+      margin-top 30px
+
+    &:nth-child(even) .project-item-row
+      flex-direction row-reverse
+    
+    .project-item
+      color white
+      -center-block()
+      width 88%
+
+      &-row
+        align-items center
+        display flex
+        
+        &.big-row
+          background $blue
+          
+          .project-text
+            padding 30px 80px
+
+            .project-title
+              font-size 64px
+              font-variant small-caps
+              font-weight $fontBlack
+              letter-spacing 3px
+              line-height 50px
+              margin 0
+              
+              &::after
+                background white
+                content ' '
+                display block
+                height 4px
+                width 32px
+              
+            .project-description
+              font-weight $fontBook
+              line-height 33px
+          
+        &.small-row
+          background $darkBlue
+          
+          .project-thumbnail
+            min-height 265px
+            width 360px
+            
+          .project-additional-info
+            padding 80px 90px 80px 60px
+            max-width calc(100% - 360px)
+            
+            >div
+              align-items center
+              display flex
+            
+            .project-characteristics
+              flex-grow 1
+              font-weight $fontBook
+              letter-spacing 1px
+              
+              &::before
+                background white
+                content ' '
+                display block
+                height 4px
+                margin-bottom 20px
+                width 32px
+                
+              p:not(:first-of-type)
+                margin-top 15px
+                
+              .icons::before
+                display inline-block
+                font-size 25px
+                vertical-align middle
+                
+              .characteristic-text
+                display inline-block
+                line-height 1
+                margin-left 8px
+                vertical-align middle
+                
+          
+        >div:not(.project-thumbnail)
+            flex-grow 1
+          

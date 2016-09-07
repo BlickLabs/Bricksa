@@ -1,16 +1,16 @@
 {% load static from staticfiles %}
 <nav id="navbar">
   <div class="logo-container">
-    <a href="#"><img src="{% static 'img/logos/brick-gray-logo.png' %}" alt="Bricksa Logo"></a>
+    <a href="{% url 'landing:homepage' %}"><img src="{% static 'img/logos/brick-gray-logo.png' %}" alt="Bricksa Logo"></a>
   </div>
   <div class="menu-container">
     <ul class="menu-list">
-      <li><a href="#">inicio</a></li>
+      <li><a href="{% url 'landing:homepage' %}">inicio</a></li>
       <li class="submenu-container">
         <a href="#">proyectos</a>
         <ul>
-          <li><a href="#">actuales</a></li>
-          <li><a href="#">terminados</a></li>
+          <li><a href="{% url 'projects:project_list' %}">actuales</a></li>
+          <li><a href="{% url 'projects:project_list' %}">terminados</a></li>
         </ul>
       </li>
       <li><a href="#">servicios</a></li>
