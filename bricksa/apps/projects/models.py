@@ -173,7 +173,7 @@ class ProjectBanner(models.Model):
     )
     description = models.TextField(
         _('Description'),
-        max_length=40,
+        max_length=140,
         blank=False,
         null=False,
     )
