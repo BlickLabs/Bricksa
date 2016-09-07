@@ -51,10 +51,13 @@
 				</div>
 			</div>
 		</div>
-		<div class="project-video-container">
-			<span>Conoce más acerca del desarrollo</span>
-			<iframe width="420" height="315"  src="{{ project.video }}">
-	    </iframe>
+		<div class="project-video-section">
+			Conoce más acerca del desarrollo
+			<div class="video-container">
+		    <div class="embed-responsive embed-responsive-16by9">
+		      <iframe src="{{ project.video }}" class="embed-responsive-item"></iframe>
+		    </div>
+		  </div>
 		</div>
 		<div class="project-characteristics-container">
 			<div class="characteristics">
