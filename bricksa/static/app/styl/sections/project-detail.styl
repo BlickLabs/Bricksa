@@ -1,7 +1,7 @@
 .project-detail-section
   .project-cover
     background-blend-mode multiply
-    background-color rgba(black, 0.2)
+    background-color rgba(black, 0.1)
     height 60vh
     max-height 480px
     position relative
@@ -17,3 +17,51 @@
       line-height 0.5
       position absolute
       right 100px
+      
+  .project-overview
+    display flex
+    
+    .project-logo
+      background white
+      width 40vw
+      
+      img
+        display block
+        -center-block()
+        margin-bottom 60px
+        margin-top 60px
+        width 50%
+        
+    .project-text
+      max-width calc(100% - 40vw)
+      padding 40px 90px
+      
+      .project-description
+        letter-spacing 1px
+        line-height 1.6
+        width 77%
+        
+      .project-characteristics
+        &::before
+          background $darkBlue
+          content ' '
+          display block
+          height 4px
+          margin-bottom 25px
+          margin-top 35px
+          width 33px
+          
+        p:not(:first-of-type)
+          margin-top 15px
+          
+        .icons::before
+          display inline-block
+          font-size 25px
+          vertical-align middle
+          
+        .characteristic-text
+          display inline-block
+          letter-spacing 1px
+          line-height 1
+          margin-left 8px
+          vertical-align middle
