@@ -133,6 +133,7 @@
     
     .department-info
       background $blue
+      simple-border('right', 6px, #b0b8c2)
       color white
       flex-grow 1
       max-width calc(100% - 34vw)
@@ -155,7 +156,7 @@
         width calc(50% - 10px)
       
     .department-brochure-section
-      simple-border('left', 6px, #b0b8c2)
+      background #f2f2f2
       font-weight $fonrMedium
       padding 60px 20px
       text-align center
@@ -181,3 +182,28 @@
       .bricksa-button
         margin-top 40px
         padding 4px 30px
+  
+  .location-title-container
+    background #f2f2f2
+
+  .location-title
+    background white
+    simple-border('right', 6px, #b0b8c2)
+    color $darkBlue
+    display block
+    font-size 41px
+    font-variant small-caps
+    font-weight $fontBlack
+    line-height 0.9
+    padding 33px 70px
+    width calc(100% - 34vw)
+    
+  .location-container
+    display flex
+    
+    .google-map
+      flex-grow 1
+      max-width calc(100% - 34vw)
+      
+    .text-container
+      width 34vw
