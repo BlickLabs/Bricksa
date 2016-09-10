@@ -63,10 +63,49 @@
 			<div class="characteristics">
 				<span class="title">acerca de</span>
 				<ul class="characteristics-list">
-					<li class="characteristic-item"></li>
+					<li class="characteristic-item">
+						<span class="icons icon-department"></span>
+						{{ project.number_departaments }} Departamentos.
+					</li>
+					<li class="characteristic-item">
+						<span class="icons icon-building-size"></span>
+						{{ project.construction_m2 }} m2 de construcción.
+					</li>
+					<li class="characteristic-item">
+						<span class="icons icon-parking-lot"></span>
+						{% if project.parking_places == 1 %}
+						1 cajón de estacionamiento.
+						{% else %}
+						{{ project.parking_places }} cajones de estacionamiento.
+						{% endif %}
+					</li>
+					{% if project.guardhouse %}
+					<li class="characteristic-item">
+						<span class="icons icon-guardhouse"></span>
+						Caseta de vigilancia.
+					</li>
+					{% endif %}
+					{% if project.waiting_area %}
+					<li class="characteristic-item">
+						<span class="icons icon-living-room"></span>
+						Área de espera para visitas.
+					</li>
+					{% endif %}
+					{% if project.common_area %}
+					<li class="characteristic-item">
+						<span class="icons icon-illumination"></span>
+						Área común con iluminación LED.
+					</li>
+					{% endif %}
+					{% if project.dumpster_area %}
+					<li class="characteristic-item">
+						<span class="icons icon-dustbin-area"></span>
+						Área para depósito de basura.
+					</li>
+					{% endif %}
 				</ul>
 			</div>
-			<div class="cover"></div>
+			<div class="cover" style="background-image: url('{{ project.photo.url }}')"></div>
 		</div>
 		<!-- Slick -->
 		<div class="project-carousel">

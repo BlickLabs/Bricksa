@@ -13,7 +13,7 @@
       font-size 83px
       font-variant small-caps
       font-weight $fontBlack
-      left calc(40vw + 86px)
+      left calc(37vw + 86px)
       letter-spacing 3px
       line-height 0.7
       position absolute
@@ -24,7 +24,7 @@
     
     .project-logo
       background white
-      width 40vw
+      width 37vw
       
       img
         display block
@@ -34,7 +34,7 @@
         width 50%
         
     .project-text
-      max-width calc(100% - 40vw)
+      max-width calc(100% - 37vw)
       padding 40px 90px
       
       .project-description
@@ -78,3 +78,42 @@
       margin-top 36px
       max-width 800px
       width 80%
+      
+  .project-characteristics-container
+    display flex
+    
+    .characteristics
+      background $darkBlue
+      color white
+      padding 60px 50px
+      width 38vw
+      
+      .title
+        display block
+        font-size 41px
+        font-variant small-caps
+        font-weight $fontBlack
+        text-align center
+      
+      .characteristics-list
+        list-style none
+        margin-left -40px
+        margin-top 40px
+        
+        li:not(:first-child)
+          margin-top 18px
+        
+      .icons::before
+        display inline-block
+        font-size 28px
+        margin-right 25px
+        text-align center
+        vertical-align middle
+        width 30px
+        
+      .icon-parking-lot::before
+        font-size 15px
+
+    .cover
+      flex-grow 1
+      max-width calc(100% - 38vw)
