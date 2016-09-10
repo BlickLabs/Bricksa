@@ -9,8 +9,8 @@
       <li class="submenu-container">
         <a href="#">proyectos</a>
         <ul>
-          <li><a href="{% url 'projects:project_list' %}">actuales</a></li>
-          <li><a href="{% url 'projects:project_list' %}">terminados</a></li>
+          <li><a href="{% url 'projects:project_list' %}?u=current%20projects">actuales</a></li>
+          <li><a href="{% url 'projects:project_list' %}?u=completed%20projects">terminados</a></li>
         </ul>
       </li>
       <li><a href="#">servicios</a></li>

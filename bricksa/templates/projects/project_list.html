@@ -1,11 +1,15 @@
-{% extends "projects/project_list_base.html" %}
+{% extends "base.html" %}
 {% block title %}
-Proyectos
+{%if type == "current projects"%}Proyectos actuales{%else%}Proyectos terminados{%endif%}
 {% endblock %}
-{% block projects-class-name %}finished-projects{% endblock %}
-{% block projects-type %}proyectos terminados{% endblock %}
-{% block list-content %}
-	{% for project in projects %}
+{% block content %}
+{% with type=request.GET.u %}
+<div class="projects-section {%if type == "current projects"%}current-projects{%else%}finished-projects{%endif%}">
+  <div class="project-type-title">
+    <span>{%if type == "current projects"%}proyectos actuales{%else%}proyectos terminados{%endif%}</span>
+  </div>
+  <div class="projects-list">
+    {% for project in projects %}
 	<div class="project-item-container">
 		<div class="project-item">
 			<div class="project-item-row big-row">
@@ -56,4 +60,7 @@ Proyectos
 		</div>
 	</div>
 	{% endfor %}
+  </div>
+</div>
+{% endwith %}
 {% endblock %}
