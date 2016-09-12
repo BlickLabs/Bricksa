@@ -201,14 +201,40 @@
     width calc(100% - 34vw)
     
   .location-container
+    align-items flex-end
     display flex
+    position relative
+    
+    &::after
+      background $darkBlue
+      bottom 0
+      content ' '
+      display block
+      height 75px
+      position absolute
+      right 0
+      width 10px
     
     .google-map
+      background white
       flex-grow 1
-      max-width calc(100% - 34vw)
+      height 65vh
+      max-height 520px
+      max-width calc(100% - 34vw - 3px)
       
     .text-container
-      width 34vw
+      padding 23px 53px
+      width calc(34vw + 3px)
+      
+      img
+        width 160px
+      
+      span
+        display block
+        font-weight $fontMedium
+        line-height 1.3
+        margin-top 15px
+        max-width 280px
       
   .contact-container
     background white

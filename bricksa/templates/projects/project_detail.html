@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% load static from staticfiles %}
 {% block title %}
 {{ project.name }}
 {% endblock %}
@@ -147,7 +148,11 @@
 				{{ project.google_maps_link }}
 			</div>
 			<div class="text-container">
-				
+				<img src="{% static 'img/logos/brick-gray-short-logo.png' %}" alt="">
+				<span>
+					Circuito Unidad y Trabajo No11,
+					Col. Pomona, Xalapa, Ver.
+				</span>
 			</div>
 		</div>
 		<div class="contact-container">
