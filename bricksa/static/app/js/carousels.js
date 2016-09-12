@@ -4,4 +4,9 @@
     prevArrow: '', 
     nextArrow: '<a href="#" class="arrow-next"></a>'
   });
+  $('#project-carousel').slick({
+    prevArrow: '', 
+    nextArrow: '<a href="#" class="arrow-next"></a>',
+    slidesToShow: 2,
+  });
 })();

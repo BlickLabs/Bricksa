@@ -224,3 +224,33 @@
       margin-top 30px
       padding-bottom 8px
       padding-top 8px
+      
+#project-carousel
+  height 55vh
+  margin-top 100px
+  max-height 440px
+  
+  &::before
+    background #b0b8c2
+    content ' '
+    display block
+    height 10px
+    width 78px
+
+  .slick-list,
+  .slick-track
+    height 100%
+
+  .project-carousel-item
+    height 100%
+    
+  .arrow-next
+    background-image url('../img/icons/carousel-right-arrow.png')
+    background-size cover
+    display inline-block
+    height 50px
+    position absolute
+    right 0
+    top 50%
+    transform translateY(-50%)
+    width 50px
