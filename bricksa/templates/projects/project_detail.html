@@ -1,4 +1,5 @@
-{% extends "projects/project_list_base.html" %}
+{% extends "base.html" %}
+{% load static from staticfiles %}
 {% block title %}
 {{ project.name }}
 {% endblock %}
@@ -12,39 +13,108 @@
 		<div class="project-overview">
 			<div class="project-logo">
 				{% if project.logo %}
-				<img src="{{ project.logo.url }}" alt="">
+				<img src="{{ project.logo.url }}" >
 				{% endif %}
 			</div>
 			<div class="project-text">
 				<p class="project-description">
 					{{ project.description }}
 				</p>
-				<div class="project-clasification">
+				<div class="project-characteristics">
 					<p>
-						Categoria: {{ project.category }}
+						{% if project.category == "Casa - Habitacion" %}
+						<span class="icons icon-house-room"></span>
+						{% elif project.category == "Departamento" %}
+						<span class="icons icon-department"></span>
+						{% elif project.category == "Oficina" %}
+						<span class="icons icon-office"></span>
+						{% elif project.category == "Comercial" %}
+						<span class="icons icon-comercial-area"></span>
+						{% elif project.category == "Fraccionamiento" %}
+						<span class="icons icon-residential"></span>
+						{% endif %}
+						<span class="characteristic-text">{{project.category}}</span>
 					</p>
 					<p>
-						Status: {{ project.status }}
+						{% if project.status == "En venta" %}
+						<span class="icons icon-on-sale"></span>
+						{% elif project.status == "Pre-venta" %}
+						<span class="icons icon-presale"></span>
+						{% elif project.status == "Vendido" %}
+						<span class="icons icon-sold"></span>
+						{% elif project.status == "En construcción" %}
+						<span class="icons icon-in-construction"></span>
+						{% elif project.status == "Terminado" %}
+						<span class="icons icon-finished"></span>
+						{% endif %}
+						<span class="characteristic-text">{{project.status}}</span>
 					</p>
 				</div>
 			</div>
 		</div>
-		<div class="project-video-container">
-			<span>Conoce más acerca del desarrollo</span>
-			<iframe width="420" height="315"  src="{{ project.video }}">
-	    </iframe>
+		{% if project.video %}
+		<div class="project-video-section">
+			Conoce más acerca del desarrollo
+			<div class="video-container">
+		    <div class="embed-responsive embed-responsive-16by9">
+		      <iframe src="{{ project.video }}" class="embed-responsive-item"></iframe>
+		    </div>
+		  </div>
 		</div>
+		{% endif %}
 		<div class="project-characteristics-container">
 			<div class="characteristics">
 				<span class="title">acerca de</span>
 				<ul class="characteristics-list">
-					<li class="characteristic-item"></li>
+					<li class="characteristic-item">
+						<span class="icons icon-department"></span>
+						{{ project.number_departaments }} Departamentos.
+					</li>
+					<li class="characteristic-item">
+						<span class="icons icon-building-size"></span>
+						{{ project.construction_m2 }} m2 de construcción.
+					</li>
+					<li class="characteristic-item">
+						<span class="icons icon-parking-lot"></span>
+						{% if project.parking_places == 1 %}
+						1 cajón de estacionamiento.
+						{% else %}
+						{{ project.parking_places }} cajones de estacionamiento.
+						{% endif %}
+					</li>
+					{% if project.guardhouse %}
+					<li class="characteristic-item">
+						<span class="icons icon-guardhouse"></span>
+						Caseta de vigilancia.
+					</li>
+					{% endif %}
+					{% if project.waiting_area %}
+					<li class="characteristic-item">
+						<span class="icons icon-living-room"></span>
+						Área de espera para visitas.
+					</li>
+					{% endif %}
+					{% if project.common_area %}
+					<li class="characteristic-item">
+						<span class="icons icon-illumination"></span>
+						Área común con iluminación LED.
+					</li>
+					{% endif %}
+					{% if project.dumpster_area %}
+					<li class="characteristic-item">
+						<span class="icons icon-dustbin-area"></span>
+						Área para depósito de basura.
+					</li>
+					{% endif %}
 				</ul>
 			</div>
-			<div class="cover"></div>
+			<div class="cover" style="background-image: url('{{ project.photo.url }}')"></div>
 		</div>
 		<!-- Slick -->
-		<div class="project-carousel">
+		<div id="project-carousel">
+		<div class="project-carousel-item cover" style="background-image: url('{{project.thumbnail_1.url}}')"></div>
+		<div class="project-carousel-item cover" style="background-image: url('{{project.thumbnail_2.url}}')"></div>
+		<div class="project-carousel-item cover" style="background-image: url('{{project.photo.url}}')"></div>
 		</div>
 		<span class="department-type-title">
 			departamento tipo
@@ -53,11 +123,19 @@
 			<div class="department-info">
 				<span class="title">Cada departamento incluye:</span>
 				<ul class="department-characteristics-list">
-					<li class="department-characteristic-item"></li>
+					<li class="department-characteristic-item">Recámaras con vestidor: 1</li>
+					<li class="department-characteristic-item">Cocina integral</li>
+					<li class="department-characteristic-item">Recámaras con clóset: 2</li>
+					<li class="department-characteristic-item">Patio de servicio</li>
+					<li class="department-characteristic-item">Baños completos: 2</li>
+					<li class="department-characteristic-item">Terraza</li>
+					<li class="department-characteristic-item">Sala</li>
+					<li class="department-characteristic-item">Lugares de estacionamiento: 1</li>
+					<li class="department-characteristic-item">Comedor</li>
 				</ul>
 			</div>
 			<div class="department-brochure-section">
-				Descarga nuestro brochure para conocer mejor el desarrollo
+				<span>Descarga nuestro brochure para conocer mejor el desarrollo</span>
 				<input type="email" placeholder="Correo electrónico">
 				<button class="bricksa-button inverse">enviar</button>
 			</div>
@@ -70,11 +148,15 @@
 				{{ project.google_maps_link }}
 			</div>
 			<div class="text-container">
-				
+				<img src="{% static 'img/logos/brick-gray-short-logo.png' %}" alt="">
+				<span>
+					Circuito Unidad y Trabajo No11,
+					Col. Pomona, Xalapa, Ver.
+				</span>
 			</div>
 		</div>
 		<div class="contact-container">
-			Contacta a un asesor para mayor información
+			<span>Contacta a un asesor para mayor información</span>
 			<a href="#" class="bricksa-button inverse">contacto</a>
 		</div>
 	</div>

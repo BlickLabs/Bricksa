@@ -11,7 +11,8 @@
       font-variant small-caps
       font-weight $fontBlack
       line-height 70px
-      padding-left 50px
+      padding 0 20px
+      text-align center
       
   &.finished-projects
     .project-type-title span
@@ -53,7 +54,7 @@
     background white
     
     &:not(:first-child)
-      margin-top 30px
+      margin-top 75px
 
     &:nth-child(even) .project-item-row
       flex-direction row-reverse
@@ -74,12 +75,13 @@
             padding 30px 80px
 
             .project-title
-              font-size 64px
+              font-size 60px
               font-variant small-caps
               font-weight $fontBlack
-              letter-spacing 3px
+              letter-spacing 2px
               line-height 50px
               margin 0
+              max-width 450px
               
               &::after
                 background white
@@ -91,6 +93,7 @@
             .project-description
               font-weight $fontBook
               line-height 33px
+              max-width 75%
           
         &.small-row
           background $darkBlue
@@ -110,7 +113,6 @@
             .project-characteristics
               flex-grow 1
               font-weight $fontBook
-              letter-spacing 1px
               
               &::before
                 background white
@@ -127,6 +129,7 @@
                 display inline-block
                 font-size 25px
                 vertical-align middle
+                width 25px
                 
               .characteristic-text
                 display inline-block
