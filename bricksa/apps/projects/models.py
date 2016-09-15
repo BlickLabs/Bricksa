@@ -85,13 +85,13 @@ class Project(models.Model):
         max_length=30,
     )
     google_maps_link = models.URLField(
-        blank=False,
-        null=False,
+        blank=True,
+        null=True,
     )
     video = models.URLField(
         _('Video'),
-        blank=False,
-        null=False,
+        blank=True,
+        null=True,
     )
     ground_m2 = models.CharField(
         _('M2 Ground'),
