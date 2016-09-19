@@ -148,7 +148,11 @@
 		</div>
 		<div class="location-container">
 			<div class="google-map">
+				<div class="embed-responsive map-container">
+				{% autoescape off %}
 				{{ project.google_maps_link }}
+				{% endautoescape %}
+				</div>
 			</div>
 			<div class="text-container">
 				<img src="{% static 'img/logos/brick-gray-short-logo.png' %}" alt="">
