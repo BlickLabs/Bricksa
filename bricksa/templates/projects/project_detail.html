@@ -74,6 +74,7 @@
 						<span class="icons icon-building-size"></span>
 						{{ project.construction_m2 }} m2 de construcción.
 					</li>
+					{% if project.parking_places > 0 %}
 					<li class="characteristic-item">
 						<span class="icons icon-parking-lot"></span>
 						{% if project.parking_places == 1 %}
@@ -82,6 +83,7 @@
 						{{ project.parking_places }} cajones de estacionamiento.
 						{% endif %}
 					</li>
+					{% endif %}
 					{% if project.guardhouse %}
 					<li class="characteristic-item">
 						<span class="icons icon-guardhouse"></span>
@@ -110,11 +112,11 @@
 			</div>
 			<div class="cover" style="background-image: url('{{ project.photo.url }}')"></div>
 		</div>
-		<!-- Slick -->
-		<div id="project-carousel">
-		<div class="project-carousel-item cover" style="background-image: url('{{project.thumbnail_1.url}}')"></div>
-		<div class="project-carousel-item cover" style="background-image: url('{{project.thumbnail_2.url}}')"></div>
-		<div class="project-carousel-item cover" style="background-image: url('{{project.photo.url}}')"></div>
+		<!-- Preparing for future Slick carousel
+		<div id="project-carousel"> -->
+		<div class="project-thumbnails">
+			<div class="project-thumbnail-item cover" style="background-image: url('{{project.thumbnail_1.url}}')"></div>
+			<div class="project-thumbnail-item cover" style="background-image: url('{{project.thumbnail_2.url}}')"></div>
 		</div>
 		<span class="department-type-title">
 			departamento tipo
@@ -140,6 +142,7 @@
 				<button class="bricksa-button inverse">enviar</button>
 			</div>
 		</div>
+		{% if project.google_maps_link %}
 		<div class="location-title-container">
 			<span class="location-title">ubicación</span>
 		</div>
@@ -155,6 +158,7 @@
 				</span>
 			</div>
 		</div>
+		{% endif %}
 		<div class="contact-container">
 			<span>Contacta a un asesor para mayor información</span>
 			<a href="#" class="bricksa-button inverse">contacto</a>
