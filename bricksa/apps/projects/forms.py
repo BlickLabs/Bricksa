@@ -16,6 +16,8 @@ class ProjectForm(forms.ModelForm):
         video = cleaned_data.get('video')
         if 'embed' in video:
             video_embedded = video
+        elif video == '':
+            video_embedded = ''
         else:
             try:
                 arg = video.split('=')[1]
