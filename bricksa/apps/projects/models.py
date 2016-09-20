@@ -89,15 +89,13 @@ class Project(models.Model):
         null=True,
         max_length=300,
     )
-    video = models.CharField(
+    video = models.TextField(
         _('Video'),
         blank=True,
         null=True,
-        max_length=300,
     )
-    ground_m2 = models.CharField(
+    ground_m2 = models.TextField(
         _('M2 Ground'),
-        max_length=50,
         blank=False,
         null=False,
     )
