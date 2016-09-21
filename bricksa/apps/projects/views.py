@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+from django.http import HttpResponse
+from django.views.generic import ListView, DetailView, View
 
-from django.views.generic import ListView, DetailView
-
-from bricksa.apps.projects.models import Project
+from bricksa.apps.projects.models import Project, Brochure
 
 
 class ProjectListView(ListView):
@@ -26,3 +26,16 @@ class ProjectDetailView(DetailView):
     model = Project
     pk_url_kwarg = 'id'
     context_object_name = 'project'
+
+
+class DownloadFileView(View):
+    def get(self, request, id):
+        brochure = Brochure.objects.get(id=id)
+        ext = brochure.file.name.split('.')[-1]
+        filename = '%s.%s' % (brochure.project.name, ext)
+        response = HttpResponse(
+            brochure.file,
+            content_type='application/force-download'
+        )
+        response['Content-Disposition'] = 'attachment; filename=%s' % filename
+        return response
