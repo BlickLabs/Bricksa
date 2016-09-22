@@ -13,7 +13,7 @@ var addBrochureListener = (function () {
         beforeSend: function () {
           var isEmail = /^[\-a-z0-9~!$%\^&*_=+}{\'?]+(\.[\-a-z0-9~!$%\^&*_=+}{\'?]+)*@([a-z0-9_][\-a-z0-9_]*(\.[\-a-z0-9_]+)*\.(aero|arpa|biz|com|coop|edu|gov|info|int|mil|museum|name|net|org|pro|travel|mobi|[a-z][a-z])|([0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}))(:[0-9]{1,5})?$/i;
           if (isEmail.test($('#download-brochure-email').val())) {
-            button.addClass('disabled');
+            button.attr('disabled', '');
             span.text('');
             span.css('margin-top', '0');
             span.css('margin-bottom', '');
@@ -26,7 +26,7 @@ var addBrochureListener = (function () {
           }
         },
         complete: function () {
-          button.removeClass('disabled');
+          button.removeAttr('disabled');
           span.text('');
           window.location.href = djangoURLs.downloadBrochure + developmentID;
         }
