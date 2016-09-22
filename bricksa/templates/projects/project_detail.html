@@ -138,8 +138,13 @@
 			</div>
 			<div class="department-brochure-section">
 				<span>Descarga nuestro brochure para conocer mejor el desarrollo</span>
-				<input type="email" placeholder="Correo electrónico">
-				<button class="bricksa-button inverse">enviar</button>
+				<form id="download-brochure-form">
+					{% csrf_token %}
+					<input type="email" id="download-brochure-email" placeholder="Correo electrónico">
+					<input type="hidden" name="source" value="{{project.name}}">
+        	<span id="download-brochure-span" style="display:block;"></span>
+					<button id="download-brochure-button" class="bricksa-button inverse">enviar</button>
+				</form>
 			</div>
 		</div>
 		{% if project.google_maps_link %}
@@ -168,4 +173,9 @@
 			<a href="#" class="bricksa-button inverse">contacto</a>
 		</div>
 	</div>
+{% endblock %}
+{% block after_scripts %}
+<script>
+  addBrochureListener('Brochure-{{project.name}}', {{project.id}});
+</script>
 {% endblock %}
