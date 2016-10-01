@@ -1,0 +1,39 @@
+.general-section
+  .section-title
+    -center-block()
+    width 88%
+    
+    span
+      background $darkGray
+      color white
+      display inline-block
+      font-size 27px
+      font-weight $fontBlack
+      line-height 65px
+      padding 5px 20px 0 20px
+      text-align center
+      text-transform uppercase
+      width 400px
+      
+  .section-content-wrapper
+    background #d8d8d8
+  
+  .section-content
+    -center-block()
+    width 88%
+    
+  .big-row
+    height 50vh
+
+  .small-row
+    height 48vh
+    
+    .big-column
+      flex-grow 1
+      max-width calc(100% - 329px)
+      
+    .small-column
+      width 329px
+    
+  .columns
+    display flex
