@@ -11,5 +11,8 @@ urlpatterns = [
         view=views.HomepageView.as_view(),
         name='homepage'),
 
+    url(regex=r'^servicios/$',
+        view=views.ServicesView.as_view(),
+        name='services'),
 
 ]
