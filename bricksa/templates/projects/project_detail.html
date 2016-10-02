@@ -52,28 +52,34 @@
 				</div>
 			</div>
 		</div>
-		{% if project.video %}
+		
 		<div class="project-video-section">
+			{% if project.video %}
 			Conoce más acerca del desarrollo
 			<div class="video-container">
 		    <div class="embed-responsive embed-responsive-16by9">
 		      <iframe src="{{ project.video }}" class="embed-responsive-item"></iframe>
 		    </div>
 		  </div>
+		  {% endif %}
 		</div>
-		{% endif %}
+		
 		<div class="project-characteristics-container">
 			<div class="characteristics">
 				<span class="title">acerca de</span>
 				<ul class="characteristics-list">
+					{% if project.number_departaments > 0 %}
 					<li class="characteristic-item">
 						<span class="icons icon-department"></span>
 						{{ project.number_departaments }} Departamentos.
 					</li>
+					{% endif %}
+					{% if project.construction_m2 > 0 %}
 					<li class="characteristic-item">
 						<span class="icons icon-building-size"></span>
 						{{ project.construction_m2 }} m2 de construcción.
 					</li>
+					{% endif %}
 					{% if project.parking_places > 0 %}
 					<li class="characteristic-item">
 						<span class="icons icon-parking-lot"></span>
@@ -106,6 +112,12 @@
 					<li class="characteristic-item">
 						<span class="icons icon-dustbin-area"></span>
 						Área para depósito de basura.
+					</li>
+					{% endif %}
+					{% if project.roof_garden %}
+					<li class="characteristic-item">
+						<span class="icons icon-roof-garden"></span>
+						Roof Garden.
 					</li>
 					{% endif %}
 				</ul>
@@ -143,7 +155,7 @@
 					<input type="email" id="download-brochure-email" placeholder="Correo electrónico">
 					<input type="hidden" name="source" value="{{project.name}}">
         	<span id="download-brochure-span" style="display:block;"></span>
-					<button id="download-brochure-button" class="bricksa-button inverse">enviar</button>
+					<button id="download-brochure-button" class="bricksa-button inverse">descargar</button>
 				</form>
 			</div>
 		</div>
@@ -176,6 +188,6 @@
 {% endblock %}
 {% block after_scripts %}
 <script>
-  addBrochureListener('Brochure-{{project.name}}', {{project.id}});
+  addBrochureListener('Brochure-{{project.name}}', {{project.brochure.id}});
 </script>
 {% endblock %}
