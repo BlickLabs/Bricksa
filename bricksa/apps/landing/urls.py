@@ -15,4 +15,8 @@ urlpatterns = [
         view=views.ServicesView.as_view(),
         name='services'),
 
+    url(regex=r'^nosotros/$',
+        view=views.ServicesView.as_view(),
+        name='about'),
+
 ]

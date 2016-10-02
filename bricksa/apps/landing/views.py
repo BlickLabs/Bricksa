@@ -18,3 +18,5 @@ class HomepageView(View):
 class ServicesView(TemplateView):
     template_name = 'landing/services.html'
 
+class AboutUsView(TemplateView):
+    template_name = 'landing/services.html'
