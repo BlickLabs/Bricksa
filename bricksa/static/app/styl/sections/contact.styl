@@ -7,6 +7,7 @@
       flex-grow 1
       max-width 75%
       padding 110px 0 120px 125px
+      z-index 2
 
     .small-column
       background $darkBlue
@@ -14,8 +15,9 @@
       width 25%
       
     .contact-form
+      float left
       text-align right
-      width 436px
+      width 50%
       
       label, input, textarea
         display block
@@ -23,7 +25,7 @@
 
       label
         color white
-        font-size 20px
+        font-size 22px
         font-weight normal
         line-height 2.3
         
@@ -33,12 +35,12 @@
       input, textarea
         background white
         border solid 1px #979797
-        font-size 20px
-        padding 15px
+        font-size 22px
+        padding 18.5px
         width 100%
         
       textarea
-        height 150px
+        height 196.3px
         resize none
         
       .bricksa-button
@@ -46,3 +48,31 @@
         letter-spacing 0.1px
         margin-top 50px
         padding 8px 30px
+        
+    .contact-info
+      background white
+      margin-left calc(50% + 56px)
+      margin-top 55px
+      width 65%
+      
+      .text
+        padding 36px 65px 0 50px
+      
+      .title, .mail, .phone
+        display block
+      
+      .title
+        color #4a4a4a
+        font-size 21.6px
+        letter-spacing 0.2px
+        
+      .mail
+        margin-top 25px
+        
+      .phone
+        margin-top 20px
+        
+      .map
+        background $gray
+        margin-top 74px
+        height 289px
