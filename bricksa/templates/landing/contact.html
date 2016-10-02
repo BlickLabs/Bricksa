@@ -1,16 +1,32 @@
-<!doctype html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Contacto</title>
-</head>
-<body>
-<form action="." method="post">
-	{% csrf_token %}
-	<input type="text" name="email" placeholder="email">
-	<input type="text" name="name" placeholder="nombre">
-	<textarea name="message"cols="30" rows="10"></textarea>
-	<button type="submit">Enviar</button>
-</form>
-</body>
-</html>
+{% extends "base.html" %}
+{% load static from staticfiles %}
+{% block title %}
+Contacto
+{% endblock %}
+{% block content %}
+<div class="general-section contact">
+  <div class="section-title">
+    <span>contacto</span>
+  </div>
+  <div class="section-content-wrapper">
+    <div class="section-content columns">
+      <div class="big-column">
+        <form class="contact-form" action="." method="post">
+          {% csrf_token %}
+          <label for="id_name">Nombre</label>
+          <input id="id_name" type="text" name="name" >
+          <label for="id_email">Correo electrónico</label>
+          <input id="id_email" type="email" name="email" >
+          <label for="id_message">Mensaje</label>
+          <textarea id="id_message" name="message"></textarea>
+          <button type="submit" class="bricksa-button">enviar</button>
+        </form>
+        <div class="contact-info">
+          
+        </div>
+      </div>
+      <div class="small-column"></div>
+    </div>
+  </div>
+</div>
+{% endblock %}

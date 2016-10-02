@@ -1,0 +1,48 @@
+.general-section.contact
+  .section-content.columns
+    display flex
+    
+    .big-column
+      background $blue
+      flex-grow 1
+      max-width 75%
+      padding 110px 0 120px 125px
+
+    .small-column
+      background $darkBlue
+      content ' '
+      width 25%
+      
+    .contact-form
+      text-align right
+      width 436px
+      
+      label, input, textarea
+        display block
+        text-align left
+
+      label
+        color white
+        font-size 20px
+        font-weight normal
+        line-height 2.3
+        
+        &:not(:first-of-type)
+          margin-top 15px
+        
+      input, textarea
+        background white
+        border solid 1px #979797
+        font-size 20px
+        padding 15px
+        width 100%
+        
+      textarea
+        height 150px
+        resize none
+        
+      .bricksa-button
+        border-width 3px
+        letter-spacing 0.1px
+        margin-top 50px
+        padding 8px 30px
