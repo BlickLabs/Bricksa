@@ -122,13 +122,13 @@ msgstr "Foto"
 #, fuzzy
 #| msgid "Thumbnail information"
 msgid "Thumbnail 1"
-msgstr "Información del Thumbnail"
+msgstr "Imagen 1"
 
 #: bricksa/apps/projects/models.py:34
 #, fuzzy
 #| msgid "Thumbnail information"
 msgid "Thumbnail 2"
-msgstr "Información del Thumbnail"
+msgstr "Imagen 2"
 
 #: bricksa/apps/projects/models.py:40
 msgid "Brief description"
