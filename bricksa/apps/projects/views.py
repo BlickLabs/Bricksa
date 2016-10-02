@@ -9,6 +9,7 @@ from bricksa.apps.projects.models import Project, Brochure
 class ProjectListView(ListView):
     template_name = 'projects/project_list.html'
     context_object_name = 'projects'
+    ordering = 'order'
     model = Project
 
     def get_queryset(self,):
