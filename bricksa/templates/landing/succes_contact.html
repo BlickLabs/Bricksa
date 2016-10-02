@@ -1,10 +1,18 @@
-<!doctype html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Document</title>
-</head>
-<body>
-Email enviado
-</body>
-</html>
+{% extends "base.html" %}
+{% load static from staticfiles %}
+{% block title %}
+Mensaje enviado
+{% endblock %}
+{% block content %}
+<div class="success-contact-container">
+  <div class="succes-contact-content">
+    <span class="big-text">
+    Tu mensaje ha sido enviado
+    </span>
+    <span class="small-text">
+      En breve nos pondremos en contacto contigo
+    </span>
+    <a href="{% url 'landing:homepage'%}" class="bricksa-button inverse">volver al inicio</a>
+  </div>
+</div>
+{% endblock %}
