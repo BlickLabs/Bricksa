@@ -18,3 +18,4 @@ django-suit==0.2.19
 
 # Your custom requirements go here
 # -----------------------------------------------------------------------------
+django-mailgun==0.8.0
