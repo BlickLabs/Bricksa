@@ -19,4 +19,12 @@ urlpatterns = [
         view=views.AboutUsView.as_view(),
         name='about'),
 
+    url(regex=r'^contacto/$',
+        view=views.ContactEmailView.as_view(),
+        name='contact'),
+
+    url(regex=r'^contacto/hecho/$',
+        view=views.SuccesEmailView.as_view(),
+        name='success_contact'),
+
 ]
