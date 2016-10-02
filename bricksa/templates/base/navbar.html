@@ -13,9 +13,9 @@
           <li><a href="{% url 'projects:project_list' %}?u=completed%20projects">terminados</a></li>
         </ul>
       </li>
-      <li><a href="#">servicios</a></li>
-      <li><a href="#">nosotros</a></li>
-      <li><a href="#">contacto</a></li>
+      <li><a href="{% url 'landing:services' %}">servicios</a></li>
+      <li><a href="{% url 'landing:about' %}">nosotros</a></li>
+      <li><a href="{% url 'landing:contact' %}">contacto</a></li>
     </ul>
   </div>
 </nav>
