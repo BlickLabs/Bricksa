@@ -136,7 +136,7 @@ msgstr "Descripción breve"
 
 #: bricksa/apps/projects/models.py:46 bricksa/apps/projects/models.py:169
 msgid "Description"
-msgstr "Descripción"
+msgstr "Descripción detallada"
 
 #: bricksa/apps/projects/models.py:52
 msgid "Category"
