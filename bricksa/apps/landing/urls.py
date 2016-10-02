@@ -16,7 +16,7 @@ urlpatterns = [
         name='services'),
 
     url(regex=r'^nosotros/$',
-        view=views.ServicesView.as_view(),
+        view=views.AboutUsView.as_view(),
         name='about'),
 
 ]

@@ -19,4 +19,4 @@ class ServicesView(TemplateView):
     template_name = 'landing/services.html'
 
 class AboutUsView(TemplateView):
-    template_name = 'landing/services.html'
+    template_name = 'landing/about.html'
