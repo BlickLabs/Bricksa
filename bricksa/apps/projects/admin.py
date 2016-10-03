@@ -17,7 +17,7 @@ class ProjectAdmin(admin.ModelAdmin):
         (_('General Information'), {
             'fields': (
                 'name', 'brief_description', 'project_type', 'category',
-                'status', 'thumbnail_1', 'thumbnail_2'
+                'status', 'thumbnail_1', 'thumbnail_2', 'address'
            )
         }),
         (_('Detail Information'), {
@@ -27,7 +27,7 @@ class ProjectAdmin(admin.ModelAdmin):
         (_('Specific information'), {
             'fields': (
             'construction_m2', 'number_departaments', 'parking_places', 'guardhouse',
-            'waiting_area', 'common_area', 'dumpster_area', 'roof_garden'
+            'waiting_area', 'common_area', 'dumpster_area', 'roof_garden', 'about_image'
             )
         }),
     )
