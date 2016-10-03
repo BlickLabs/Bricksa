@@ -96,4 +96,4 @@ class Departament(models.Model):
         verbose_name_plural = _('Departaments')
 
     def __unicode__(self):
-        return 'Departament - ' % self.project.name
+        return 'Departament - %s' % self.project.name
