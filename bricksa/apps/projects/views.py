@@ -32,8 +32,6 @@ class ProjectDetailView(DetailView):
         # Call the base implementation first to get a context
         project = kwargs.get('object')
         context = super(ProjectDetailView, self).get_context_data(**kwargs)
-        hola = ProjectPhoto.objects.filter(project=project)
-        print hola
         # Add in a QuerySet of all the books
         context['photos'] = ProjectPhoto.objects.filter(project=project)
         return context
