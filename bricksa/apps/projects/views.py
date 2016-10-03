@@ -3,6 +3,7 @@
 from django.http import HttpResponse
 from django.views.generic import ListView, DetailView, View
 
+from bricksa.apps.newsletter.models import Subscriber
 from bricksa.apps.projects.models import Project, Brochure, ProjectPhoto
 
 
@@ -40,6 +41,11 @@ class ProjectDetailView(DetailView):
 class DownloadFileView(View):
     def get(self, request, id):
         brochure = Brochure.objects.get(id=id)
+        subscriber = Subscriber(
+            email=request.GET.get('email'),
+            source=request.GET.get('source')
+        )
+        subscriber.save()
         ext = brochure.file.name.split('.')[-1]
         filename = '%s.%s' % (brochure.project.name, ext)
         response = HttpResponse(
