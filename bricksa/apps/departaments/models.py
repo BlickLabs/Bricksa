@@ -65,35 +65,36 @@ class Departament(models.Model):
         null=False,
         default=False
     )
-    service_yard = models.CharField(
+    service_yard = models.BooleanField(
         _('Service yard'),
-        max_length=50,
         blank=False,
         null=False,
+        default=False
     )
-    garden = models.CharField(
+    garden = models.BooleanField(
         _('Garden'),
-        max_length=50,
         blank=False,
         null=False,
+        default=False
     )
-    roof_garden = models.CharField(
+    roof_garden = models.BooleanField(
         _('Roof garden'),
-        max_length=50,
         blank=False,
         null=False,
+        default=False
     )
-    terrace = models.CharField(
+    terrace = models.BooleanField(
         _('Terrace'),
-        max_length=50,
         blank=False,
         null=False,
+        default=False
     )
     parking_places = models.CharField(
         _('Parking places'),
         max_length=50,
         blank=False,
         null=False,
+        default=0
     )
 
     class Meta:
