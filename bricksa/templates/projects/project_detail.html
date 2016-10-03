@@ -149,13 +149,21 @@
 				</ul>
 			</div>
 			<div class="department-brochure-section">
+			 	{% if project.brochure.id %}
 				<span>Descarga nuestro brochure para conocer mejor el desarrollo</span>
+				{% else %}
+				<span>Registrate para recibir noticias sobre este desarrollo</span>
+				{% endif %}
 				<form id="download-brochure-form">
 					{% csrf_token %}
 					<input type="email" id="download-brochure-email" placeholder="Correo electrónico">
 					<input type="hidden" name="source" value="{{project.name}}">
         	<span id="download-brochure-span" style="display:block;"></span>
+					{% if project.brochure.id %}
 					<button id="download-brochure-button" class="bricksa-button inverse">descargar</button>
+					{% else %}
+					<button id="download-brochure-button" class="bricksa-button inverse">enviar</button>
+					{% endif %}
 				</form>
 			</div>
 		</div>
@@ -188,6 +196,10 @@
 {% endblock %}
 {% block after_scripts %}
 <script>
+	{% if project.brochure.id %}
   addBrochureListener('Brochure-{{project.name}}', {{project.brochure.id}});
+  {% else %}
+  addBrochureListener('Brochure-{{project.name}}', 'vacio');
+  {% endif %}
 </script>
 {% endblock %}
