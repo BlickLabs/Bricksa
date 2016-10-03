@@ -156,7 +156,7 @@
 				{% endif %}
 				<form id="download-brochure-form">
 					{% csrf_token %}
-					<input type="email" id="download-brochure-email" placeholder="Correo electrónico">
+					<input type="email" name="email" id="download-brochure-email" placeholder="Correo electrónico">
 					<input type="hidden" name="source" value="{{project.name}}">
         	<span id="download-brochure-span" style="display:block;"></span>
 					{% if project.brochure.id %}
