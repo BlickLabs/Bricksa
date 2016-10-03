@@ -17,48 +17,53 @@ class Departament(models.Model):
         max_length=50,
         blank=False,
         null=False,
+        default=0
     )
     bedrooms_with_closet = models.CharField(
         _('Bedrooms with closet'),
         max_length=50,
         blank=False,
         null=False,
+        default=0
     )
     complete_bathrooms = models.CharField(
         _('Complete bathrooms'),
         max_length=50,
         blank=False,
         null=False,
+        default=0
     )
     half_bathrooms = models.CharField(
         _('Half bathrooms'),
         max_length=50,
         blank=False,
         null=False,
+        default=0
     )
-    living_room = models.CharField(
+    living_room = models.BooleanField(
         _('Living room'),
-        max_length=50,
         blank=False,
         null=False,
+        default=False
     )
-    dinning_room = models.CharField(
+    dinning_room = models.BooleanField(
         _('Dinning room'),
-        max_length=50,
         blank=False,
         null=False,
+        default=False
     )
-    kitchen = models.CharField(
+    kitchen = models.BooleanField(
         _('Kitchen'),
-        max_length=50,
         blank=False,
         null=False,
+        default=False
     )
-    linen_closet = models.CharField(
+    linen_closet = models.BooleanField(
         _('Linen closet'),
         max_length=50,
         blank=False,
         null=False,
+        default=False
     )
     service_yard = models.CharField(
         _('Service yard'),
