@@ -28,7 +28,11 @@ var addBrochureListener = (function () {
         complete: function () {
           button.removeAttr('disabled');
           span.text('');
-          window.location.href = djangoURLs.downloadBrochure + developmentID;
+          if (developmentID != '0') {
+            window.location.href = djangoURLs.downloadBrochure + developmentID;
+          } else {
+            // Aqui vas a mostrar el label
+          }
         }
       });
     });

@@ -199,7 +199,7 @@
 	{% if project.brochure.id %}
   addBrochureListener('Brochure-{{project.name}}', {{project.brochure.id}});
   {% else %}
-  addBrochureListener('Brochure-{{project.name}}', 'vacio');
+  addBrochureListener('Brochure-{{project.name}}', 0);
   {% endif %}
 </script>
 {% endblock %}
