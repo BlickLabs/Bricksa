@@ -11,7 +11,7 @@ Contacto
   <div class="section-content-wrapper">
     <div class="section-content columns">
       <div class="big-column">
-        <form class="contact-form" action="." method="post">
+        <form id="contact-form" class="contact-form" action="." method="post">
           {% csrf_token %}
           <label for="id_name">Nombre</label>
           <input id="id_name" type="text" name="name" >
