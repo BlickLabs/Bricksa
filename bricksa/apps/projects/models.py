@@ -36,6 +36,12 @@ class Project(models.Model):
         null=False,
         upload_to='project_photos'
     )
+    address = models.TextField(
+        _('Address'),
+        blank=False,
+        null=False,
+        default="",
+    )
     brief_description = models.TextField(
         _('Brief description'),
         max_length=140,
