@@ -8,14 +8,14 @@ from django.utils.translation import ugettext_lazy as _
 class Subscriber(models.Model):
     email = models.EmailField(
         _('Email'),
-        blank=False,
-        null=False,
+        blank=True,
+        null=True,
     )
     source = models.CharField(
         _('Source'),
         max_length=50,
-        blank=False,
-        null=False,
+        blank=True,
+        null=True,
 
     )
 
