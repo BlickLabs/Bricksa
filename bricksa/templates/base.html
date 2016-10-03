@@ -26,7 +26,8 @@
   <script>
     {% url "projects:project_brochure" id=1 as download_brochure %}
     var djangoURLs = {
-      downloadBrochure: {{ download_brochure|slice:'-2' }}
+      downloadBrochure: {{ download_brochure|slice:'-2' }},
+      newsletterSubscribe: {% url 'newsletter:suscribe' %}
     };
   </script>
   <script src="{% static "js/bower_dependencies.min.js" %}"></script>

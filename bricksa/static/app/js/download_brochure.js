@@ -7,8 +7,8 @@ var addBrochureListener = (function () {
       var button = $(this),
         span = $('#download-brochure-span');
       $.ajax({
-        url: djangoURLs.downloadBrochure + developmentID + '/',
-        type : 'GET',
+        url: djangoURLs.newsletterSubscribe,
+        type : 'POST',
         data: $('#download-brochure-form').serialize(),
         beforeSend: function () {
           var isEmail = /^[\-a-z0-9~!$%\^&*_=+}{\'?]+(\.[\-a-z0-9~!$%\^&*_=+}{\'?]+)*@([a-z0-9_][\-a-z0-9_]*(\.[\-a-z0-9_]+)*\.(aero|arpa|biz|com|coop|edu|gov|info|int|mil|museum|name|net|org|pro|travel|mobi|[a-z][a-z])|([0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}))(:[0-9]{1,5})?$/i;
