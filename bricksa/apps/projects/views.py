@@ -3,7 +3,7 @@
 from django.http import HttpResponse
 from django.views.generic import ListView, DetailView, View
 
-from bricksa.apps.projects.models import Project, Brochure
+from bricksa.apps.projects.models import Project, Brochure, ProjectPhoto
 
 
 class ProjectListView(ListView):
@@ -27,6 +27,16 @@ class ProjectDetailView(DetailView):
     model = Project
     pk_url_kwarg = 'id'
     context_object_name = 'project'
+
+    def get_context_data(self, **kwargs):
+        # Call the base implementation first to get a context
+        project = kwargs.get('object')
+        context = super(ProjectDetailView, self).get_context_data(**kwargs)
+        hola = ProjectPhoto.objects.filter(project=project)
+        print hola
+        # Add in a QuerySet of all the books
+        context['photos'] = ProjectPhoto.objects.filter(project=project)
+        return context
 
 
 class DownloadFileView(View):
