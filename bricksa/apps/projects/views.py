@@ -41,11 +41,6 @@ class ProjectDetailView(DetailView):
 class DownloadFileView(View):
     def get(self, request, id):
         brochure = Brochure.objects.get(id=id)
-        subscriber = Subscriber(
-            email=request.GET.get('email'),
-            source=request.GET.get('source')
-        )
-        subscriber.save()
         ext = brochure.file.name.split('.')[-1]
         filename = '%s.%s' % (brochure.project.name, ext)
         response = HttpResponse(
