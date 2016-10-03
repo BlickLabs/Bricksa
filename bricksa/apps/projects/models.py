@@ -44,7 +44,6 @@ class Project(models.Model):
     )
     description = models.TextField(
         _('Description'),
-        max_length=140,
         blank=False,
         null=False,
     )
@@ -84,10 +83,9 @@ class Project(models.Model):
         null=False,
         max_length=30,
     )
-    google_maps_link = models.CharField(
+    google_maps_link = models.TextField(
         blank=True,
         null=True,
-        max_length=300,
     )
     video = models.TextField(
         _('Video'),
@@ -109,17 +107,20 @@ class Project(models.Model):
         _('Number of departaments'),
         blank=False,
         null=False,
+        default=0
     )
     parking_places = models.IntegerField(
         _('Parking places'),
         blank=False,
         null=False,
+        default=0
     )
     guardhouse = models.BooleanField(
         _('Guarhouse'),
         blank=False,
         null=False,
         default=False,
+
     )
     waiting_area = models.BooleanField(
         _('Waiting area'),
@@ -170,12 +171,6 @@ class ProjectBanner(models.Model):
         blank=False,
         null=False,
         upload_to='project_banner_photos'
-    )
-    description = models.TextField(
-        _('Description'),
-        max_length=140,
-        blank=False,
-        null=False,
     )
 
     class Meta:
