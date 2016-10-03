@@ -103,7 +103,7 @@ msgstr "Información detallada"
 #, fuzzy
 #| msgid "Detail Information"
 msgid "Specific information"
-msgstr "Información detallada"
+msgstr "Acerca del proyecto"
 
 #: bricksa/apps/projects/models.py:10
 msgid "Name"

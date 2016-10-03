@@ -36,6 +36,12 @@ class Project(models.Model):
         null=False,
         upload_to='project_photos'
     )
+    about_image = models.ImageField(
+        _('About image'),
+        blank=False,
+        null=False,
+        upload_to='project_photos'
+    )
     address = models.TextField(
         _('Address'),
         blank=False,

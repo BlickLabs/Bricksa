@@ -90,18 +90,6 @@ class Departament(models.Model):
         blank=False,
         null=False,
     )
-    ground_m2 = models.CharField(
-        _('M2 Ground'),
-        max_length=50,
-        blank=False,
-        null=False,
-    )
-    construction_m2 = models.CharField(
-        _('M2 Ground'),
-        max_length=50,
-        blank=False,
-        null=False,
-    )
 
     class Meta:
         verbose_name = _('Departament')
