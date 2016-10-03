@@ -124,11 +124,10 @@
 			</div>
 			<div class="cover" style="background-image: url('{{ project.about_image.url }}')"></div>
 		</div>
-		<!-- Preparing for future Slick carousel
-		<div id="project-carousel"> -->
-		<div class="project-thumbnails">
-			<div class="project-thumbnail-item cover" style="background-image: url('{{project.thumbnail_1.url}}')"></div>
-			<div class="project-thumbnail-item cover" style="background-image: url('{{project.thumbnail_2.url}}')"></div>
+		<div id="project-carousel">
+			{% for photo in photos %}
+			<div class="project-thumbnail-item cover" style="background-image: url('{{photo.photo.url}}')"></div>
+			{% endfor %}
 		</div>
 		<span class="department-type-title">
 			departamento tipo
@@ -182,8 +181,7 @@
 			<div class="text-container">
 				<img src="{% static 'img/logos/brick-white-short-logo.png' %}" alt="">
 				<span>
-					Circuito Unidad y Trabajo No11,
-					Col. Pomona, Xalapa, Ver.
+					{{ project.address }}
 				</span>
 			</div>
 		</div>
