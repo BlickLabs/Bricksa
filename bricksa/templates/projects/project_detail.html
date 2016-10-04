@@ -124,12 +124,22 @@
 			</div>
 			<div class="cover" style="background-image: url('{{ project.about_image.url }}')"></div>
 		</div>
+		{% if photos|length == 0 %}
+		<span class="department-type-title" style="margin-top: 120px;">
+		{% elif photos|length == 1 %}
+		<div class="project-thumbnails">
+			<div class="project-thumbnail-item cover" style="background-image: url('{{ photos.0.photo.url }}')"></div>
+			<div class="project-thumbnail-item" style="background-color: #dedede"></div>
+		</div>
+		<span class="department-type-title">
+		{% else %}
 		<div id="project-carousel">
 			{% for photo in photos %}
 			<div class="project-thumbnail-item cover" style="background-image: url('{{photo.photo.url}}')"></div>
 			{% endfor %}
 		</div>
 		<span class="department-type-title">
+		{% endif %}
 			departamento tipo
 		</span>
 		<div class="department-info-container">
