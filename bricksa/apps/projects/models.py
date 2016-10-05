@@ -14,8 +14,8 @@ class Project(models.Model):
     )
     logo = models.ImageField(
         _('Logo'),
-        blank=False,
-        null=False,
+        blank=True,
+        null=True,
         upload_to='project_logos'
     )
     photo = models.ImageField(
