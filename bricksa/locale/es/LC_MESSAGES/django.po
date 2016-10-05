@@ -3,12 +3,11 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-10-02 20:54-0500\n"
+"POT-Creation-Date: 2016-10-05 00:22-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -76,11 +75,11 @@ msgstr "Terraza"
 msgid "Parking places"
 msgstr "Lugares de estacionamiento"
 
-#: bricksa/apps/departaments/models.py:100 bricksa/apps/projects/models.py:65
+#: bricksa/apps/departaments/models.py:101 bricksa/apps/projects/models.py:65
 msgid "Departament"
 msgstr "Departamento"
 
-#: bricksa/apps/departaments/models.py:101
+#: bricksa/apps/departaments/models.py:102
 msgid "Departaments"
 msgstr "Departamentos"
 
@@ -101,17 +100,15 @@ msgid "Subscribers"
 msgstr "Suscriptores"
 
 #: bricksa/apps/projects/admin.py:17
-#, fuzzy
 #| msgid "Detail Information"
 msgid "General Information"
-msgstr "Información detallada"
+msgstr "Informacion general"
 
 #: bricksa/apps/projects/admin.py:23
 msgid "Detail Information"
 msgstr "Información detallada"
 
 #: bricksa/apps/projects/admin.py:27
-#, fuzzy
 #| msgid "Detail Information"
 msgid "Specific information"
 msgstr "Acerca del proyecto"
@@ -130,13 +127,11 @@ msgid "Photo"
 msgstr "Foto"
 
 #: bricksa/apps/projects/models.py:28
-#, fuzzy
 #| msgid "Thumbnail information"
 msgid "Thumbnail 1"
 msgstr "Imagen 1"
 
 #: bricksa/apps/projects/models.py:34
-#, fuzzy
 #| msgid "Thumbnail information"
 msgid "Thumbnail 2"
 msgstr "Imagen 2"
@@ -170,7 +165,6 @@ msgid "House - Room"
 msgstr "Casa - Habitacion"
 
 #: bricksa/apps/projects/models.py:68
-#, fuzzy
 #| msgid "Commercial"
 msgid "commercial"
 msgstr "Comercial"
@@ -232,7 +226,6 @@ msgid "M2 Construction"
 msgstr "M2 Construcción"
 
 #: bricksa/apps/projects/models.py:119
-#, fuzzy
 #| msgid "Departaments"
 msgid "Number of departaments"
 msgstr "Departamentos"
