@@ -10,16 +10,14 @@ from bricksa.apps.projects.models import Project, Brochure, ProjectPhoto
 class ProjectListView(ListView):
     template_name = 'projects/project_list.html'
     context_object_name = 'projects'
-    ordering = 'order'
     model = Project
 
     def get_queryset(self,):
         arg = self.request.GET.get('u')
-        print arg
         if arg:
-            queryset = Project.objects.filter(project_type=arg)
+            queryset = Project.objects.filter(project_type=arg).order_by('order')
         else:
-            queryset = super(ProjectListView, self).get_queryset()
+            queryset = Project.objects.all().order_by('order')
         return queryset
 
 
