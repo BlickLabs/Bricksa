@@ -10,30 +10,30 @@
       bottom calc(-83px * 0.1)
       color white
       display block
-      font-size 83px
+      rc-font-size 83px 62px 45px
       font-variant small-caps
       font-weight $fontBlack
       left calc(37vw + 86px)
       letter-spacing 3px
-      line-height 0.7
+      line-height 0.7em
       position absolute
       right 100px
       
   .project-overview
+    align-items center
+    background white
     display flex
     
     .project-logo
-      background white
       width 37vw
       
       img
         display block
         -center-block()
-        margin-bottom 60px
-        margin-top 60px
         width 50%
         
     .project-text
+      background $lighterGray
       max-width calc(100% - 37vw)
       padding 40px 90px
       
@@ -57,7 +57,7 @@
           
         .icons::before
           display inline-block
-          font-size 25px
+          rc-font-size 25px 22px 19px
           vertical-align middle
           width 25px
           
@@ -90,7 +90,7 @@
       
       .title
         display block
-        font-size 41px
+        rc-font-size 41px 32px 26px
         font-variant small-caps
         font-weight $fontBlack
         text-align center
@@ -105,17 +105,17 @@
         
       .icons::before
         display inline-block
-        font-size 28px
+        rc-font-size 28px 23px 19px
         margin-right 25px
         text-align center
         vertical-align middle
         width 30px
         
       .icon-parking-lot::before
-        font-size 15px
+        rc-font-size 15px 13px 11px
         
       .icon-roof-garden::before
-        font-size 21.5px
+        rc-font-size 21.5px 18px 14px
 
     .cover
       flex-grow 1
@@ -125,11 +125,11 @@
     background $darkBlue
     color white
     display block
-    font-size 41px
+    rc-font-size 41px 32px 26px
     font-variant small-caps
     font-weight $fontBlack
     line-height 1
-    padding 21px 50px
+    padding 0.58em 50px
     
   .department-info-container
     display flex
@@ -143,7 +143,7 @@
       padding 60px
       
       .title
-        font-size 20px
+        rc-font-size 20px 18px 16px
         font-weight $fontBlack
         
       .department-characteristics-list
@@ -156,11 +156,12 @@
         display inline-block
         font-weight $fontMedium
         margin-top 5px
+        vertical-align middle
         width calc(50% - 10px)
       
     .department-brochure-section
       background #f2f2f2
-      font-weight $fonrMedium
+      font-weight $fontBook
       padding 60px 20px
       text-align center
       width 34vw
@@ -183,7 +184,7 @@
         width 90%
         
       .bricksa-button
-        font-size 15px
+        rc-font-size 15px 12.5px
         font-weight $fontBlack
         margin-top 40px
         padding 6px 30px
@@ -196,11 +197,11 @@
     simple-border('right', 6px, #b0b8c2)
     color $darkBlue
     display block
-    font-size 41px
+    rc-font-size 41px 32px 26px
     font-variant small-caps
     font-weight $fontBlack
     line-height 0.9
-    padding 33px 70px
+    padding 0.74em 70px
     width calc(100% - 34vw)
     
   .location-container
@@ -234,7 +235,9 @@
       width calc(34vw + 3px)
       
       img
-        width 120px
+        max-width 120px
+        min-width 80px
+        width 50%
       
       span
         display block
@@ -252,7 +255,7 @@
       display block
       
     .bricksa-button
-      font-size 15px
+      rc-font-size 15px 12.5px
       font-weight $fontBlack
       margin-top 30px
       padding-bottom 8px
@@ -296,3 +299,122 @@
     top 50%
     transform translateY(-50%)
     width 50px
+    
+@media screen and (max-width: 920px)
+  .project-detail-section
+    .project-cover
+      .project-name
+        left calc(37vw + 48px)
+        line-height 0.8em
+        
+    .project-overview
+      .project-text
+        padding 50px
+        
+        .project-description
+          width 100%
+          
+    .project-video-section
+      padding 40px 20px
+      
+    .project-characteristics-container
+      .characteristics
+        padding 50px 40px
+        width 50vw
+        
+    #project-carousel
+      margin-top 70px
+      
+    .department-info-container
+      .department-info
+        padding 42px
+        width 50vw
+        
+        .department-characteristics-list
+          margin-left 0
+          
+          .department-characteristic-item
+            display block
+            width 100%
+        
+      .department-brochure-section
+        width 50vw
+        
+    .location-title-container .location-title
+      width 100%
+      
+    .contact-container
+      padding 40px 20px
+      
+@media screen and (max-width: 600px)
+  .project-detail-section
+    .project-cover
+      .project-name
+        left 46px
+        line-height 0.8em
+        
+    .project-overview
+      .project-logo
+        display none
+        
+      .project-text
+        max-width initial
+        width 100%
+          
+    .project-characteristics-container
+      flex-wrap wrap
+      
+      .characteristics
+        width 100%
+        
+      .cover
+        display none
+        
+    .department-info-container
+      flex-wrap wrap
+      
+      .department-info, .department-brochure-section
+        max-width initial
+        width 100%
+        
+      .department-info
+        border none
+
+        .department-characteristics-list .department-characteristic-item
+          display inline-block
+          min-width 200px
+          width calc(50% - 8px)
+          
+      .department-brochure-section
+        padding 40px 20px
+        
+    .location-container
+      flex-wrap wrap
+
+      &::after
+        content ''
+        display none
+
+      .google-map, .text-container
+        max-width initial
+        width 100%
+        
+      .google-map
+        height 50vh
+        max-height initial
+        
+        .embed-responsive
+          width calc((16/9) * 50vh)
+          margin 0 auto
+          
+      .text-container
+        padding 20px
+
+        img
+          display inline-block
+          min-width initial
+          width 50px
+          
+        span
+          display inline-block
+          margin-left 30px
