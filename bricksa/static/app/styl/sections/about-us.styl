@@ -8,7 +8,7 @@
     .title
       bottom 0
       color white
-      font-size 90px
+      rc-font-size 90px 70px 50px
       font-weight $fontBlack
       left 70px
       line-height 0.6
@@ -26,3 +26,18 @@
     
     .small-column
       background $darkBlue
+      
+@media screen and (max-width: 930px)
+  .general-section.about
+    .small-row .big-column
+      padding 50px
+        
+    .big-row
+      max-height 420px
+      min-height initial
+      
+      .title
+        left 46px
+    
+    .small-row .small-column
+      display none

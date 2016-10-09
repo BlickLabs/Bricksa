@@ -7,9 +7,9 @@
       background $darkGray
       color white
       display inline-block
-      font-size 27px
+      rc-font-size 27px 21px 19px
       font-weight $fontBlack
-      line-height 65px
+      line-height 2.7em
       padding 5px 20px 0 20px
       text-align center
       text-transform uppercase
@@ -42,3 +42,27 @@
     
   .big-column
     flex-grow 1
+    
+@media screen and (max-width: 999px)
+  .general-section
+    .section-title
+      min-width 320px
+      width 95%
+      
+      span
+        min-width 320px
+        width auto
+
+    .section-content
+      min-width 320px
+      width 95%
+      
+@media screen and (max-width: 930px)
+  .general-section
+    .columns
+      flex-wrap wrap
+    
+    .big-column, .small-column
+      flex-basis 100% !important
+      max-width initial !important
+      width 100% !important
