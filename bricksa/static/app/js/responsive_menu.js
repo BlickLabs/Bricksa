@@ -24,12 +24,12 @@
   }
 
   $(window).resize(function () {
+    $('body')[0].removeEventListener('touchmove', detectTouch, false);
+    $('#navbar .menu-trigger').unbind('click');
+
     if (mobile.matches) {
       $('body')[0].addEventListener('touchmove', detectTouch, false);
       $('#navbar .menu-trigger').click(detectClick);
-    } else {
-      $('body')[0].removeEventListener('touchmove', detectTouch, false);
-      $('#navbar .menu-trigger').unbind('click');
     }
   });
 })();
