@@ -10,7 +10,7 @@
       rc-font-size 27px 23px
       font-variant small-caps
       font-weight $fontBlack
-      line-height 70px
+      line-height 2.7em
       padding 0 20px
       text-align center
       
@@ -182,13 +182,13 @@
       flex-wrap wrap
       
       &.big-row .project-text
-        padding 30px 0
+        padding 50px
         
         .project-title, .project-description
           -center-block()
           max-width initial
           min-width initial
-          width 80%
+          width 100%
           
         .project-title::after
           margin-top 18px
@@ -198,14 +198,14 @@
           margin-top 30px
           
       &.small-row .project-additional-info
-        padding 50px 0
+        padding 50px
         
         >div
           -center-block()
           flex-wrap wrap
           max-width initial
           min-width initial
-          width 80%
+          width auto
           
         .project-characteristics
           margin-bottom 30px
