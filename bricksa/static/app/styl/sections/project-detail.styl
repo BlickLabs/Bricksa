@@ -75,9 +75,8 @@
     
     .video-container
       -center-block()
-      margin-top 36px
+      margin-top 1.9em
       max-width 800px
-      width 80%
       
   .project-characteristics-container
     display flex
@@ -130,6 +129,9 @@
     font-weight $fontBlack
     line-height 1
     padding 0.58em 50px
+    
+    &.no-carousel
+      margin-top 110px
     
   .department-info-container
     display flex
@@ -325,6 +327,9 @@
     #project-carousel
       margin-top 70px
       
+    .department-type-title.no-carousel
+      margin-top 80px
+      
     .department-info-container
       .department-info
         padding 42px
@@ -369,6 +374,9 @@
         
       .cover
         display none
+        
+    .department-type-title.no-carousel
+      margin-top 60px
         
     .department-info-container
       flex-wrap wrap
