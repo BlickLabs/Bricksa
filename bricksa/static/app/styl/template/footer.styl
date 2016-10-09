@@ -10,12 +10,17 @@
   .footer-content
     background $darkGray
     color white
-    font-size 13px
+    rc-font-size 13px 11px
     padding 25px 38px 20px 20px
     width 260px
     
     .gray-text
       color lighten($gray, 25%)
       display block
-      font-size 12px
+      rc-font-size 12px 10px
       margin-top 4px
+      
+@media $windowSmall
+  #footer .footer-content
+    padding 15px 18px
+    width 208px

@@ -42,8 +42,8 @@
         width 260px
         
         p
-          font-size 17px
-          line-height 30px
+          rc-font-size 17px 13px
+          line-height 1.8em
           margin-bottom 0
           
           &::before
@@ -70,16 +70,16 @@
         
           .banner-title
             display inline-block
-            font-size 76px
+            rc-font-size 76px 50px 34px
             font-weight inherit
-            line-height 0.75
+            line-height 0.75em
             margin 0
             max-width 520px
             min-width 280px
           
           .banner-motto
             display block
-            font-size 28px
+            rc-font-size 28px 21px 20px
             line-height 0.9
             margin-top 8px
             width 280px
@@ -88,3 +88,104 @@
             margin-bottom 20px
             margin-top 120px
       
+@media screen and (max-width: 865px)
+  .homepage-banners .homepage-banner
+    .banner-text-container .banner-info-container
+      text-align left
+      
+      .banner-info .bricksa-button
+        margin 80px 0 50px 0
+  @media screen and (orientation: portrait)
+    .homepage-banners .homepage-banner
+      .banner-text-container
+        align-items stretch
+        flex-wrap wrap-reverse
+        height calc(100% - 83px)
+        margin 0 auto
+        max-width 500px
+        min-width 320px
+        transform none
+        width 80%
+        
+        .banner-white-box, .banner-info-container
+          width 100%
+          
+        .banner-white-box
+          height auto
+          
+  @media screen and (orientation: landscape)
+    .homepage-banners .homepage-banner
+      padding-top 0
+
+      .banner-text-container
+        align-items center
+        flex-wrap wrap
+        height calc(100% - 83px)
+        margin 0 auto
+        transform none
+        width 100%
+        
+        .banner-white-box, .banner-info-container
+          height 100%
+          
+        .banner-white-box
+          width 250px
+        
+        .banner-info-container
+          margin-left 50px
+          
+@media screen and (max-width: 800px)
+  #main.homepage-main
+    margin-top 70px
+
+  .homepage-banners
+    height calc(100vh - 70px)
+
+    .homepage-banner .banner-text-container
+      .banner-white-box
+        padding 25px
+    
+@media $windowSmall
+  #main.homepage-main
+    margin-top 56px
+
+  .homepage-banners
+    height calc(100vh - 56px)
+    
+    .homepage-banner .banner-text-container
+      height calc(100% - 63px)
+      transform none
+      
+      .banner-info-container
+        .banner-info .bricksa-button
+          margin 30px 0
+      
+  @media screen and (orientation: landscape)
+    .homepage-banners .homepage-banner
+      .banner-text-container
+        .banner-white-box
+          width 208px
+          
+        .banner-info-container
+          margin-left 30px
+          position relative
+          width 50%
+          
+         .banner-info
+            position absolute
+            top 50%
+            transform translateY(-50%)
+            
+            .bricksa-button
+              margin-bottom 0 !important
+
+@media screen and (max-width: 320px)
+  @media screen and (orientation: portrait)
+    .homepage-banners .homepage-banner
+      .banner-text-container
+        .banner-info-container
+          text-align center
+        
+        .banner-info
+          text-align left
+          width 90% !important
