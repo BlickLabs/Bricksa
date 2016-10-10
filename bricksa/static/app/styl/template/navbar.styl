@@ -1,5 +1,6 @@
 #navbar
   background $darkBlue
+  rc-font-size 18px 18px
   height 70px
   left 0
   position fixed
@@ -16,10 +17,26 @@
       height 100%
       width auto
 
+  .menu-trigger
+    cursor pointer
+    display none
+
+    .menu-trigger-line
+      background white
+      display block
+      height 3px
+      width 27px
+      
+      &:not(:first-child)
+        margin-top 5px
+
   .menu-container
     float right
     height 100%
     margin-right 70px
+              
+    .logo-container
+      display none
 
     .menu-list
       background transparent
@@ -61,7 +78,7 @@
 
         ul
           display none
-          font-size 15px
+          rc-font-size 15px inherit
           left 0
           padding-left 0
           position absolute
@@ -78,3 +95,64 @@
             
             &:hover
               background $gray
+              
+@media $windowSmall
+  #navbar
+    height 56px
+    
+    >.logo-container
+      display none
+      
+    .menu-trigger
+      display block
+      float right
+      margin 18px
+      
+    .menu-container
+      background $darkBlue
+      height 100vh
+      margin-right 0
+      overflow-y auto
+      position fixed
+      right -280px
+      top 0
+      transition right 0.2s
+      width 280px
+      
+      &.active
+        right 0
+      
+      .logo-container
+        display block
+        margin 25px 30px 35px 30px
+        
+        &::after
+          background white
+          content ' '
+          display block
+          height 4px
+          width 32px
+          margin-top 15px
+      
+      .menu-list
+        height auto
+        padding-left 0
+        text-align left
+        
+        li
+          display block
+          height auto
+          
+          a
+            line-height 2.5em
+            padding 0 30px
+            
+        .submenu-container
+          ul
+            display block
+            position relative
+            top 0
+            
+            a
+              background transparent
+              padding-left 50px

@@ -25,7 +25,7 @@
 
       label:not(.error)
         color white
-        font-size 22px
+        rc-font-size 22px 20px 18px
         font-weight normal
         line-height 2.3
         
@@ -35,8 +35,8 @@
       input, textarea
         background white
         border solid 1px #979797
-        font-size 22px
-        padding 18.5px
+        rc-font-size 22px 20px 18px
+        padding 0.841em
         width 100%
         
       textarea
@@ -51,7 +51,7 @@
         
       .error
         color white
-        font-size 18px
+        rc-font-size 18px 16px 14px
         font-weight normal
         margin-top 8px
         
@@ -69,8 +69,8 @@
       
       .title
         color #4a4a4a
-        font-size 21.6px
-        letter-spacing 0.2px
+        rc-font-size 21.6px 18px 16px
+        letter-spacing 0.00925925925em
         
       .mail
         margin-top 25px
@@ -82,3 +82,46 @@
         background $gray
         margin-top 74px
         height 289px
+        
+@media screen and (max-width: 1235px)
+  .general-section.contact
+    .section-content.columns
+      .big-column
+        padding 50px 0 50px 80px
+
+      .contact-form
+        input, textarea
+          padding 0.6em
+          
+      .contact-info .map
+        margin-top 50px
+        
+@media screen and (max-width: 930px)
+  .general-section.contact
+    .section-content.columns
+      flex-wrap wrap
+
+      .big-column
+        padding 30px 40px
+        width 100%
+
+      .small-column
+        display none
+        
+      .contact-form
+        float none
+        width 100%
+        
+        .bricksa-button
+          margin-top 30px
+        
+      .contact-info
+        margin 40px 0 0 0
+        width 100%
+        
+        .text
+          padding 30px
+          
+        .map
+          height calc((9/16)*(100vw - 80px))
+          margin 0

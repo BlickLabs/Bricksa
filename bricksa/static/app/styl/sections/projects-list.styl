@@ -7,10 +7,10 @@
       background $darkGray
       color white
       display inline-block
-      font-size 27px
+      rc-font-size 27px 23px
       font-variant small-caps
       font-weight $fontBlack
-      line-height 70px
+      line-height 2.7em
       padding 0 20px
       text-align center
       
@@ -75,11 +75,11 @@
             padding 30px 80px
 
             .project-title
-              font-size 60px
+              rc-font-size 60px 40px 30px
               font-variant small-caps
               font-weight $fontBlack
               letter-spacing 2px
-              line-height 50px
+              line-height 0.84em
               margin 0
               max-width 450px
               
@@ -92,7 +92,7 @@
               
             .project-description
               font-weight $fontBook
-              line-height 33px
+              line-height 1.85em
               max-width 75%
           
         &.small-row
@@ -127,7 +127,7 @@
                 
               .icons::before
                 display inline-block
-                font-size 25px
+                rc-font-size 25px 22px 19px
                 vertical-align middle
                 width 25px
                 
@@ -141,3 +141,72 @@
         >div:not(.project-thumbnail)
             flex-grow 1
           
+@media screen and (max-width: 999px)
+  .projects-section
+    .project-type-title
+      min-width 320px
+      width 95%
+
+    .project-item-container .project-item
+      min-width 320px
+      width 95%
+      
+@media screen and (max-width: 930px)
+  .projects-section .project-item-container
+    .project-item .project-item-row
+      flex-wrap wrap
+      
+      .project-thumbnail,
+      .project-text,
+      .project-additional-info
+        flex-basis 100% !important
+        max-width initial !important
+        width 100% !important
+        
+      &.big-row .project-thumbnail
+        height 50vh
+        max-height 400px
+        
+      &.small-row .project-thumbnail
+        display none
+      
+@media $windowSmall
+  .projects-section .project-type-title span
+    min-width 320px
+    padding 0 30px !important
+    width auto !important
+
+@media screen and (max-width: 570px)
+  .projects-section .project-item-container
+    .project-item .project-item-row
+      flex-wrap wrap
+      
+      &.big-row .project-text
+        padding 40px
+        
+        .project-title, .project-description
+          -center-block()
+          max-width initial
+          min-width initial
+          width 100%
+          
+        .project-title::after
+          margin-top 18px
+          
+        .project-description
+          margin-bottom 0
+          margin-top 30px
+          
+      &.small-row .project-additional-info
+        padding 40px
+        
+        >div
+          -center-block()
+          flex-wrap wrap
+          max-width initial
+          min-width initial
+          width auto
+          
+        .project-characteristics
+          margin-bottom 30px
+          width 100%
