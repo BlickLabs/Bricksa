@@ -77,24 +77,11 @@ class Departament(models.Model):
         null=False,
         default=False
     )
-    roof_garden = models.BooleanField(
-        _('Roof garden'),
-        blank=False,
-        null=False,
-        default=False
-    )
     terrace = models.BooleanField(
         _('Terrace'),
         blank=False,
         null=False,
         default=False
-    )
-    parking_places = models.CharField(
-        _('Parking places'),
-        max_length=50,
-        blank=False,
-        null=False,
-        default=0
     )
 
     class Meta:
