@@ -140,21 +140,57 @@
 		</div>
 		<span class="department-type-title">
 		{% endif %}
-			departamento tipo
+			{{ project.get_category_display | lower  }} tipo
 		</span>
 		<div class="department-info-container">
 			<div class="department-info">
 				<span class="title">Cada departamento incluye:</span>
 				<ul class="department-characteristics-list">
-					<li class="department-characteristic-item">Recámaras con vestidor: 1</li>
-					<li class="department-characteristic-item">Cocina integral</li>
-					<li class="department-characteristic-item">Recámaras con clóset: 2</li>
-					<li class="department-characteristic-item">Patio de servicio</li>
-					<li class="department-characteristic-item">Baños completos: 2</li>
-					<li class="department-characteristic-item">Terraza</li>
-					<li class="department-characteristic-item">Sala</li>
-					<li class="department-characteristic-item">Lugares de estacionamiento: 1</li>
-					<li class="department-characteristic-item">Comedor</li>
+					{% if project.departament.bedrooms_with_dress > 0 %}
+						<li class="department-characteristic-item">
+							Recámaras con vestidor: {{ project.departament.bedrooms_with_dress }}
+						</li>
+					{% endif %}
+					{% if project.departament.integral_kitchen %}
+						<li class="department-characteristic-item">Cocina integral</li>
+					{% endif %}
+					{% if project.departament.kitchen_cupboard %}
+						<li class="department-characteristic-item">Cocina alacena</li>
+					{% endif %}
+					{% if project.departament.bedrooms_with_closet > 0 %}
+						<li class="department-characteristic-item">
+							Recámaras con clóset: {{ project.departament.bedrooms_with_closet }}
+						</li>
+					{% endif %}
+					{% if project.departament.service_yard %}
+						<li class="department-characteristic-item">Patio de servicio</li>
+					{% endif %}
+					{% if project.departament.complete_bathrooms > 0 %}
+						<li class="department-characteristic-item">
+							Baños completos: {{ project.departament.complete_bathrooms }}
+						</li>
+					{% endif %}
+					{% if project.departament.half_bathrooms > 0 %}
+						<li class="department-characteristic-item">
+							Medios baños: {{ project.departament.half_bathrooms }}
+						</li>
+					{% endif %}
+					{% if project.departament.terrace %}
+						<li class="department-characteristic-item">Terraza</li>
+					{% endif %}
+					{% if project.departament.living_room %}
+						<li class="department-characteristic-item">Sala</li>
+					{% endif %}
+					{% if project.departament.dinning_room %}
+						<li class="department-characteristic-item">Comedor</li>
+					{% endif %}
+					{% if project.departament.garden %}
+						<li class="department-characteristic-item">Jardin</li>
+					{% endif %}
+					{% if project.departament.linen_closet %}
+						<li class="department-characteristic-item">Clóset de blancos</li>
+					{% endif %}
+
 				</ul>
 			</div>
 			<div class="department-brochure-section">
