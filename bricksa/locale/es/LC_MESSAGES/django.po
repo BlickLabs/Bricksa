@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-10-05 00:22-0500\n"
+"POT-Creation-Date: 2016-10-13 22:33-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,59 +27,55 @@ msgstr "Proyecto"
 msgid "Bedrooms with dress"
 msgstr "Recamara con vestidor"
 
-#: bricksa/apps/departaments/models.py:23
+#: bricksa/apps/departaments/models.py:22
 msgid "Bedrooms with closet"
 msgstr "Recamara con closet"
 
-#: bricksa/apps/departaments/models.py:30
+#: bricksa/apps/departaments/models.py:28
 msgid "Complete bathrooms"
 msgstr "Baños completos"
 
-#: bricksa/apps/departaments/models.py:37
+#: bricksa/apps/departaments/models.py:34
 msgid "Half bathrooms"
 msgstr "Medios baños"
 
-#: bricksa/apps/departaments/models.py:44
+#: bricksa/apps/departaments/models.py:40
 msgid "Living room"
 msgstr "Sala"
 
-#: bricksa/apps/departaments/models.py:50
+#: bricksa/apps/departaments/models.py:46
 msgid "Dinning room"
 msgstr "Comedor"
 
-#: bricksa/apps/departaments/models.py:56
-msgid "Kitchen"
-msgstr "Cocina"
+#: bricksa/apps/departaments/models.py:52
+msgid "Integral kitchen"
+msgstr "Cocina integral"
 
-#: bricksa/apps/departaments/models.py:62
+#: bricksa/apps/departaments/models.py:58
+msgid "Cupboard kitchen"
+msgstr "Cocina alacena"
+
+#: bricksa/apps/departaments/models.py:64
 msgid "Linen closet"
 msgstr "Closet de blancos"
 
-#: bricksa/apps/departaments/models.py:69
+#: bricksa/apps/departaments/models.py:71
 msgid "Service yard"
 msgstr "Patio de servicio"
 
-#: bricksa/apps/departaments/models.py:75
+#: bricksa/apps/departaments/models.py:77
 msgid "Garden"
 msgstr "Jardin"
 
-#: bricksa/apps/departaments/models.py:81 bricksa/apps/projects/models.py:156
-msgid "Roof garden"
-msgstr "Roof garden"
-
-#: bricksa/apps/departaments/models.py:87
+#: bricksa/apps/departaments/models.py:83
 msgid "Terrace"
 msgstr "Terraza"
 
-#: bricksa/apps/departaments/models.py:93 bricksa/apps/projects/models.py:125
-msgid "Parking places"
-msgstr "Lugares de estacionamiento"
-
-#: bricksa/apps/departaments/models.py:101 bricksa/apps/projects/models.py:65
+#: bricksa/apps/departaments/models.py:90 bricksa/apps/projects/models.py:65
 msgid "Departament"
 msgstr "Departamento"
 
-#: bricksa/apps/departaments/models.py:102
+#: bricksa/apps/departaments/models.py:91
 msgid "Departaments"
 msgstr "Departamentos"
 
@@ -100,7 +96,6 @@ msgid "Subscribers"
 msgstr "Suscriptores"
 
 #: bricksa/apps/projects/admin.py:17
-#| msgid "Detail Information"
 msgid "General Information"
 msgstr "Informacion general"
 
@@ -109,7 +104,6 @@ msgid "Detail Information"
 msgstr "Información detallada"
 
 #: bricksa/apps/projects/admin.py:27
-#| msgid "Detail Information"
 msgid "Specific information"
 msgstr "Acerca del proyecto"
 
@@ -127,12 +121,10 @@ msgid "Photo"
 msgstr "Foto"
 
 #: bricksa/apps/projects/models.py:28
-#| msgid "Thumbnail information"
 msgid "Thumbnail 1"
 msgstr "Imagen 1"
 
 #: bricksa/apps/projects/models.py:34
-#| msgid "Thumbnail information"
 msgid "Thumbnail 2"
 msgstr "Imagen 2"
 
@@ -165,7 +157,6 @@ msgid "House - Room"
 msgstr "Casa - Habitacion"
 
 #: bricksa/apps/projects/models.py:68
-#| msgid "Commercial"
 msgid "commercial"
 msgstr "Comercial"
 
@@ -226,9 +217,12 @@ msgid "M2 Construction"
 msgstr "M2 Construcción"
 
 #: bricksa/apps/projects/models.py:119
-#| msgid "Departaments"
 msgid "Number of departaments"
 msgstr "Departamentos"
+
+#: bricksa/apps/projects/models.py:125
+msgid "Parking places"
+msgstr "Lugares de estacionamiento"
 
 #: bricksa/apps/projects/models.py:131
 msgid "Guarhouse"
@@ -245,6 +239,10 @@ msgstr "Area comun"
 #: bricksa/apps/projects/models.py:150
 msgid "Dumpster area"
 msgstr "Area para deposito de basura"
+
+#: bricksa/apps/projects/models.py:156
+msgid "Roof garden"
+msgstr "Roof garden"
 
 #: bricksa/apps/projects/models.py:162
 msgid "Order"
@@ -318,6 +316,9 @@ msgstr "Ingles"
 #: config/settings/base.py:88
 msgid "Spanish"
 msgstr "Español"
+
+#~ msgid "Kitchen"
+#~ msgstr "Cocina"
 
 #~ msgid "Project status"
 #~ msgstr "Status de Proyecto"
