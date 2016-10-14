@@ -8,34 +8,30 @@ from bricksa.apps.projects.models import Project
 
 
 class Departament(models.Model):
-    project = models.ForeignKey(
+    project = models.OneToOneField(
         Project,
         verbose_name=_('Project')
     )
-    bedrooms_with_dress = models.CharField(
+    bedrooms_with_dress = models.IntegerField(
         _('Bedrooms with dress'),
-        max_length=50,
         blank=False,
         null=False,
         default=0
     )
-    bedrooms_with_closet = models.CharField(
+    bedrooms_with_closet = models.IntegerField(
         _('Bedrooms with closet'),
-        max_length=50,
         blank=False,
         null=False,
         default=0
     )
-    complete_bathrooms = models.CharField(
+    complete_bathrooms = models.IntegerField(
         _('Complete bathrooms'),
-        max_length=50,
         blank=False,
         null=False,
         default=0
     )
-    half_bathrooms = models.CharField(
+    half_bathrooms = models.IntegerField(
         _('Half bathrooms'),
-        max_length=50,
         blank=False,
         null=False,
         default=0
@@ -52,8 +48,14 @@ class Departament(models.Model):
         null=False,
         default=False
     )
-    kitchen = models.BooleanField(
-        _('Kitchen'),
+    integral_kitchen = models.BooleanField(
+        _('Integral kitchen'),
+        blank=False,
+        null=False,
+        default=False
+    )
+    kitchen_cupboard = models.BooleanField(
+        _('Cupboard kitchen'),
         blank=False,
         null=False,
         default=False
