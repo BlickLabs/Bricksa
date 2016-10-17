@@ -48,17 +48,24 @@
     padding-left 0px
     
     li
+      display flex
       line-height 1.6
+      
+      &:not(:first-child)
+        margin-top 5px
       
       &::before
         content ' '
-        display inline-block
         background-repeat no-repeat
         background-size 12px
         height 17px
         margin-right 12px
         margin-top 1.5px
         width 12px
+        
+      span
+        flex-grow 1
+        max-width calc(100% - 24px)
       
 @media screen and (max-width: 930px)
   .general-section.services
