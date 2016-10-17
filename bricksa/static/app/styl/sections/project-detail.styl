@@ -99,22 +99,28 @@
         margin-left -40px
         margin-top 40px
         
-        li:not(:first-child)
-          margin-top 18px
+        li
+          align-items center
+          display flex
+          
+          &:not(:first-child)
+            margin-top 18px
+            
+          span:not(.icons)
+            flex-grow 1
+            max-width calc(100% - 25px)
         
       .icons::before
-        display inline-block
         rc-font-size 28px 23px 19px
         margin-right 25px
         text-align center
-        vertical-align middle
         width 30px
         
       .icon-parking-lot::before
-        rc-font-size 15px 13px 11px
+        rc-font-size 13.5px 11.5px 9.5px
         
       .icon-roof-garden::before
-        rc-font-size 21.5px 18px 14px
+        rc-font-size 22px 19px 15px
 
     .cover
       flex-grow 1

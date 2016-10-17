@@ -71,53 +71,69 @@
 					{% if project.number_departaments > 0 %}
 					<li class="characteristic-item">
 						<span class="icons icon-department"></span>
+						<span>
 						{{ project.number_departaments }} Departamentos.
+						</span>
 					</li>
 					{% endif %}
 					{% if project.construction_m2 > 0 %}
 					<li class="characteristic-item">
 						<span class="icons icon-building-size"></span>
+						<span>
 						{{ project.construction_m2 }} m2 de construcción.
+						</span>
 					</li>
 					{% endif %}
 					{% if project.parking_places > 0 %}
 					<li class="characteristic-item">
 						<span class="icons icon-parking-lot"></span>
+						<span>
 						{% if project.parking_places == 1 %}
 						1 cajón de estacionamiento.
 						{% else %}
 						{{ project.parking_places }} cajones de estacionamiento.
 						{% endif %}
+						</span>
 					</li>
 					{% endif %}
 					{% if project.guardhouse %}
 					<li class="characteristic-item">
 						<span class="icons icon-guardhouse"></span>
+						<span>
 						Caseta de vigilancia.
+						</span>
 					</li>
 					{% endif %}
 					{% if project.waiting_area %}
 					<li class="characteristic-item">
 						<span class="icons icon-living-room"></span>
+						<span>
 						Área de espera para visitas.
+						</span>
 					</li>
 					{% endif %}
 					{% if project.common_area %}
 					<li class="characteristic-item">
 						<span class="icons icon-illumination"></span>
+						<span>
 						Área común con iluminación LED.
+						</span>
 					</li>
 					{% endif %}
 					{% if project.dumpster_area %}
 					<li class="characteristic-item">
 						<span class="icons icon-dustbin-area"></span>
+						<span>
 						Área para depósito de basura.
+						</span>
 					</li>
 					{% endif %}
 					{% if project.roof_garden %}
 					<li class="characteristic-item">
 						<span class="icons icon-roof-garden"></span>
+						<span>
 						Roof Garden.
+						</span>
 					</li>
 					{% endif %}
 				</ul>
