@@ -12,7 +12,7 @@ from bricksa.core.utils import send_email
 
 class HomepageView(View):
     def get(self, request):
-        banners = ProjectBanner.objects.all()
+        banners = ProjectBanner.objects.all().order_by('order')
         ctx = {
             'banners': banners
         }

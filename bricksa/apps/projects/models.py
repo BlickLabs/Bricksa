@@ -189,6 +189,13 @@ class ProjectBanner(models.Model):
         verbose_name = _('Project Banner')
         verbose_name_plural = _('Project Banners')
 
+    order = models.IntegerField(
+        _('Order'),
+        blank=False,
+        null=False,
+        default=1,
+    )
+
     def __unicode__(self):
         return self.project.name
 
