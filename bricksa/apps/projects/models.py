@@ -158,6 +158,54 @@ class Project(models.Model):
         null=False,
         default=False,
     )
+    lobby = models.BooleanField(
+        _('Lobby'),
+        blank=False,
+        null=False,
+        default=False,
+    )
+    multiple_room = models.BooleanField(
+        _('Multipurpose room'),
+        blank=False,
+        null=False,
+        default=False,
+    )
+    closed_circuit = models.BooleanField(
+        _('Closed circuit'),
+        blank=False,
+        null=False,
+        default=False,
+    )
+    undergroun_services = models.BooleanField(
+        _('All services underground'),
+        blank=False,
+        null=False,
+        default=False,
+    )
+    green_areas = models.IntegerField(
+        _('Green areas'),
+        blank=False,
+        null=False,
+        default=0
+    )
+    access_gate = models.BooleanField(
+        _('Access gate'),
+        blank=False,
+        null=False,
+        default=False,
+    )
+    concrete_paving = models.BooleanField(
+        _('Concrete paving'),
+        blank=False,
+        null=False,
+        default=False,
+    )
+    club_house = models.BooleanField(
+        _('Club house'),
+        blank=False,
+        null=False,
+        default=False,
+    )
     order = models.IntegerField(
         _('Order'),
         blank=False,
@@ -178,6 +226,7 @@ class ProjectBanner(models.Model):
         Project,
         verbose_name=_('Project')
     )
+
     photo = models.ImageField(
         _('Photo'),
         blank=False,
@@ -185,16 +234,17 @@ class ProjectBanner(models.Model):
         upload_to='project_banner_photos'
     )
 
-    class Meta:
-        verbose_name = _('Project Banner')
-        verbose_name_plural = _('Project Banners')
-
     order = models.IntegerField(
         _('Order'),
         blank=False,
         null=False,
         default=1,
     )
+
+    class Meta:
+        verbose_name = _('Project Banner')
+        verbose_name_plural = _('Project Banners')
+
 
     def __unicode__(self):
         return self.project.name
