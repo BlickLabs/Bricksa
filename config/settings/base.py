@@ -50,6 +50,7 @@ LOCAL_APPS = (
     'bricksa.apps.landing',
     'bricksa.apps.newsletter',
     'bricksa.apps.houses',
+    'bricksa.apps.offices',
 )
 
 INSTALLED_APPS = THIRD_PARTY_APPS + DJANGO_APPS + LOCAL_APPS
