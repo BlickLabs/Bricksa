@@ -85,6 +85,24 @@ class Departament(models.Model):
         null=False,
         default=False
     )
+    tv_room = models.BooleanField(
+        _('TV Room'),
+        blank=False,
+        null=False,
+        default=False
+    )
+    study = models.BooleanField(
+        _('Study'),
+        blank=False,
+        null=False,
+        default=False
+    )
+    room_service = models.BooleanField(
+        _('Room service'),
+        blank=False,
+        null=False,
+        default=False
+    )
 
     class Meta:
         verbose_name = _('Departament')
