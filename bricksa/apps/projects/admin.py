@@ -37,6 +37,7 @@ class ProjectAdmin(admin.ModelAdmin):
 
 @admin.register(models.ProjectBanner)
 class ProjectBannerAdmin(admin.ModelAdmin):
+    list_display = ('project', 'photo', 'order',)
     list_editable = ('order',)
     show_full_result_count = True
 
