@@ -195,8 +195,6 @@ class House(models.Model):
         default=False
     )
 
-
-
     class Meta:
         verbose_name = _('House')
         verbose_name_plural = _('Houses')

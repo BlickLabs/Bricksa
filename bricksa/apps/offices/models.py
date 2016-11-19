@@ -30,3 +30,10 @@ class Office(models.Model):
         null=False,
         default=False
     )
+
+    class Meta:
+        verbose_name = _('Ofice')
+        verbose_name_plural = _('Offices')
+
+    def __unicode__(self):
+        return 'Office - %s' % self.project.name
