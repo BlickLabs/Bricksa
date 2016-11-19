@@ -282,6 +282,131 @@
 				</form>
 			</div>
 		</div>
+    {% elif project.building == 'houses' %}
+       casa tipo
+		</span>
+		<div class="department-info-container">
+			<div class="department-info">
+				<span class="title">Cada casa incluye:</span>
+				<ul class="department-characteristics-list">
+					{% if project.house.bedrooms_with_closet > 0 %}
+						<li class="department-characteristic-item">
+							Recamaras con closet: {{ project.house.bedrooms_with_closet }}
+						</li>
+					{% endif %}
+          {% if project.house.bedrooms_with_dress > 0 %}
+						<li class="department-characteristic-item">
+							Recamaras con vestidor: {{ project.house.bedrooms_with_dress }}
+						</li>
+					{% endif %}
+          {% if project.house.complete_bathrooms > 0 %}
+						<li class="department-characteristic-item">
+							Baños completos: {{ project.house.complete_bathrooms }}
+						</li>
+					{% endif %}
+          {% if project.house.half_bathrooms > 0 %}
+						<li class="department-characteristic-item">
+							Medios baños: {{ project.house.half_bathrooms }}
+						</li>
+					{% endif %}
+          {% if project.house.living_room %}
+						<li class="department-characteristic-item">Sala</li>
+					{% endif %}
+          {% if project.house.dinning_room %}
+						<li class="department-characteristic-item">Comedor</li>
+					{% endif %}
+          {% if project.house.beforedinning_room %}
+						<li class="department-characteristic-item">Antecomedor</li>
+					{% endif %}
+          {% if project.house.integral_kitchen %}
+						<li class="department-characteristic-item">Cocina integral</li>
+					{% endif %}
+          {% if project.house.kitchen_cupboard %}
+						<li class="department-characteristic-item">Alacena</li>
+					{% endif %}
+          {% if project.house.study %}
+						<li class="department-characteristic-item">Estudio</li>
+					{% endif %}
+          {% if project.house.bar %}
+						<li class="department-characteristic-item">Bar</li>
+					{% endif %}
+          {% if project.house.cellar %}
+						<li class="department-characteristic-item">Cava</li>
+					{% endif %}
+          {% if project.house.balcony %}
+						<li class="department-characteristic-item">Balcon</li>
+					{% endif %}
+          {% if project.house.deck %}
+						<li class="department-characteristic-item">Deck</li>
+					{% endif %}
+          {% if project.house.deck_with_gas_fireplace %}
+						<li class="department-characteristic-item">Deck con chimenea de gas</li>
+					{% endif %}
+          {% if project.house.terrace %}
+						<li class="department-characteristic-item">Terraza</li>
+					{% endif %}
+          {% if project.house.swimming_pool %}
+						<li class="department-characteristic-item">Alberca</li>
+					{% endif %}
+          {% if project.house.jacuzzi %}
+						<li class="department-characteristic-item">Jacuzzi</li>
+					{% endif %}
+          {% if project.house.bathroom_with_tub %}
+						<li class="department-characteristic-item">Baño con tina</li>
+					{% endif %}
+          {% if project.house.game_room %}
+						<li class="department-characteristic-item">Cuarto de juegos</li>
+					{% endif %}
+          {% if project.house.guest_room %}
+						<li class="department-characteristic-item">Cuarto de visitas</li>
+					{% endif %}
+          {% if project.house.guest_bathroom %}
+						<li class="department-characteristic-item">Baño de visitas</li>
+					{% endif %}
+          {% if project.house.service_bathroom %}
+						<li class="department-characteristic-item">Baño de servicio</li>
+					{% endif %}
+          {% if project.house.interior_garden %}
+						<li class="department-characteristic-item">Jardín interior</li>
+					{% endif %}
+          {% if project.house.service_yard %}
+						<li class="department-characteristic-item">Patio de servicio</li>
+					{% endif %}
+          {% if project.house.room_service %}
+						<li class="department-characteristic-item">Cuarto de servicio</li>
+					{% endif %}
+          {% if project.house.floor_heating_system %}
+						<li class="department-characteristic-item">Sistema de calefacción por piso</li>
+					{% endif %}
+          {% if project.house.warehouse %}
+						<li class="department-characteristic-item">Bodega</li>
+					{% endif %}
+          {% if project.house.water_glass > 0 %}
+						<li class="department-characteristic-item">
+							Espejos de agua: {{ project.house.water_glass }}
+						</li>
+					{% endif %}
+				</ul>
+			</div>
+			<div class="department-brochure-section">
+			 	{% if project.brochure.id %}
+				<span>Descarga nuestro brochure para conocer mejor el desarrollo</span>
+				{% else %}
+				<span>Regístrate para recibir noticias sobre este desarrollo</span>
+				{% endif %}
+				<form id="download-brochure-form">
+					{% csrf_token %}
+					<input type="email" name="email" id="download-brochure-email" placeholder="Correo electrónico">
+					<input type="hidden" name="source" value="{{project.name}}">
+        	<span id="download-brochure-span" style="display:block;"></span>
+					{% if project.brochure.id %}
+					<button id="download-brochure-button" class="bricksa-button inverse">descargar</button>
+					{% else %}
+					<button id="download-brochure-button" class="bricksa-button inverse">enviar</button>
+					{% endif %}
+				</form>
+			</div>
+		</div>
     {% endif %}
 		{% if project.google_maps_link %}
 		<div class="location-title-container">

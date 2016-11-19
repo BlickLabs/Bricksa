@@ -188,6 +188,14 @@ class House(models.Model):
         null=False,
         default=0
     )
+    service_bathroom = models.BooleanField(
+        _('Service Bathroom'),
+        blank=False,
+        null=False,
+        default=False
+    )
+
+
 
     class Meta:
         verbose_name = _('House')
