@@ -72,7 +72,13 @@
 					<li class="characteristic-item">
 						<span class="icons icon-department"></span>
 						<span>
-						{{ project.number_departaments }} Departamentos.
+            {% if project.building == 'departaments' %}
+              {{ project.number_departaments }} Departamentos.
+            {% elif project.building == 'offices' %}
+              {{ project.number_departaments }} Oficinas.
+            {% elif project.building == 'houses' %}
+              {{ project.number_departaments }} Casas.
+            {% endif %}
 						</span>
 					</li>
 					{% endif %}
