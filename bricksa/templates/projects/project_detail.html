@@ -156,7 +156,8 @@
 		</div>
 		<span class="department-type-title">
 		{% endif %}
-			{{ project.get_category_display | lower  }} tipo
+    {% if project.building == 'departaments' %}
+      departamento tipo
 		</span>
 		<div class="department-info-container">
 			<div class="department-info">
@@ -167,44 +168,56 @@
 							Recámaras con vestidor: {{ project.departament.bedrooms_with_dress }}
 						</li>
 					{% endif %}
-					{% if project.departament.integral_kitchen %}
+          {% if project.departament.bedrooms_with_closet > 0 %}
+						<li class="department-characteristic-item">
+							Recámaras con clóset: {{ project.departament.bedrooms_with_closet }}
+						</li>
+					{% endif %}
+          {% if project.departament.complete_bathrooms > 0 %}
+						<li class="department-characteristic-item">
+							Baños completos: {{ project.departament.complete_bathrooms }}
+						</li>
+					{% endif %}
+          {% if project.departament.half_bathrooms > 0 %}
+						<li class="department-characteristic-item">
+							Medios baños: {{ project.departament.half_bathrooms }}
+						</li>
+					{% endif %}
+          {% if project.departament.living_room %}
+						<li class="department-characteristic-item">Sala</li>
+					{% endif %}
+          {% if project.departament.dinning_room %}
+						<li class="department-characteristic-item">Comedor</li>
+					{% endif %}
+          {% if project.departament.integral_kitchen %}
 						<li class="department-characteristic-item">Cocina integral</li>
 					{% endif %}
 					{% if project.departament.kitchen_cupboard %}
 						<li class="department-characteristic-item">Cocina alacena</li>
 					{% endif %}
-					{% if project.departament.bedrooms_with_closet > 0 %}
-						<li class="department-characteristic-item">
-							Recámaras con clóset: {{ project.departament.bedrooms_with_closet }}
-						</li>
+          {% if project.departament.terrace %}
+						<li class="department-characteristic-item">Terraza</li>
 					{% endif %}
 					{% if project.departament.service_yard %}
 						<li class="department-characteristic-item">Patio de servicio</li>
 					{% endif %}
-					{% if project.departament.complete_bathrooms > 0 %}
-						<li class="department-characteristic-item">
-							Baños completos: {{ project.departament.complete_bathrooms }}
-						</li>
-					{% endif %}
-					{% if project.departament.half_bathrooms > 0 %}
-						<li class="department-characteristic-item">
-							Medios baños: {{ project.departament.half_bathrooms }}
-						</li>
-					{% endif %}
-					{% if project.departament.terrace %}
-						<li class="department-characteristic-item">Terraza</li>
-					{% endif %}
-					{% if project.departament.living_room %}
-						<li class="department-characteristic-item">Sala</li>
-					{% endif %}
-					{% if project.departament.dinning_room %}
-						<li class="department-characteristic-item">Comedor</li>
-					{% endif %}
-					{% if project.departament.garden %}
-						<li class="department-characteristic-item">Jardin</li>
-					{% endif %}
 					{% if project.departament.linen_closet %}
 						<li class="department-characteristic-item">Clóset de blancos</li>
+					{% endif %}
+          {% if project.departament.garden %}
+						<li class="department-characteristic-item">Jardin</li>
+					{% endif %}
+          {% if project.departament.terrace %}
+						<li class="department-characteristic-item">Terraza</li>
+					{% endif %}
+          {% if project.departament.tv_room %}
+						<li class="department-characteristic-item">Cuarto de T.V</li>
+					{% endif %}
+          {% if project.departament.study %}
+						<li class="department-characteristic-item">Estudio</li>
+					{% endif %}
+          {% if project.departament.room_service %}
+						<li class="department-characteristic-item">Cuarto de servicio</li>
 					{% endif %}
 
 				</ul>
@@ -228,6 +241,7 @@
 				</form>
 			</div>
 		</div>
+    {% endif %}
 		{% if project.google_maps_link %}
 		<div class="location-title-container">
 			<span class="location-title">ubicación</span>
@@ -252,6 +266,7 @@
 			<span>Contacta a un asesor para mayor información</span>
 			<a href="{% url 'landing:contact' %}" class="bricksa-button inverse">contacto</a>
 		</div>
+
 	</div>
 {% endblock %}
 {% block after_scripts %}
