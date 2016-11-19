@@ -98,9 +98,9 @@ class Project(models.Model):
     building = models.CharField(
         _('Building'),
         choices=(
-            (_('Departaments'), _('Departaments')),
-            (_('Offices'), _('Offices')),
-            (_('Houses'), _('Houses')),
+            (_('departaments'), _('Departaments')),
+            (_('offices'), _('Offices')),
+            (_('houses'), _('Houses')),
         ),
         blank=False,
         null=False,
