@@ -127,7 +127,7 @@ class Project(models.Model):
         null=False,
     )
     number_departaments = models.IntegerField(
-        _('Number of departaments'),
+        _('Departaments or houses'),
         blank=False,
         null=False,
         default=0
