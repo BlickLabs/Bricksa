@@ -16,7 +16,7 @@ class ProjectAdmin(admin.ModelAdmin):
     fieldsets = (
         (_('General Information'), {
             'fields': (
-                'name', 'brief_description', 'project_type', 'category',
+                'name', 'brief_description', 'project_type', 'category', 'building',
                 'status', 'thumbnail_1', 'thumbnail_2', 'address'
            )
         }),

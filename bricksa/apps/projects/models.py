@@ -95,6 +95,17 @@ class Project(models.Model):
         null=False,
         max_length=30,
     )
+    building = models.CharField(
+        _('Building'),
+        choices=(
+            (_('Departaments'), _('Departaments')),
+            (_('Offices'), _('Offices')),
+            (_('Houses'), _('Houses')),
+        ),
+        blank=False,
+        null=False,
+        max_length=30,
+    )
     google_maps_link = models.TextField(
         blank=True,
         null=True,
