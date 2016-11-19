@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-10-13 22:33-0500\n"
+"POT-Creation-Date: 2016-11-19 01:14-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,41 +17,42 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: bricksa/apps/departaments/models.py:13 bricksa/apps/projects/models.py:169
-#: bricksa/apps/projects/models.py:179 bricksa/apps/projects/models.py:199
-#: bricksa/apps/projects/models.py:226
+#: bricksa/apps/departaments/models.py:13 bricksa/apps/houses/models.py:13
+#: bricksa/apps/offices/models.py:13 bricksa/apps/projects/models.py:228
+#: bricksa/apps/projects/models.py:238 bricksa/apps/projects/models.py:267
+#: bricksa/apps/projects/models.py:294
 msgid "Project"
 msgstr "Proyecto"
 
-#: bricksa/apps/departaments/models.py:16
+#: bricksa/apps/departaments/models.py:16 bricksa/apps/houses/models.py:17
 msgid "Bedrooms with dress"
 msgstr "Recamara con vestidor"
 
-#: bricksa/apps/departaments/models.py:22
+#: bricksa/apps/departaments/models.py:22 bricksa/apps/houses/models.py:23
 msgid "Bedrooms with closet"
 msgstr "Recamara con closet"
 
-#: bricksa/apps/departaments/models.py:28
+#: bricksa/apps/departaments/models.py:28 bricksa/apps/houses/models.py:29
 msgid "Complete bathrooms"
 msgstr "Baños completos"
 
-#: bricksa/apps/departaments/models.py:34
+#: bricksa/apps/departaments/models.py:34 bricksa/apps/houses/models.py:35
 msgid "Half bathrooms"
 msgstr "Medios baños"
 
-#: bricksa/apps/departaments/models.py:40
+#: bricksa/apps/departaments/models.py:40 bricksa/apps/houses/models.py:41
 msgid "Living room"
 msgstr "Sala"
 
-#: bricksa/apps/departaments/models.py:46
+#: bricksa/apps/departaments/models.py:46 bricksa/apps/houses/models.py:47
 msgid "Dinning room"
 msgstr "Comedor"
 
-#: bricksa/apps/departaments/models.py:52
+#: bricksa/apps/departaments/models.py:52 bricksa/apps/houses/models.py:59
 msgid "Integral kitchen"
 msgstr "Cocina integral"
 
-#: bricksa/apps/departaments/models.py:58
+#: bricksa/apps/departaments/models.py:58 bricksa/apps/houses/models.py:65
 msgid "Cupboard kitchen"
 msgstr "Cocina alacena"
 
@@ -59,7 +60,7 @@ msgstr "Cocina alacena"
 msgid "Linen closet"
 msgstr "Closet de blancos"
 
-#: bricksa/apps/departaments/models.py:71
+#: bricksa/apps/departaments/models.py:71 bricksa/apps/houses/models.py:161
 msgid "Service yard"
 msgstr "Patio de servicio"
 
@@ -67,17 +68,107 @@ msgstr "Patio de servicio"
 msgid "Garden"
 msgstr "Jardin"
 
-#: bricksa/apps/departaments/models.py:83
+#: bricksa/apps/departaments/models.py:83 bricksa/apps/houses/models.py:113
 msgid "Terrace"
 msgstr "Terraza"
 
-#: bricksa/apps/departaments/models.py:90 bricksa/apps/projects/models.py:65
+#: bricksa/apps/departaments/models.py:89 bricksa/apps/houses/models.py:89
+msgid "TV Room"
+msgstr "Cuarto de tele"
+
+#: bricksa/apps/departaments/models.py:95 bricksa/apps/houses/models.py:71
+msgid "Study"
+msgstr "Estudio"
+
+#: bricksa/apps/departaments/models.py:101 bricksa/apps/houses/models.py:167
+msgid "Room service"
+msgstr "Cuarto de servicio"
+
+#: bricksa/apps/departaments/models.py:108 bricksa/apps/projects/models.py:65
 msgid "Departament"
 msgstr "Departamento"
 
-#: bricksa/apps/departaments/models.py:91
+#: bricksa/apps/departaments/models.py:109 bricksa/apps/projects/models.py:101
 msgid "Departaments"
 msgstr "Departamentos"
+
+#: bricksa/apps/houses/models.py:53
+msgid "Before dinning room"
+msgstr "Antecomedor"
+
+#: bricksa/apps/houses/models.py:77
+msgid "Bar"
+msgstr "Bar"
+
+#: bricksa/apps/houses/models.py:83
+msgid "Cellar"
+msgstr "Cava"
+
+#: bricksa/apps/houses/models.py:95
+msgid "Balcony"
+msgstr "Balcon"
+
+#: bricksa/apps/houses/models.py:101
+msgid "Deck"
+msgstr "Deck"
+
+#: bricksa/apps/houses/models.py:107
+msgid "Deck with gas fireplacek"
+msgstr "Deck con chimenea de gas"
+
+#: bricksa/apps/houses/models.py:119
+msgid "Swimming Pool"
+msgstr "Alberca"
+
+#: bricksa/apps/houses/models.py:125
+msgid "Jacuzzi"
+msgstr "Jacuzzi"
+
+#: bricksa/apps/houses/models.py:131
+#, fuzzy
+#| msgid "Bedrooms with closet"
+msgid "Bathroom with tub"
+msgstr "Recamara con closet"
+
+#: bricksa/apps/houses/models.py:137
+msgid "Game room"
+msgstr "Cuarto de juegos"
+
+#: bricksa/apps/houses/models.py:143
+msgid "Guest room"
+msgstr "Cuarto de visitas"
+
+#: bricksa/apps/houses/models.py:149
+msgid "Guest bathroom"
+msgstr "Baño de visitas"
+
+#: bricksa/apps/houses/models.py:155
+msgid "Interior garden"
+msgstr "Jardin interior"
+
+#: bricksa/apps/houses/models.py:174
+msgid "Floor heating system"
+msgstr "Sistema de calefacción por piso"
+
+#: bricksa/apps/houses/models.py:180
+msgid "Warehouse"
+msgstr "Bodega"
+
+#: bricksa/apps/houses/models.py:186
+msgid "Water glass"
+msgstr "Espejos de agua"
+
+#: bricksa/apps/houses/models.py:192
+msgid "Service Bathroom"
+msgstr "Baño de servicio"
+
+#: bricksa/apps/houses/models.py:199
+msgid "House"
+msgstr "Casa"
+
+#: bricksa/apps/houses/models.py:200 bricksa/apps/projects/models.py:103
+msgid "Houses"
+msgstr "Casas"
 
 #: bricksa/apps/newsletter/models.py:10
 msgid "Email"
@@ -94,6 +185,26 @@ msgstr "Suscriptor"
 #: bricksa/apps/newsletter/models.py:24
 msgid "Subscribers"
 msgstr "Suscriptores"
+
+#: bricksa/apps/offices/models.py:16
+msgid "Office floors"
+msgstr "Pisos de oficinas"
+
+#: bricksa/apps/offices/models.py:22
+msgid "Bathrooms per level"
+msgstr "Baños por nivel"
+
+#: bricksa/apps/offices/models.py:28
+msgid "Elevator"
+msgstr "Elevador"
+
+#: bricksa/apps/offices/models.py:35
+msgid "Ofice"
+msgstr "Oficina"
+
+#: bricksa/apps/offices/models.py:36 bricksa/apps/projects/models.py:102
+msgid "Offices"
+msgstr "Oficinas"
 
 #: bricksa/apps/projects/admin.py:17
 msgid "General Information"
@@ -115,8 +226,8 @@ msgstr "Nombre"
 msgid "Logo"
 msgstr "Logo"
 
-#: bricksa/apps/projects/models.py:22 bricksa/apps/projects/models.py:182
-#: bricksa/apps/projects/models.py:202
+#: bricksa/apps/projects/models.py:22 bricksa/apps/projects/models.py:242
+#: bricksa/apps/projects/models.py:270
 msgid "Photo"
 msgstr "Foto"
 
@@ -204,79 +315,115 @@ msgstr "Proyectos Actuales"
 msgid "Completed projects"
 msgstr "Proyectos terminados"
 
-#: bricksa/apps/projects/models.py:103
+#: bricksa/apps/projects/models.py:99
+msgid "Building"
+msgstr "Tipo de construcción"
+
+#: bricksa/apps/projects/models.py:114
 msgid "Video"
 msgstr "Video (YouTube)"
 
-#: bricksa/apps/projects/models.py:108
+#: bricksa/apps/projects/models.py:119
 msgid "M2 Ground"
 msgstr "M2 Terreno"
 
-#: bricksa/apps/projects/models.py:113
+#: bricksa/apps/projects/models.py:124
 msgid "M2 Construction"
 msgstr "M2 Construcción"
 
-#: bricksa/apps/projects/models.py:119
-msgid "Number of departaments"
-msgstr "Departamentos"
+#: bricksa/apps/projects/models.py:130
+msgid "Departaments or houses"
+msgstr "Departamentos o casas"
 
-#: bricksa/apps/projects/models.py:125
+#: bricksa/apps/projects/models.py:136
 msgid "Parking places"
 msgstr "Lugares de estacionamiento"
 
-#: bricksa/apps/projects/models.py:131
+#: bricksa/apps/projects/models.py:142
 msgid "Guarhouse"
 msgstr "Caseta de vigilancia"
 
-#: bricksa/apps/projects/models.py:138
+#: bricksa/apps/projects/models.py:149
 msgid "Waiting area"
 msgstr "Sala de espera"
 
-#: bricksa/apps/projects/models.py:144
+#: bricksa/apps/projects/models.py:155
 msgid "Common area"
 msgstr "Area comun"
 
-#: bricksa/apps/projects/models.py:150
+#: bricksa/apps/projects/models.py:161
 msgid "Dumpster area"
 msgstr "Area para deposito de basura"
 
-#: bricksa/apps/projects/models.py:156
+#: bricksa/apps/projects/models.py:167
 msgid "Roof garden"
 msgstr "Roof garden"
 
-#: bricksa/apps/projects/models.py:162
+#: bricksa/apps/projects/models.py:173
+msgid "Lobby"
+msgstr "Lobby"
+
+#: bricksa/apps/projects/models.py:179
+msgid "Multipurpose room"
+msgstr "Salón de usos multiples"
+
+#: bricksa/apps/projects/models.py:185
+msgid "Closed circuit"
+msgstr "Circuito cerrado"
+
+#: bricksa/apps/projects/models.py:191
+msgid "All services underground"
+msgstr "Todos los servicios subterraneos"
+
+#: bricksa/apps/projects/models.py:197
+msgid "Green areas"
+msgstr "Áreas Verdes"
+
+#: bricksa/apps/projects/models.py:203
+msgid "Access gate"
+msgstr "Portón de acceso"
+
+#: bricksa/apps/projects/models.py:209
+msgid "Concrete paving"
+msgstr "Pavimento de concreto hidráulico"
+
+#: bricksa/apps/projects/models.py:215
+msgid "Club house"
+msgstr "Casa club"
+
+#: bricksa/apps/projects/models.py:221 bricksa/apps/projects/models.py:249
 msgid "Order"
 msgstr "Orden"
 
-#: bricksa/apps/projects/models.py:170
+#: bricksa/apps/projects/models.py:229
 msgid "Projects"
 msgstr "Proyectos"
 
-#: bricksa/apps/projects/models.py:189
+#: bricksa/apps/projects/models.py:256
 msgid "Project Banner"
 msgstr "Banner de proyecto"
 
-#: bricksa/apps/projects/models.py:190
+#: bricksa/apps/projects/models.py:257
 msgid "Project Banners"
 msgstr "Banners de proyecto"
 
-#: bricksa/apps/projects/models.py:216
+#: bricksa/apps/projects/models.py:284
 msgid "Project Photo"
 msgstr "Foto de lproyecto"
 
-#: bricksa/apps/projects/models.py:217
+#: bricksa/apps/projects/models.py:285
 msgid "Project Photos"
 msgstr "Fotos del proyecto"
 
-#: bricksa/apps/projects/models.py:229
+#: bricksa/apps/projects/models.py:297
 msgid "File"
 msgstr "Archivo"
 
-#: bricksa/apps/projects/models.py:236
+#: bricksa/apps/projects/models.py:304
 msgid "Brochure"
 msgstr "Brochure"
 
-#: bricksa/apps/projects/models.py:237
+#: bricksa/apps/projects/models.py:305
 msgid "Brochures"
 msgstr "Brochures"
 
@@ -309,13 +456,16 @@ msgstr "La contraseña es incorrecta"
 msgid "Profile updated"
 msgstr "Perfil Actualizado"
 
-#: config/settings/base.py:87
+#: config/settings/base.py:89
 msgid "English"
 msgstr "Ingles"
 
-#: config/settings/base.py:88
+#: config/settings/base.py:90
 msgid "Spanish"
 msgstr "Español"
+
+#~ msgid "Number of departaments"
+#~ msgstr "Departamentos"
 
 #~ msgid "Kitchen"
 #~ msgstr "Cocina"
