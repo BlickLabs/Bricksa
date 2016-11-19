@@ -24,9 +24,9 @@ class Office(models.Model):
         null=False,
         default=0
     )
-    elevator= models.IntegerField(
+    elevator = models.BooleanField(
         _('Elevator'),
         blank=False,
         null=False,
-        default=0
+        default=False
     )

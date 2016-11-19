@@ -241,6 +241,47 @@
 				</form>
 			</div>
 		</div>
+    {% elif project.building == 'offices' %}
+       oficina tipo
+		</span>
+		<div class="department-info-container">
+			<div class="department-info">
+				<span class="title">Cada oficina incluye:</span>
+				<ul class="department-characteristics-list">
+					{% if project.office.office_floors > 0 %}
+						<li class="department-characteristic-item">
+							Pisos de oficinas: {{ project.office.office_floors }}
+						</li>
+					{% endif %}
+          {% if project.office.bathrooms_per_level > 0 %}
+						<li class="department-characteristic-item">
+							Baños por nivel: {{ project.office.bathrooms_per_level }}
+						</li>
+					{% endif %}
+          {% if project.office.elevator %}
+						<li class="department-characteristic-item">Elevador</li>
+					{% endif %}
+				</ul>
+			</div>
+			<div class="department-brochure-section">
+			 	{% if project.brochure.id %}
+				<span>Descarga nuestro brochure para conocer mejor el desarrollo</span>
+				{% else %}
+				<span>Regístrate para recibir noticias sobre este desarrollo</span>
+				{% endif %}
+				<form id="download-brochure-form">
+					{% csrf_token %}
+					<input type="email" name="email" id="download-brochure-email" placeholder="Correo electrónico">
+					<input type="hidden" name="source" value="{{project.name}}">
+        	<span id="download-brochure-span" style="display:block;"></span>
+					{% if project.brochure.id %}
+					<button id="download-brochure-button" class="bricksa-button inverse">descargar</button>
+					{% else %}
+					<button id="download-brochure-button" class="bricksa-button inverse">enviar</button>
+					{% endif %}
+				</form>
+			</div>
+		</div>
     {% endif %}
 		{% if project.google_maps_link %}
 		<div class="location-title-container">
