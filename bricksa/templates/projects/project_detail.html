@@ -142,6 +142,70 @@
 						</span>
 					</li>
 					{% endif %}
+          {% if project.lobby %}
+					<li class="characteristic-item">
+            <img src="{% static 'img/icons/lobby.png' %}" style="margin-right: 30px">
+						<span>
+						Lobby.
+						</span>
+					</li>
+					{% endif %}
+          {% if project.multiple_room %}
+          <li class="characteristic-item">
+            <img src="{% static 'img/icons/salon-multi-usos.png' %}" style="margin-right: 23px">
+            <span>
+            Salón de usos multiples
+            </span>
+          </li>
+          {% endif %}
+          {% if project.closed_circuit %}
+          <li class="characteristic-item">
+            <img src="{% static 'img/icons/circuito-cerrado.png' %}" style="margin-right: 30px">
+            <span>
+            Circuito cerrado.
+            </span>
+          </li>
+          {% endif %}
+          {% if project.undergroun_services %}
+          <li class="characteristic-item">
+            <img src="{% static 'img/icons/bajo-tierra.png' %}" style="margin-right: 36px" alt="">
+            <span>
+            Todos los servicios subterraneos
+            </span>
+          </li>
+          {% endif %}
+          {% if project.green_areas %}
+          <li class="characteristic-item">
+            <img src="{% static 'img/icons/areas-verdes.png' %}" style="margin-right: 26px" alt="">
+            <span>
+            Áreas Verdes
+            </span>
+          </li>
+          {% endif %}
+          {% if project.access_gate %}
+          <li class="characteristic-item">
+            <img src="{% static 'img/icons/puertas-acceso.png' %}" style="margin-right: 27px" alt="">
+            <span>
+            Portón de acceso
+            </span>
+          </li>
+          {% endif %}
+          {% if project.concrete_paving %}
+          <li class="characteristic-item">
+            <img src="{% static 'img/icons/concreto.png' %}" style="margin-right: 20px" alt="">
+            <span>
+            Pavimento de concreto hidráulico
+            </span>
+          </li>
+          {% endif %}
+          {% if project.club_house %}
+          <li class="characteristic-item">
+            <img src="{% static 'img/icons/casa-club.png' %}" style="margin-right: 27px" alt="">
+            <span>
+            Casa club
+            </span>
+          </li>
+          {% endif %}
 				</ul>
 			</div>
 			<div class="cover" style="background-image: url('{{ project.about_image.url }}')"></div>
