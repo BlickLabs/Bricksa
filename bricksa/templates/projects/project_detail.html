@@ -206,6 +206,14 @@
             </span>
           </li>
           {% endif %}
+          {% if project.elevator %}
+          <li class="characteristic-item">
+            <img src="{% static 'img/icons/puertas-acceso.png' %}" style="margin-right: 26px" alt="">
+            <span>
+            Elevador
+            </span>
+          </li>
+          {% endif %}
 				</ul>
 			</div>
 			<div class="cover" style="background-image: url('{{ project.about_image.url }}')"></div>
