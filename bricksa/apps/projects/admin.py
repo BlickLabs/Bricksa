@@ -29,7 +29,7 @@ class ProjectAdmin(admin.ModelAdmin):
             'construction_m2', 'number_departaments', 'parking_places', 'guardhouse',
             'waiting_area', 'common_area', 'dumpster_area', 'roof_garden', 'about_image',
             'lobby', 'multiple_room', 'closed_circuit', 'undergroun_services', 'green_areas',
-            'access_gate', 'concrete_paving', 'club_house',
+            'access_gate', 'concrete_paving', 'club_house', 'elevator',
             )
         }),
     )

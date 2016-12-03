@@ -217,6 +217,12 @@ class Project(models.Model):
         null=False,
         default=False,
     )
+    elevator = models.BooleanField(
+        _('Elevador'),
+        blank=False,
+        null=False,
+        default=False,
+    )
     order = models.IntegerField(
         _('Order'),
         blank=False,
