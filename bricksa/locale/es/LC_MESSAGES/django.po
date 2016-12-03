@@ -125,10 +125,8 @@ msgid "Jacuzzi"
 msgstr "Jacuzzi"
 
 #: bricksa/apps/houses/models.py:131
-#, fuzzy
-#| msgid "Bedrooms with closet"
 msgid "Bathroom with tub"
-msgstr "Recamara con closet"
+msgstr "Baño con bañera"
 
 #: bricksa/apps/houses/models.py:137
 msgid "Game room"
