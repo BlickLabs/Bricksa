@@ -321,19 +321,19 @@ class SeoData(models.Model):
     )
     meta_description = models.TextField(
         _('Meta descripción'),
-        blank=False,
-        null=False,
+        blank=True,
+        null=True,
         max_length=200,
     )
     keywords = models.TextField(
         _('Keywords'),
-        blank=False,
-        null=False,
+        blank=True,
+        null=True,
     )
     title = models.CharField(
         _('Título'),
-        blank=False,
-        null=False,
+        blank=True,
+        null=True,
         max_length=100,
     )
 
