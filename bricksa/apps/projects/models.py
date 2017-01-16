@@ -12,6 +12,13 @@ class Project(models.Model):
         blank=False,
         null=False
     )
+
+    slug = models.SlugField(
+        blank=True,
+        null=True,
+        max_length=500
+    )
+
     logo = models.ImageField(
         _('Logo'),
         blank=True,
