@@ -53,3 +53,8 @@ class ProjectPhotoAdmin(admin.ModelAdmin):
 @admin.register(models.Brochure)
 class BrochureAdmin(admin.ModelAdmin):
     pass
+
+
+@admin.register(models.SeoData)
+class SeoAdmin(admin.ModelAdmin):
+    pass
