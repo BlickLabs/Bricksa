@@ -4,6 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  {% block seo %}
+  
+  {% endblock %}
   <link href="{% static "css/bower_dependencies.min.css" %}"
       rel="stylesheet"/>
   <link href="{% static "css/main.min.css" %}"
@@ -19,7 +22,7 @@
 
     ga('create', 'UA-90054920-1', 'auto');
     ga('send', 'pageview');
-  
+
   </script>
   </head>
 <body>

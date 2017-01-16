@@ -1,7 +1,18 @@
 {% extends "base.html" %}
+
 {% load static from staticfiles %}
+
+{% block seo %}
+  <meta name="description" content="{{ project.seodata.keywords }}">
+  <meta name="keywords" content="{{ project.seodata.meta_description }}">
+{% endblock %}
+
 {% block title %}
-{{ project.name }}
+  {% if project.seodata %}
+    {{ project.seodata.title }}
+  {% else %}
+    {{ project.name }}
+  {% endif %}
 {% endblock %}
 {% block content %}
 	<div class="project-detail-section">
