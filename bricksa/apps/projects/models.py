@@ -312,3 +312,34 @@ class Brochure(models.Model):
 
     def __unicode__(self):
         return 'Brochure - %s' % self.project.name
+
+
+class SeoData(models.Model):
+    project = models.OneToOneField(
+        Project,
+        verbose_name=_('Project')
+    )
+    meta_description = models.TextField(
+        _('Meta descripción'),
+        blank=False,
+        null=False,
+        max_length=200,
+    )
+    keywords = models.TextField(
+        _('Keywords'),
+        blank=False,
+        null=False,
+    )
+    title = models.CharField(
+        _('Título'),
+        blank=False,
+        null=False,
+        max_length=100,
+    )
+
+    class Meta:
+        verbose_name = _('SEO')
+        verbose_name_plural = _('SEO')
+
+    def __unicode__(self):
+        return 'SEO - %s' % self.project.name
