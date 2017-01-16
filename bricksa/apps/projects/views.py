@@ -24,7 +24,7 @@ class ProjectListView(ListView):
 class ProjectDetailView(DetailView):
     template_name = 'projects/project_detail.html'
     model = Project
-    pk_url_kwarg = 'id'
+    slug_url_kwarg = 'slug'
     context_object_name = 'project'
 
     def get_context_data(self, **kwargs):

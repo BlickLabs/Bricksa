@@ -52,7 +52,7 @@
 								<span class="characteristic-text">{{project.status}}</span>
 							</p>
 						</div>
-						<a href="{% url 'projects:project_detail' project.id %}" class="bricksa-button">ver proyecto</a>
+						<a href="{% url 'projects:project_detail' project.slug %}" class="bricksa-button">ver proyecto</a>
 					</div>
 				</div>
 				<div class="project-thumbnail cover" style="background-image: url('{{ project.thumbnail_2.url }}')"></div>

@@ -11,7 +11,7 @@ urlpatterns = [
         view=views.ProjectListView.as_view(),
         name='project_list'),
 
-    url(regex='^proyectos/(?P<id>.*)/$',
+    url(regex='^proyectos/(?P<slug>.*)/$',
         view=views.ProjectDetailView.as_view(),
         name='project_detail'),
 
