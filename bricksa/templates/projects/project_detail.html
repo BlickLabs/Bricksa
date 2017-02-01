@@ -63,7 +63,7 @@
 				</div>
 			</div>
 		</div>
-		
+
 		<div class="project-video-section">
 			{% if project.video %}
 			Conoce más acerca del desarrollo
@@ -74,7 +74,7 @@
 		  </div>
 		  {% endif %}
 		</div>
-		
+
 		<div class="project-characteristics-container">
 			<div class="characteristics">
 				<span class="title">acerca de</span>
@@ -496,6 +496,8 @@
 				</form>
 			</div>
 		</div>
+    {% else %}
+    </span>
     {% endif %}
 		{% if project.google_maps_link %}
 		<div class="location-title-container">
