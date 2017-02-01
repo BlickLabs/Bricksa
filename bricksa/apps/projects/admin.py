@@ -58,3 +58,8 @@ class BrochureAdmin(admin.ModelAdmin):
 @admin.register(models.SeoData)
 class SeoAdmin(admin.ModelAdmin):
     pass
+
+
+@admin.register(models.SocialNetworks)
+class SocialNetworksAdmin(admin.ModelAdmin):
+    pass

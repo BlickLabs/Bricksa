@@ -350,3 +350,34 @@ class SeoData(models.Model):
 
     def __unicode__(self):
         return 'SEO - %s' % self.project.name
+
+
+class SocialNetworks(models.Model):
+    project = models.OneToOneField(
+        Project,
+        verbose_name=_('Project')
+    )
+    facebook = models.CharField(
+        _('Facebook'),
+        blank=True,
+        null=True,
+        max_length=100,
+    )
+    twitter = models.CharField(
+        _('Twitter'),
+        blank=True,
+        null=True,
+        max_length=100,
+    )
+    instagram = models.CharField(
+        _('Instagram'),
+        blank=True,
+        null=True,
+        max_length=100,
+    )
+    class Meta:
+        verbose_name = _('Redes Sociales')
+        verbose_name_plural = _('Redes Sociales')
+
+    def __unicode__(self):
+        return 'Social - %s' % self.project.name
