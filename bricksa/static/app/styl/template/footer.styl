@@ -1,19 +1,19 @@
 #footer
   width 100%
-  
+
   &.homepage-footer
     bottom 0
     left 0
     position fixed
     width auto
-    
+
   .footer-content
     background $darkGray
     color white
     rc-font-size 13px 11px
-    padding 25px 38px 20px 20px
-    width 296px
-    
+    padding 25px 26px 20px 20px
+    width 300px
+
     .gray-text
       color lighten($gray, 25%)
       display block
@@ -23,10 +23,17 @@
 .footer-social-link
   color lighten($gray, 25%)
   text-decoration none
+  font-size 16px
+  vertical-align middle
 
+  &:not(:first-of-type)
+    margin-left 2px
 
-      
 @media $windowSmall
   #footer .footer-content
-    padding 15px 18px
-    width 238px
+    padding 12px 18px 5px 18px
+    width 320px
+
+  .footer-social-link
+    font-size 19px
+    margin-left 0.3em

@@ -513,11 +513,17 @@
 			</div>
 			<div class="text-container">
 				<img src="{% static 'img/logos/brick-white-short-logo.png' %}" alt="">
-        <p>
-          {{ project.socialnetworks.facebook }}
-          {{ project.socialnetworks.twitter }}
-          {{ project.socialnetworks.instagram }}
-        </p>
+        <div class="project-social-networks">
+          {% if project.socialnetworks.facebook|length > 0%}
+          <a target="_blank" class="project-social-link fa fa-facebook" href="{{ project.socialnetworks.facebook }}"></a>
+          {% endif %}
+          {% if project.socialnetworks.twitter|length > 0%}
+          <a target="_blank" class="project-social-link fa fa-twitter" href="{{ project.socialnetworks.twitter }}"></a>
+          {% endif %}
+          {% if project.socialnetworks.instagram|length > 0%}
+          <a target="_blank" class="project-social-link fa fa-instagram" href="{{ project.socialnetworks.instagram }}"></a>
+          {% endif %}
+        </div>
 				<span>
 					{{ project.address }}
 				</span>

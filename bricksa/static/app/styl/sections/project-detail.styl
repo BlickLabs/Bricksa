@@ -5,7 +5,7 @@
     height 60vh
     max-height 480px
     position relative
-    
+
     .project-name
       bottom calc(-83px * 0.1)
       color white
@@ -18,30 +18,30 @@
       line-height 0.7em
       position absolute
       right 100px
-      
+
   .project-overview
     align-items center
     background white
     display flex
-    
+
     .project-logo
       width 37vw
-      
+
       img
         display block
         -center-block()
         width 50%
-        
+
     .project-text
       background $lighterGray
       max-width calc(100% - 37vw)
       padding 40px 90px
-      
+
       .project-description
         letter-spacing 1px
         line-height 1.6
         width 77%
-        
+
       .project-characteristics
         &::before
           background $darkBlue
@@ -51,81 +51,81 @@
           margin-bottom 25px
           margin-top 35px
           width 33px
-          
+
         p:not(:first-of-type)
           margin-top 15px
-          
+
         .icons::before
           display inline-block
           rc-font-size 25px 22px 19px
           vertical-align middle
           width 25px
-          
+
         .characteristic-text
           display inline-block
           letter-spacing 1px
           line-height 1
           margin-left 8px
           vertical-align middle
-          
+
   .project-video-section
     background white
     padding 56px 20px
     text-align center
-    
+
     .video-container
       -center-block()
       margin-top 1.9em
       max-width 800px
-      
+
   .project-characteristics-container
     display flex
-    
+
     .characteristics
       background $darkBlue
       color white
       padding 60px 50px
       width 38vw
-      
+
       .title
         display block
         rc-font-size 41px 32px 26px
         font-variant small-caps
         font-weight $fontBlack
         text-align center
-      
+
       .characteristics-list
         list-style none
         margin-left -40px
         margin-top 40px
-        
+
         li
           align-items center
           display flex
-          
+
           &:not(:first-child)
             margin-top 18px
-            
+
           span:not(.icons)
             flex-grow 1
             max-width calc(100% - 25px)
-        
+
       .icons::before
         rc-font-size 28px 23px 19px
         margin-right 25px
         text-align center
         width 30px
-        
+
       .icon-parking-lot::before
         rc-font-size 13.5px 11.5px 9.5px
-        
+
       .icon-roof-garden::before
         rc-font-size 22px 19px 15px
 
     .cover
       flex-grow 1
       max-width calc(100% - 38vw)
-      
+
   .department-type-title
     background $darkBlue
     color white
@@ -135,13 +135,13 @@
     font-weight $fontBlack
     line-height 1
     padding 0.58em 50px
-    
+
     &.no-carousel
       margin-top 110px
-    
+
   .department-info-container
     display flex
-    
+
     .department-info
       background $blue
       simple-border('right', 6px, #b0b8c2)
@@ -149,36 +149,36 @@
       flex-grow 1
       max-width calc(100% - 34vw)
       padding 60px
-      
+
       .title
         rc-font-size 20px 18px 16px
         font-weight $fontBlack
-        
+
       .department-characteristics-list
         list-style none
         margin-left 80px
         margin-top 30px
         padding-left 0
-        
+
       .department-characteristic-item
         display inline-block
         font-weight $fontMedium
         margin-top 5px
         vertical-align middle
         width calc(50% - 10px)
-      
+
     .department-brochure-section
       background #f2f2f2
       font-weight $fontBook
       padding 60px 20px
       text-align center
       width 34vw
-      
+
       span
         display block
         -center-block()
         max-width 280px
-        
+
       input
         background white
         border none
@@ -190,13 +190,13 @@
         padding 10px
         text-align center
         width 90%
-        
+
       .bricksa-button
         rc-font-size 15px 12.5px
         font-weight $fontBlack
         margin-top 40px
         padding 6px 30px
-  
+
   .location-title-container
     background #f2f2f2
 
@@ -211,12 +211,12 @@
     line-height 0.9
     padding 0.74em 70px
     width calc(100% - 34vw)
-    
+
   .location-container
     align-items flex-end
     display flex
     position relative
-    
+
     &::after
       background $darkBlue
       bottom 0
@@ -226,42 +226,55 @@
       position absolute
       right 0
       width 10px
-    
+
     .google-map
       background white
       flex-grow 1
       height 65vh
       max-height calc(100vw * 0.36)
       max-width calc(100% - 34vw - 3px)
-      
+
       .map-container
         height 100%
         width 100%
-      
+
     .text-container
       padding 23px 53px
       width calc(34vw + 3px)
-      
+
       img
         max-width 120px
         min-width 80px
         width 50%
-      
+
       span
         display block
         font-weight $fontMedium
         line-height 1.3
         margin-top 15px
         max-width 280px
-      
+
+    .project-social-networks
+      font-size 22px
+      margin-top 1.05em
+
+    .project-social-link
+      color inherit
+
+      &:hover, &:active, &:focus
+        color $blue
+
+      &:not(:first-child)
+        margin-left 0.3em
+
   .contact-container
     background white
     padding 60px 20px
     text-align center
-    
+
     span
       display block
-      
+
     .bricksa-button
       rc-font-size 15px 12.5px
       font-weight $fontBlack
@@ -273,7 +286,7 @@
   height 55vh
   margin-top 100px
   max-height 440px
-  
+
   &::before
     background #b0b8c2
     content ' '
@@ -290,13 +303,13 @@
 #project-carousel
   .slick-list
     height 100%
-    
+
   .slick-track
     height calc(100% - 10px)
 
   .project-carousel-item
     height 100%
-    
+
   .arrow-next
     background-image url('../img/icons/carousel-right-arrow.png')
     background-size cover
@@ -307,90 +320,90 @@
     top 50%
     transform translateY(-50%)
     width 50px
-    
+
 @media screen and (max-width: 920px)
   .project-detail-section
     .project-cover
       .project-name
         left calc(37vw + 48px)
         line-height 0.8em
-        
+
     .project-overview
       .project-text
         padding 50px
-        
+
         .project-description
           width 100%
-          
+
     .project-video-section
       padding 40px 20px
-      
+
     .project-characteristics-container
       .characteristics
         padding 50px 40px
         width 50vw
-        
+
     #project-carousel
       margin-top 70px
-      
+
     .department-type-title.no-carousel
       margin-top 80px
-      
+
     .department-info-container
       .department-info
         padding 42px
         width 50vw
-        
+
         .department-characteristics-list
           margin-left 0
-          
+
           .department-characteristic-item
             display block
             width 100%
-        
+
       .department-brochure-section
         width 50vw
-        
+
     .location-title-container .location-title
       width 100%
-      
+
     .contact-container
       padding 40px 20px
-      
+
 @media screen and (max-width: 600px)
   .project-detail-section
     .project-cover
       .project-name
         left 46px
         line-height 0.8em
-        
+
     .project-overview
       .project-logo
         display none
-        
+
       .project-text
         max-width initial
         width 100%
-          
+
     .project-characteristics-container
       flex-wrap wrap
-      
+
       .characteristics
         width 100%
-        
+
       .cover
         display none
-        
+
     .department-type-title.no-carousel
       margin-top 60px
-        
+
     .department-info-container
       flex-wrap wrap
-      
+
       .department-info, .department-brochure-section
         max-width initial
         width 100%
-        
+
       .department-info
         border none
 
@@ -398,10 +411,10 @@
           display inline-block
           min-width 200px
           width calc(50% - 8px)
-          
+
       .department-brochure-section
         padding 40px 20px
-        
+
     .location-container
       flex-wrap wrap
 
@@ -412,15 +425,15 @@
       .google-map, .text-container
         max-width initial
         width 100%
-        
+
       .google-map
         height 50vh
         max-height initial
-        
+
         .embed-responsive
           width calc((16/9) * 50vh)
           margin 0 auto
-          
+
       .text-container
         padding 20px
 
@@ -428,7 +441,10 @@
           display inline-block
           min-width initial
           width 50px
-          
+
         span
           display inline-block
           margin-left 30px
+
+      .project-social-networks
+        margin-left 30px
