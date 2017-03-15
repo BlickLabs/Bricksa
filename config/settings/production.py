@@ -24,12 +24,6 @@ SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 # -----------------------------------------------------------------------------
 ALLOWED_HOSTS = ["*"]
 
-# DATABASE
-# -----------------------------------------------------------------------------
-DATABASES = {
-    'default': dj_database_url.config()
-}
-
 # STATIC FILE CONFIGURATION
 # -----------------------------------------------------------------------------
 # STATIC FILE CONFIGURATION

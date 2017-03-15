@@ -12,10 +12,6 @@ TEMPLATES[0]['OPTIONS']['debug'] = DEBUG
 
 SECRET_KEY = env("DJANGO_SECRET_KEY", default='CHANGEME!!!')
 
-DATABASES = {
-    'default': dj_database_url.config()
-}
-
 STATIC_URL = '/static/'
 
 MEDIA_ROOT = str(PROJECT_DIR('media'))
