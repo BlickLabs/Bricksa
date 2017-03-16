@@ -10,6 +10,7 @@ https://docs.djangoproject.com/en/dev/ref/settings/
 
 from __future__ import absolute_import, unicode_literals
 
+import dj_database_url
 from django.utils.translation import ugettext_lazy as _
 
 import environ
@@ -71,6 +72,12 @@ MIDDLEWARE_CLASSES = (
 # -----------------------------------------------------------------------------
 MIGRATION_MODULES = {
     'sites': 'cookies.contrib.sites.migrations'
+}
+
+# DATABASE
+# -----------------------------------------------------------------------------
+DATABASES = {
+    'default': dj_database_url.config()
 }
 
 # FIXTURE CONFIGURATION
