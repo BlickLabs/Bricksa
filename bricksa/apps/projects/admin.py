@@ -29,12 +29,18 @@ class ProjectAdmin(admin.ModelAdmin):
             'construction_m2', 'number_departaments', 'parking_places', 'guardhouse',
             'waiting_area', 'common_area', 'dumpster_area', 'roof_garden', 'about_image',
             'lobby', 'multiple_room', 'closed_circuit', 'undergroun_services', 'green_areas',
-            'access_gate', 'concrete_paving', 'club_house', 'elevator',
+            'access_gate', 'concrete_paving', 'club_house', 'elevator', 'solar_panel', 'water_treatment_plant',
+            'indoor_garden', 'car_ramp', 'warehouse', 'extra_1', 'extra_2', 'extra_3'
             )
         }),
     )
     list_editable = ('order',)
     show_full_result_count = True
+
+
+@admin.register(models.ProjectAmenities)
+class ProjectBannerAdmin(admin.ModelAdmin):
+    pass
 
 
 @admin.register(models.ProjectBanner)

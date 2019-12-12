@@ -230,6 +230,54 @@ class Project(models.Model):
         null=False,
         default=False,
     )
+    solar_panel = models.BooleanField(
+        _('Solar Panel'),
+        blank=False,
+        null=False,
+        default=False,
+    )
+    water_treatment_plant = models.BooleanField(
+        _('Water Treatment Plant'),
+        blank=False,
+        null=False,
+        default=False,
+    )
+    indoor_garden = models.BooleanField(
+        _('Indoor Garden'),
+        blank=False,
+        null=False,
+        default=False,
+    )
+    car_ramp = models.BooleanField(
+        _('Car Ramp'),
+        blank=False,
+        null=False,
+        default=False,
+    )
+    warehouse = models.BooleanField(
+        _('Warehouse'),
+        blank=False,
+        null=False,
+        default=False,
+    )
+    extra_1 = models.CharField(
+        _('Extra 1'),
+        max_length=200,
+        blank=True,
+        null=True,
+    )
+    extra_2 = models.CharField(
+        _('Extra 2'),
+        max_length=200,
+        blank=True,
+        null=True,
+    )
+    extra_3 = models.CharField(
+        _('Extra 3'),
+        max_length=200,
+        blank=True,
+        null=True,
+    )
     order = models.IntegerField(
         _('Order'),
         blank=False,
@@ -245,6 +293,88 @@ class Project(models.Model):
         return self.name
 
 
+class ProjectAmenities(models.Model):
+    project = models.OneToOneField(
+        Project,
+        verbose_name=_('Project')
+    )
+    photo = models.ImageField(
+        _('Photo'),
+        blank=False,
+        null=False,
+        upload_to='project_photos'
+    )
+    swimming_pool = models.BooleanField(
+        _('Swimming Pool'),
+        default=False,
+    )
+    jacuzzi = models.BooleanField(
+        _('Jacuzzi'),
+        default=False,
+    )
+    water_mirror = models.BooleanField(
+        _('Water Mirror'),
+        default=False,
+    )
+    gym = models.BooleanField(
+        _('Gym'),
+        default=False,
+    )
+    yoga_area = models.BooleanField(
+        _('Yoga Area'),
+        default=False,
+    )
+    rooftop = models.BooleanField(
+        _('Rooftop'),
+        default=False,
+    )
+    roofgarden = models.BooleanField(
+        _('Roofgarden'),
+        default=False,
+    )
+    grill_area = models.BooleanField(
+        _('Grill Area'),
+        default=False,
+    )
+    waiting_area = models.BooleanField(
+        _('Waiting Area'),
+        default=False,
+    )
+    reading_area = models.BooleanField(
+        _('Reading Area'),
+        default=False,
+    )
+    bicycle_area = models.BooleanField(
+        _('Bicycle Area'),
+        default=False,
+    )
+    extra_1 = models.CharField(
+        _('Extra 1'),
+        max_length=200,
+        blank=True,
+        null=True,
+    )
+    extra_2 = models.CharField(
+        _('Extra 2'),
+        max_length=200,
+        blank=True,
+        null=True,
+    )
+    extra_3 = models.CharField(
+        _('Extra 3'),
+        max_length=200,
+        blank=True,
+        null=True,
+    )
+
+    class Meta:
+        verbose_name = _('Project Amenities')
+        verbose_name_plural = _('Projects Amenities')
+
+    def __unicode__(self):
+        return self.project.name
+
+
 class ProjectBanner(models.Model):
     project = models.OneToOneField(
         Project,
@@ -252,12 +382,23 @@ class ProjectBanner(models.Model):
     )
 
     photo = models.ImageField(
-        _('Photo'),
+        _('Desktop Photo'),
         blank=False,
         null=False,
         upload_to='project_banner_photos'
     )
-
+    tablet_photo = models.ImageField(
+        _('Tablet Photo'),
+        blank=True,
+        null=True,
+        upload_to='project_banner_photos'
+    )
+    mobile_photo = models.ImageField(
+        _('Mobile Photo'),
+        blank=True,
+        null=True,
+        upload_to='project_banner_photos'
+    )
     order = models.IntegerField(
         _('Order'),
         blank=False,

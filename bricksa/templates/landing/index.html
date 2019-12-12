@@ -5,11 +5,13 @@
   <div class="homepage-banners">
     <!-- SLICK -->
     <div id="banners-carousel">
-      <div class="homepage-banner cover" style="background-image: url('{% static "img/homepage-cover.jpg"%}')">
+      <div class="homepage-banner cover"
+           style="background-image: url('http://estudiogbr.com.ar/products/pic-182,414x736.jpg')">
         <div class="banner-text-container">
           <div class="banner-white-box">
             <p>
-              Siempre buscando crear <b>proyectos de alta calidad</b> que generen un valor agregado a nuestros clientes y contribuyan al <b>desarrollo de nuestra sociedad.</b>
+              Siempre buscando crear <b>proyectos de alta calidad</b> que generen un valor agregado a nuestros clientes
+              y contribuyan al <b>desarrollo de nuestra sociedad.</b>
             </p>
           </div>
           <div class="banner-info-container">
@@ -22,23 +24,88 @@
         </div>
       </div>
       {% for banner in banners %}
-      <div class="homepage-banner cover" style="background-image: url('{{ banner.photo.url }}')">
-        <div class="banner-text-container">
-          <div class="banner-white-box">
-            <p>
-              {{ banner.project.brief_description }}</b>
-            </p>
-          </div>
-          <div class="banner-info-container">
-            <div class="banner-info">
-              <h2 class="banner-title">{{ banner.project.name|lower }}</h2>
-              <span class="banner-motto">{{ banner.project.category|lower }}</span>
-              <a href="{% url 'projects:project_detail' banner.project.slug %}" class="bricksa-button">conoce más</a>
+        <div class="homepage-banner cover" id="banner-{{ banner.id }}"
+             style="background-image: url('{{ banner.photo.url }}')">
+          <div class="banner-text-container">
+            <div class="banner-white-box">
+              <p>
+                {{ banner.project.brief_description }}</b>
+              </p>
+            </div>
+            <div class="banner-info-container">
+              <div class="banner-info">
+                <h2 class="banner-title">{{ banner.project.name|lower }}</h2>
+                <span class="banner-motto">{{ banner.project.category|lower }}</span>
+                <a href="{% url 'projects:project_detail' banner.project.slug %}" class="bricksa-button">conoce más</a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
       {% endfor %}
     </div>
   </div>
+{% endblock %}
+{% block after_scripts %}
+  <script type="text/javascript">
+    {% for banner in banners %}
+      banner_{{ banner.id }} = $('#banner-{{ banner.id }}');
+    {% endfor %}
+
+    function check_image() {
+      // Mobile Portrait
+      if (window.matchMedia("(min-width: 320px)").matches && window.matchMedia("(max-width: 480px)").matches) {
+        {% for banner in banners %}
+          {% if banner.mobile_photo %}
+            banner_{{ banner.id }}.css('background-image', "url('{{ banner.mobile_photo.url }}')");
+          {% endif %}
+        {% endfor %}
+        console.log("Mobil Portrait")
+      }
+
+      // Mobile Landscape
+      if (window.matchMedia("(min-width: 481px)").matches && window.matchMedia("(max-width: 767px)").matches) {
+        {% for banner in banners %}
+          {% if banner.photo %}
+            banner_{{ banner.id }}.css('background-image', "url('{{ banner.photo.url }}')");
+          {% endif %}
+        {% endfor %}
+        console.log("Mobile Landscape")
+      }
+
+      // Tablet Landscape
+      if (window.matchMedia("(min-width: 767px)").matches && window.matchMedia("(max-width: 1024px)").matches && window.matchMedia("(orientation: landscape)").matches) {
+        {% for banner in banners %}
+          {% if banner.photo %}
+            banner_{{ banner.id }}.css('background-image', "url('{{ banner.photo.url }}')");
+          {% endif %}
+        {% endfor %}
+        console.log("Tablet Landscape")
+      }
+
+      // Tablet Portrait
+      if (window.matchMedia("(min-width: 768px)").matches && window.matchMedia("(max-width: 1024px)").matches) {
+        {% for banner in banners %}
+          {% if banner.tablet_photo %}
+            banner_{{ banner.id }}.css('background-image', "url('{{ banner.tablet_photo.url }}')");
+          {% endif %}
+        {% endfor %}
+        console.log("Tablet Portrait")
+      }
+
+      // Desktop
+      if (window.matchMedia("(min-width: 1024px)").matches) {
+        {% for banner in banners %}
+          banner_{{ banner.id }}.css('background-image', "url('{{ banner.photo.url }}')");
+        {% endfor %}
+        console.log("Desktop")
+      }
+    }
+    check_image()
+    $( window ).resize(function() {
+      check_image()
+    });
+
+
+
+  </script>
 {% endblock %}

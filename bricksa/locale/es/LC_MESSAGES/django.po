@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-12-02 17:10-0600\n"
+"POT-Creation-Date: 2019-12-12 14:44-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,77 +18,102 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: bricksa/apps/departaments/models.py:13 bricksa/apps/houses/models.py:13
-#: bricksa/apps/offices/models.py:13 bricksa/apps/projects/models.py:228
-#: bricksa/apps/projects/models.py:238 bricksa/apps/projects/models.py:267
-#: bricksa/apps/projects/models.py:294
+#: bricksa/apps/offices/models.py:13 bricksa/apps/projects/models.py:289
+#: bricksa/apps/projects/models.py:299 bricksa/apps/projects/models.py:381
+#: bricksa/apps/projects/models.py:421 bricksa/apps/projects/models.py:448
+#: bricksa/apps/projects/models.py:468 bricksa/apps/projects/models.py:499
 msgid "Project"
 msgstr "Proyecto"
 
-#: bricksa/apps/departaments/models.py:16 bricksa/apps/houses/models.py:17
+#: bricksa/apps/departaments/models.py:17 bricksa/apps/houses/models.py:17
 msgid "Bedrooms with dress"
 msgstr "Recamara con vestidor"
 
-#: bricksa/apps/departaments/models.py:22 bricksa/apps/houses/models.py:23
+#: bricksa/apps/departaments/models.py:23 bricksa/apps/houses/models.py:23
 msgid "Bedrooms with closet"
 msgstr "Recamara con closet"
 
-#: bricksa/apps/departaments/models.py:28 bricksa/apps/houses/models.py:29
+#: bricksa/apps/departaments/models.py:29 bricksa/apps/houses/models.py:29
 msgid "Complete bathrooms"
 msgstr "Baños completos"
 
-#: bricksa/apps/departaments/models.py:34 bricksa/apps/houses/models.py:35
+#: bricksa/apps/departaments/models.py:35 bricksa/apps/houses/models.py:35
 msgid "Half bathrooms"
 msgstr "Medios baños"
 
-#: bricksa/apps/departaments/models.py:40 bricksa/apps/houses/models.py:41
+#: bricksa/apps/departaments/models.py:41
+msgid "Studio"
+msgstr "Estudio"
+
+#: bricksa/apps/departaments/models.py:47
+msgid "One Room"
+msgstr "Una Habitacion"
+
+#: bricksa/apps/departaments/models.py:53
+msgid "Two Rooms"
+msgstr "2 Habitaciones"
+
+#: bricksa/apps/departaments/models.py:59
+msgid "Three Rooms"
+msgstr "Tres Habitaciones"
+
+#: bricksa/apps/departaments/models.py:65
+msgid "Penthouse"
+msgstr "Penthouse"
+
+#: bricksa/apps/departaments/models.py:71
+msgid "Lock Off"
+msgstr ""
+
+#: bricksa/apps/departaments/models.py:77 bricksa/apps/houses/models.py:41
 msgid "Living room"
 msgstr "Sala"
 
-#: bricksa/apps/departaments/models.py:46 bricksa/apps/houses/models.py:47
+#: bricksa/apps/departaments/models.py:83 bricksa/apps/houses/models.py:47
 msgid "Dinning room"
 msgstr "Comedor"
 
-#: bricksa/apps/departaments/models.py:52 bricksa/apps/houses/models.py:59
+#: bricksa/apps/departaments/models.py:89 bricksa/apps/houses/models.py:59
 msgid "Integral kitchen"
 msgstr "Cocina integral"
 
-#: bricksa/apps/departaments/models.py:58 bricksa/apps/houses/models.py:65
+#: bricksa/apps/departaments/models.py:95 bricksa/apps/houses/models.py:65
 msgid "Cupboard kitchen"
 msgstr "Cocina alacena"
 
-#: bricksa/apps/departaments/models.py:64
+#: bricksa/apps/departaments/models.py:101
 msgid "Linen closet"
 msgstr "Closet de blancos"
 
-#: bricksa/apps/departaments/models.py:71 bricksa/apps/houses/models.py:161
+#: bricksa/apps/departaments/models.py:108 bricksa/apps/houses/models.py:161
 msgid "Service yard"
 msgstr "Patio de servicio"
 
-#: bricksa/apps/departaments/models.py:77
+#: bricksa/apps/departaments/models.py:114
 msgid "Garden"
 msgstr "Jardin"
 
-#: bricksa/apps/departaments/models.py:83 bricksa/apps/houses/models.py:113
+#: bricksa/apps/departaments/models.py:120 bricksa/apps/houses/models.py:113
 msgid "Terrace"
 msgstr "Terraza"
 
-#: bricksa/apps/departaments/models.py:89 bricksa/apps/houses/models.py:89
+#: bricksa/apps/departaments/models.py:126 bricksa/apps/houses/models.py:89
 msgid "TV Room"
 msgstr "Cuarto de tele"
 
-#: bricksa/apps/departaments/models.py:95 bricksa/apps/houses/models.py:71
+#: bricksa/apps/departaments/models.py:132 bricksa/apps/houses/models.py:71
 msgid "Study"
 msgstr "Estudio"
 
-#: bricksa/apps/departaments/models.py:101 bricksa/apps/houses/models.py:167
+#: bricksa/apps/departaments/models.py:138 bricksa/apps/houses/models.py:167
 msgid "Room service"
 msgstr "Cuarto de servicio"
 
-#: bricksa/apps/departaments/models.py:108 bricksa/apps/projects/models.py:65
+#: bricksa/apps/departaments/models.py:145 bricksa/apps/projects/models.py:72
 msgid "Departament"
 msgstr "Departamento"
 
-#: bricksa/apps/departaments/models.py:109 bricksa/apps/projects/models.py:101
+#: bricksa/apps/departaments/models.py:146 bricksa/apps/projects/models.py:108
 msgid "Departaments"
 msgstr "Departamentos"
 
@@ -116,11 +141,11 @@ msgstr "Deck"
 msgid "Deck with gas fireplacek"
 msgstr "Deck con chimenea de gas"
 
-#: bricksa/apps/houses/models.py:119
+#: bricksa/apps/houses/models.py:119 bricksa/apps/projects/models.py:308
 msgid "Swimming Pool"
 msgstr "Alberca"
 
-#: bricksa/apps/houses/models.py:125
+#: bricksa/apps/houses/models.py:125 bricksa/apps/projects/models.py:312
 msgid "Jacuzzi"
 msgstr "Jacuzzi"
 
@@ -148,7 +173,7 @@ msgstr "Jardin interior"
 msgid "Floor heating system"
 msgstr "Sistema de calefacción por piso"
 
-#: bricksa/apps/houses/models.py:180
+#: bricksa/apps/houses/models.py:180 bricksa/apps/projects/models.py:258
 msgid "Warehouse"
 msgstr "Bodega"
 
@@ -164,7 +189,7 @@ msgstr "Baño de servicio"
 msgid "House"
 msgstr "Casa"
 
-#: bricksa/apps/houses/models.py:200 bricksa/apps/projects/models.py:103
+#: bricksa/apps/houses/models.py:200 bricksa/apps/projects/models.py:110
 msgid "Houses"
 msgstr "Casas"
 
@@ -200,7 +225,7 @@ msgstr "Elevador"
 msgid "Ofice"
 msgstr "Oficina"
 
-#: bricksa/apps/offices/models.py:36 bricksa/apps/projects/models.py:102
+#: bricksa/apps/offices/models.py:36 bricksa/apps/projects/models.py:109
 msgid "Offices"
 msgstr "Oficinas"
 
@@ -217,213 +242,337 @@ msgid "Specific information"
 msgstr "Acerca del proyecto"
 
 #: bricksa/apps/projects/models.py:10
+#: venv/lib/python2.7/site-packages/suit/templates/admin/filer/folder/directory_table.html:13
 msgid "Name"
 msgstr "Nombre"
 
-#: bricksa/apps/projects/models.py:16
+#: bricksa/apps/projects/models.py:23
 msgid "Logo"
 msgstr "Logo"
 
-#: bricksa/apps/projects/models.py:22 bricksa/apps/projects/models.py:242
-#: bricksa/apps/projects/models.py:270
+#: bricksa/apps/projects/models.py:29 bricksa/apps/projects/models.py:302
+#: bricksa/apps/projects/models.py:424
 msgid "Photo"
 msgstr "Foto"
 
-#: bricksa/apps/projects/models.py:28
+#: bricksa/apps/projects/models.py:35
 msgid "Thumbnail 1"
 msgstr "Imagen 1"
 
-#: bricksa/apps/projects/models.py:34
+#: bricksa/apps/projects/models.py:41
 msgid "Thumbnail 2"
 msgstr "Imagen 2"
 
-#: bricksa/apps/projects/models.py:40
+#: bricksa/apps/projects/models.py:47
 msgid "About image"
 msgstr "Imagen Acerca de"
 
-#: bricksa/apps/projects/models.py:46
+#: bricksa/apps/projects/models.py:53
 msgid "Address"
 msgstr "Dirección"
 
-#: bricksa/apps/projects/models.py:52
+#: bricksa/apps/projects/models.py:59
 msgid "Brief description"
 msgstr "Descripción breve"
 
-#: bricksa/apps/projects/models.py:58
+#: bricksa/apps/projects/models.py:65
 msgid "Description"
 msgstr "Descripción detallada"
 
-#: bricksa/apps/projects/models.py:63
+#: bricksa/apps/projects/models.py:70
 msgid "Category"
 msgstr "Categoria"
 
-#: bricksa/apps/projects/models.py:66
+#: bricksa/apps/projects/models.py:73
 msgid "Office"
 msgstr "Oficina"
 
-#: bricksa/apps/projects/models.py:67
+#: bricksa/apps/projects/models.py:74
 msgid "House - Room"
 msgstr "Casa - Habitacion"
 
-#: bricksa/apps/projects/models.py:68
+#: bricksa/apps/projects/models.py:75
 msgid "commercial"
 msgstr "Comercial"
 
-#: bricksa/apps/projects/models.py:68
+#: bricksa/apps/projects/models.py:75
 msgid "Commercial"
 msgstr "Comercial"
 
-#: bricksa/apps/projects/models.py:69
+#: bricksa/apps/projects/models.py:76
 msgid "Fractionation"
 msgstr "Fraccionamiento"
 
-#: bricksa/apps/projects/models.py:76
+#: bricksa/apps/projects/models.py:83
 msgid "Status"
 msgstr "Status"
 
-#: bricksa/apps/projects/models.py:78
+#: bricksa/apps/projects/models.py:85
 msgid "Sale"
 msgstr "En venta"
 
-#: bricksa/apps/projects/models.py:79
+#: bricksa/apps/projects/models.py:86
 msgid "Pre-sale"
 msgstr "Pre-venta"
 
-#: bricksa/apps/projects/models.py:80
+#: bricksa/apps/projects/models.py:87
 msgid "Sold"
 msgstr "Vendido"
 
-#: bricksa/apps/projects/models.py:81
+#: bricksa/apps/projects/models.py:88
 msgid "In construction"
 msgstr "En construcción"
 
-#: bricksa/apps/projects/models.py:82
+#: bricksa/apps/projects/models.py:89
 msgid "Finished"
 msgstr "Terminado"
 
-#: bricksa/apps/projects/models.py:89
+#: bricksa/apps/projects/models.py:96
 msgid "Project type"
 msgstr "Tipo de proyecto"
 
-#: bricksa/apps/projects/models.py:91
+#: bricksa/apps/projects/models.py:98
 msgid "Current projects"
 msgstr "Proyectos Actuales"
 
-#: bricksa/apps/projects/models.py:92
+#: bricksa/apps/projects/models.py:99
 msgid "Completed projects"
 msgstr "Proyectos terminados"
 
-#: bricksa/apps/projects/models.py:99
+#: bricksa/apps/projects/models.py:106
 msgid "Building"
 msgstr "Tipo de construcción"
 
-#: bricksa/apps/projects/models.py:114
+#: bricksa/apps/projects/models.py:121
 msgid "Video"
 msgstr "Video (YouTube)"
 
-#: bricksa/apps/projects/models.py:119
+#: bricksa/apps/projects/models.py:126
 msgid "M2 Ground"
 msgstr "M2 Terreno"
 
-#: bricksa/apps/projects/models.py:124
+#: bricksa/apps/projects/models.py:131
 msgid "M2 Construction"
 msgstr "M2 Construcción"
 
-#: bricksa/apps/projects/models.py:130
+#: bricksa/apps/projects/models.py:137
 msgid "Departaments or houses"
 msgstr "Departamentos o casas"
 
-#: bricksa/apps/projects/models.py:136
+#: bricksa/apps/projects/models.py:143
 msgid "Parking places"
 msgstr "Lugares de estacionamiento"
 
-#: bricksa/apps/projects/models.py:142
+#: bricksa/apps/projects/models.py:149
 msgid "Guarhouse"
 msgstr "Caseta de vigilancia"
 
-#: bricksa/apps/projects/models.py:149
+#: bricksa/apps/projects/models.py:156
 msgid "Waiting area"
 msgstr "Sala de espera"
 
-#: bricksa/apps/projects/models.py:155
+#: bricksa/apps/projects/models.py:162
 msgid "Common area"
 msgstr "Area comun"
 
-#: bricksa/apps/projects/models.py:161
+#: bricksa/apps/projects/models.py:168
 msgid "Dumpster area"
 msgstr "Area para deposito de basura"
 
-#: bricksa/apps/projects/models.py:167
+#: bricksa/apps/projects/models.py:174
 msgid "Roof garden"
 msgstr "Roof garden"
 
-#: bricksa/apps/projects/models.py:173
+#: bricksa/apps/projects/models.py:180
 msgid "Lobby"
 msgstr "Lobby"
 
-#: bricksa/apps/projects/models.py:179
+#: bricksa/apps/projects/models.py:186
 msgid "Multipurpose room"
 msgstr "Salón de usos multiples"
 
-#: bricksa/apps/projects/models.py:185
+#: bricksa/apps/projects/models.py:192
 msgid "Closed circuit"
 msgstr "Circuito cerrado"
 
-#: bricksa/apps/projects/models.py:191
+#: bricksa/apps/projects/models.py:198
 msgid "All services underground"
 msgstr "Todos los servicios subterraneos"
 
-#: bricksa/apps/projects/models.py:197
+#: bricksa/apps/projects/models.py:204
 msgid "Green areas"
 msgstr "Áreas Verdes"
 
-#: bricksa/apps/projects/models.py:203
+#: bricksa/apps/projects/models.py:210
 msgid "Access gate"
 msgstr "Portón de acceso"
 
-#: bricksa/apps/projects/models.py:209
+#: bricksa/apps/projects/models.py:216
 msgid "Concrete paving"
 msgstr "Pavimento de concreto hidráulico"
 
-#: bricksa/apps/projects/models.py:215
+#: bricksa/apps/projects/models.py:222
 msgid "Club house"
 msgstr "Casa club"
 
-#: bricksa/apps/projects/models.py:221 bricksa/apps/projects/models.py:249
+#: bricksa/apps/projects/models.py:228
+msgid "Elevador"
+msgstr "Elevador"
+
+#: bricksa/apps/projects/models.py:234
+msgid "Solar Panel"
+msgstr "Paneles Solares"
+
+#: bricksa/apps/projects/models.py:240
+msgid "Water Treatment Plant"
+msgstr "Planta de Tratamiento de Aguas"
+
+#: bricksa/apps/projects/models.py:246
+msgid "Indoor Garden"
+msgstr "Jardin interior"
+
+#: bricksa/apps/projects/models.py:252
+msgid "Car Ramp"
+msgstr "Rampa para autos"
+
+#: bricksa/apps/projects/models.py:264 bricksa/apps/projects/models.py:352
+msgid "Extra 1"
+msgstr ""
+
+#: bricksa/apps/projects/models.py:270 bricksa/apps/projects/models.py:358
+msgid "Extra 2"
+msgstr ""
+
+#: bricksa/apps/projects/models.py:276 bricksa/apps/projects/models.py:364
+msgid "Extra 3"
+msgstr ""
+
+#: bricksa/apps/projects/models.py:282 bricksa/apps/projects/models.py:403
+#: venv/lib/python2.7/site-packages/django/forms/formsets.py:380
+#: venv/lib/python2.7/site-packages/django/forms/formsets.py:382
 msgid "Order"
 msgstr "Orden"
 
-#: bricksa/apps/projects/models.py:229
+#: bricksa/apps/projects/models.py:290
 msgid "Projects"
 msgstr "Proyectos"
 
-#: bricksa/apps/projects/models.py:256
+#: bricksa/apps/projects/models.py:316
+msgid "Water Mirror"
+msgstr "Espejo de Agua"
+
+#: bricksa/apps/projects/models.py:320
+msgid "Gym"
+msgstr "Gimnasio"
+
+#: bricksa/apps/projects/models.py:324
+msgid "Yoga Area"
+msgstr "Area de Yoga"
+
+#: bricksa/apps/projects/models.py:328
+msgid "Rooftop"
+msgstr ""
+
+#: bricksa/apps/projects/models.py:332
+msgid "Roofgarden"
+msgstr "Roof garden"
+
+#: bricksa/apps/projects/models.py:336
+msgid "Grill Area"
+msgstr "Area de asadores"
+
+#: bricksa/apps/projects/models.py:340
+msgid "Waiting Area"
+msgstr "Area de espera para visitas"
+
+#: bricksa/apps/projects/models.py:344
+msgid "Reading Area"
+msgstr "Area de lectura "
+
+#: bricksa/apps/projects/models.py:348
+msgid "Bicycle Area"
+msgstr "Area para bicicletas"
+
+#: bricksa/apps/projects/models.py:371
+msgid "Project Amenities"
+msgstr "Amenidades"
+
+#: bricksa/apps/projects/models.py:372
+msgid "Projects Amenities"
+msgstr "Amenidades"
+
+#: bricksa/apps/projects/models.py:385
+msgid "Desktop Photo"
+msgstr "Foto Escritorio"
+
+#: bricksa/apps/projects/models.py:391
+msgid "Tablet Photo"
+msgstr "Foto Tablet"
+
+#: bricksa/apps/projects/models.py:397
+msgid "Mobile Photo"
+msgstr "Foto Celular"
+
+#: bricksa/apps/projects/models.py:410
 msgid "Project Banner"
 msgstr "Banner de proyecto"
 
-#: bricksa/apps/projects/models.py:257
+#: bricksa/apps/projects/models.py:411
 msgid "Project Banners"
 msgstr "Banners de proyecto"
 
-#: bricksa/apps/projects/models.py:284
+#: bricksa/apps/projects/models.py:438
 msgid "Project Photo"
 msgstr "Foto de lproyecto"
 
-#: bricksa/apps/projects/models.py:285
+#: bricksa/apps/projects/models.py:439
 msgid "Project Photos"
 msgstr "Fotos del proyecto"
 
-#: bricksa/apps/projects/models.py:297
+#: bricksa/apps/projects/models.py:451
+#: venv/lib/python2.7/site-packages/django/db/models/fields/files.py:237
 msgid "File"
 msgstr "Archivo"
 
-#: bricksa/apps/projects/models.py:304
+#: bricksa/apps/projects/models.py:458
 msgid "Brochure"
 msgstr "Brochure"
 
-#: bricksa/apps/projects/models.py:305
+#: bricksa/apps/projects/models.py:459
 msgid "Brochures"
 msgstr "Brochures"
+
+#: bricksa/apps/projects/models.py:471
+msgid "Meta descripción"
+msgstr "Meta Descripción"
+
+#: bricksa/apps/projects/models.py:477
+msgid "Keywords"
+msgstr "Palabras Clave"
+
+#: bricksa/apps/projects/models.py:482
+msgid "Título"
+msgstr "Titulo"
+
+#: bricksa/apps/projects/models.py:489 bricksa/apps/projects/models.py:490
+msgid "SEO"
+msgstr "SEO"
+
+#: bricksa/apps/projects/models.py:502
+msgid "Facebook"
+msgstr "Facebook"
+
+#: bricksa/apps/projects/models.py:508
+msgid "Twitter"
+msgstr "Twitter"
+
+#: bricksa/apps/projects/models.py:514
+msgid "Instagram"
+msgstr "Instagram"
+
+#: bricksa/apps/projects/models.py:520 bricksa/apps/projects/models.py:521
+msgid "Redes Sociales"
+msgstr ""
 
 #: bricksa/core/messages.py:9
 msgid "This field can not be blank"
@@ -454,22 +603,2119 @@ msgstr "La contraseña es incorrecta"
 msgid "Profile updated"
 msgstr "Perfil Actualizado"
 
-#: config/settings/base.py:89
+#: config/settings/base.py:96
 msgid "English"
 msgstr "Ingles"
 
-#: config/settings/base.py:90
+#: config/settings/base.py:97
 msgid "Spanish"
 msgstr "Español"
 
-#~ msgid "Number of departaments"
-#~ msgstr "Departamentos"
+#: venv/lib/python2.7/site-packages/django/contrib/messages/apps.py:7
+msgid "Messages"
+msgstr ""
 
-#~ msgid "Kitchen"
-#~ msgstr "Cocina"
+#: venv/lib/python2.7/site-packages/django/contrib/sitemaps/apps.py:7
+msgid "Site Maps"
+msgstr ""
 
-#~ msgid "Project status"
-#~ msgstr "Status de Proyecto"
+#: venv/lib/python2.7/site-packages/django/contrib/staticfiles/apps.py:7
+msgid "Static Files"
+msgstr ""
 
-#~ msgid "Project category"
-#~ msgstr "Banner de proyecto"
+#: venv/lib/python2.7/site-packages/django/contrib/syndication/apps.py:7
+msgid "Syndication"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/contrib/webdesign/apps.py:7
+msgid "Web Design"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/core/validators.py:33
+msgid "Enter a valid value."
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/core/validators.py:105
+#: venv/lib/python2.7/site-packages/django/forms/fields.py:678
+msgid "Enter a valid URL."
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/core/validators.py:148
+msgid "Enter a valid integer."
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/core/validators.py:159
+msgid "Enter a valid email address."
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/core/validators.py:232
+msgid ""
+"Enter a valid 'slug' consisting of letters, numbers, underscores or hyphens."
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/core/validators.py:239
+msgid ""
+"Enter a valid 'slug' consisting of Unicode letters, numbers, underscores, or "
+"hyphens."
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/core/validators.py:244
+#: venv/lib/python2.7/site-packages/django/core/validators.py:263
+msgid "Enter a valid IPv4 address."
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/core/validators.py:249
+#: venv/lib/python2.7/site-packages/django/core/validators.py:264
+msgid "Enter a valid IPv6 address."
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/core/validators.py:259
+#: venv/lib/python2.7/site-packages/django/core/validators.py:262
+msgid "Enter a valid IPv4 or IPv6 address."
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/core/validators.py:291
+#: venv/lib/python2.7/site-packages/django/db/models/fields/__init__.py:1130
+msgid "Enter only digits separated by commas."
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/core/validators.py:299
+#, python-format
+msgid "Ensure this value is %(limit_value)s (it is %(show_value)s)."
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/core/validators.py:325
+#, python-format
+msgid "Ensure this value is less than or equal to %(limit_value)s."
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/core/validators.py:332
+#, python-format
+msgid "Ensure this value is greater than or equal to %(limit_value)s."
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/core/validators.py:341
+#, python-format
+msgid ""
+"Ensure this value has at least %(limit_value)d character (it has "
+"%(show_value)d)."
+msgid_plural ""
+"Ensure this value has at least %(limit_value)d characters (it has "
+"%(show_value)d)."
+msgstr[0] ""
+msgstr[1] ""
+
+#: venv/lib/python2.7/site-packages/django/core/validators.py:352
+#, python-format
+msgid ""
+"Ensure this value has at most %(limit_value)d character (it has "
+"%(show_value)d)."
+msgid_plural ""
+"Ensure this value has at most %(limit_value)d characters (it has "
+"%(show_value)d)."
+msgstr[0] ""
+msgstr[1] ""
+
+#: venv/lib/python2.7/site-packages/django/core/validators.py:366
+#, python-format
+msgid "Ensure that there are no more than %(max)s digit in total."
+msgid_plural "Ensure that there are no more than %(max)s digits in total."
+msgstr[0] ""
+msgstr[1] ""
+
+#: venv/lib/python2.7/site-packages/django/core/validators.py:371
+#, python-format
+msgid "Ensure that there are no more than %(max)s decimal place."
+msgid_plural "Ensure that there are no more than %(max)s decimal places."
+msgstr[0] ""
+msgstr[1] ""
+
+#: venv/lib/python2.7/site-packages/django/core/validators.py:376
+#, python-format
+msgid ""
+"Ensure that there are no more than %(max)s digit before the decimal point."
+msgid_plural ""
+"Ensure that there are no more than %(max)s digits before the decimal point."
+msgstr[0] ""
+msgstr[1] ""
+
+#: venv/lib/python2.7/site-packages/django/db/models/base.py:1103
+#: venv/lib/python2.7/site-packages/django/forms/models.py:727
+#: venv/lib/python2.7/site-packages/suit/templates/admin/filer/tools/search_form.html:19
+msgid "and"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/db/models/base.py:1105
+#, fuzzy, python-format
+#| msgid ""
+#| "There is a %(model_name)s with this %(field_label)s already registred"
+msgid "%(model_name)s with this %(field_labels)s already exists."
+msgstr "Hay un %(model_name)s con este %(field_label)s ya registrado"
+
+#: venv/lib/python2.7/site-packages/django/db/models/fields/__init__.py:110
+#, python-format
+msgid "Value %(value)r is not a valid choice."
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/db/models/fields/__init__.py:111
+#, fuzzy
+#| msgid "This field can not be blank"
+msgid "This field cannot be null."
+msgstr "Este campo no puede estar en blanco"
+
+#: venv/lib/python2.7/site-packages/django/db/models/fields/__init__.py:112
+#, fuzzy
+#| msgid "This field can not be blank"
+msgid "This field cannot be blank."
+msgstr "Este campo no puede estar en blanco"
+
+#: venv/lib/python2.7/site-packages/django/db/models/fields/__init__.py:113
+#, fuzzy, python-format
+#| msgid ""
+#| "There is a %(model_name)s with this %(field_label)s already registred"
+msgid "%(model_name)s with this %(field_label)s already exists."
+msgstr "Hay un %(model_name)s con este %(field_label)s ya registrado"
+
+#. Translators: The 'lookup_type' is one of 'date', 'year' or 'month'.
+#. Eg: "Title must be unique for pub_date year"
+#: venv/lib/python2.7/site-packages/django/db/models/fields/__init__.py:117
+#, python-format
+msgid ""
+"%(field_label)s must be unique for %(date_field_label)s %(lookup_type)s."
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/db/models/fields/__init__.py:134
+#, python-format
+msgid "Field of type: %(field_type)s"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/db/models/fields/__init__.py:913
+#: venv/lib/python2.7/site-packages/django/db/models/fields/__init__.py:1818
+msgid "Integer"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/db/models/fields/__init__.py:917
+#: venv/lib/python2.7/site-packages/django/db/models/fields/__init__.py:1816
+#, python-format
+msgid "'%(value)s' value must be an integer."
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/db/models/fields/__init__.py:992
+#, python-format
+msgid "'%(value)s' value must be either True or False."
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/db/models/fields/__init__.py:994
+msgid "Boolean (Either True or False)"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/db/models/fields/__init__.py:1069
+#, python-format
+msgid "String (up to %(max_length)s)"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/db/models/fields/__init__.py:1125
+msgid "Comma-separated integers"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/db/models/fields/__init__.py:1174
+#, python-format
+msgid ""
+"'%(value)s' value has an invalid date format. It must be in YYYY-MM-DD "
+"format."
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/db/models/fields/__init__.py:1176
+#: venv/lib/python2.7/site-packages/django/db/models/fields/__init__.py:1319
+#, python-format
+msgid ""
+"'%(value)s' value has the correct format (YYYY-MM-DD) but it is an invalid "
+"date."
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/db/models/fields/__init__.py:1179
+msgid "Date (without time)"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/db/models/fields/__init__.py:1317
+#, python-format
+msgid ""
+"'%(value)s' value has an invalid format. It must be in YYYY-MM-DD HH:MM[:ss[."
+"uuuuuu]][TZ] format."
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/db/models/fields/__init__.py:1321
+#, python-format
+msgid ""
+"'%(value)s' value has the correct format (YYYY-MM-DD HH:MM[:ss[.uuuuuu]]"
+"[TZ]) but it is an invalid date/time."
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/db/models/fields/__init__.py:1325
+msgid "Date (with time)"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/db/models/fields/__init__.py:1477
+#, python-format
+msgid "'%(value)s' value must be a decimal number."
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/db/models/fields/__init__.py:1479
+msgid "Decimal number"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/db/models/fields/__init__.py:1636
+#, python-format
+msgid ""
+"'%(value)s' value has an invalid format. It must be in [DD] [HH:[MM:]]ss[."
+"uuuuuu] format."
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/db/models/fields/__init__.py:1639
+#, fuzzy
+#| msgid "Description"
+msgid "Duration"
+msgstr "Descripción detallada"
+
+#: venv/lib/python2.7/site-packages/django/db/models/fields/__init__.py:1691
+#, fuzzy
+#| msgid "Address"
+msgid "Email address"
+msgstr "Dirección"
+
+#: venv/lib/python2.7/site-packages/django/db/models/fields/__init__.py:1715
+#, fuzzy
+#| msgid "File"
+msgid "File path"
+msgstr "Archivo"
+
+#: venv/lib/python2.7/site-packages/django/db/models/fields/__init__.py:1782
+#, python-format
+msgid "'%(value)s' value must be a float."
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/db/models/fields/__init__.py:1784
+msgid "Floating point number"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/db/models/fields/__init__.py:1885
+msgid "Big (8 byte) integer"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/db/models/fields/__init__.py:1900
+#, fuzzy
+#| msgid "Address"
+msgid "IPv4 address"
+msgstr "Dirección"
+
+#: venv/lib/python2.7/site-packages/django/db/models/fields/__init__.py:1931
+#, fuzzy
+#| msgid "Address"
+msgid "IP address"
+msgstr "Dirección"
+
+#: venv/lib/python2.7/site-packages/django/db/models/fields/__init__.py:2015
+#, python-format
+msgid "'%(value)s' value must be either None, True or False."
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/db/models/fields/__init__.py:2017
+msgid "Boolean (Either True, False or None)"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/db/models/fields/__init__.py:2077
+msgid "Positive integer"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/db/models/fields/__init__.py:2089
+msgid "Positive small integer"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/db/models/fields/__init__.py:2102
+#, python-format
+msgid "Slug (up to %(max_length)s)"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/db/models/fields/__init__.py:2136
+msgid "Small integer"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/db/models/fields/__init__.py:2143
+msgid "Text"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/db/models/fields/__init__.py:2169
+#, python-format
+msgid ""
+"'%(value)s' value has an invalid format. It must be in HH:MM[:ss[.uuuuuu]] "
+"format."
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/db/models/fields/__init__.py:2171
+#, python-format
+msgid ""
+"'%(value)s' value has the correct format (HH:MM[:ss[.uuuuuu]]) but it is an "
+"invalid time."
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/db/models/fields/__init__.py:2174
+msgid "Time"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/db/models/fields/__init__.py:2302
+msgid "URL"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/db/models/fields/__init__.py:2325
+msgid "Raw binary data"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/db/models/fields/__init__.py:2369
+#, python-format
+msgid "'%(value)s' is not a valid UUID."
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/db/models/fields/files.py:392
+msgid "Image"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/db/models/fields/related.py:740
+#, python-format
+msgid "%(model)s instance with %(field)s %(value)r does not exist."
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/db/models/fields/related.py:742
+msgid "Foreign Key (type determined by related field)"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/db/models/fields/related.py:1001
+msgid "One-to-one relationship"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/db/models/fields/related.py:1119
+msgid "Many-to-many relationship"
+msgstr ""
+
+#. Translators: If found as last label character, these punctuation
+#. characters will prevent the default label_suffix to be appended to the label
+#: venv/lib/python2.7/site-packages/django/forms/boundfield.py:167
+msgid ":?.!"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/forms/fields.py:65
+msgid "This field is required."
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/forms/fields.py:255
+msgid "Enter a whole number."
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/forms/fields.py:300
+#: venv/lib/python2.7/site-packages/django/forms/fields.py:337
+msgid "Enter a number."
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/forms/fields.py:415
+#: venv/lib/python2.7/site-packages/django/forms/fields.py:1159
+msgid "Enter a valid date."
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/forms/fields.py:439
+#: venv/lib/python2.7/site-packages/django/forms/fields.py:1160
+msgid "Enter a valid time."
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/forms/fields.py:461
+msgid "Enter a valid date/time."
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/forms/fields.py:490
+msgid "Enter a valid duration."
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/forms/fields.py:557
+msgid "No file was submitted. Check the encoding type on the form."
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/forms/fields.py:558
+msgid "No file was submitted."
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/forms/fields.py:559
+msgid "The submitted file is empty."
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/forms/fields.py:561
+#, python-format
+msgid "Ensure this filename has at most %(max)d character (it has %(length)d)."
+msgid_plural ""
+"Ensure this filename has at most %(max)d characters (it has %(length)d)."
+msgstr[0] ""
+msgstr[1] ""
+
+#: venv/lib/python2.7/site-packages/django/forms/fields.py:564
+msgid "Please either submit a file or check the clear checkbox, not both."
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/forms/fields.py:626
+msgid ""
+"Upload a valid image. The file you uploaded was either not an image or a "
+"corrupted image."
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/forms/fields.py:793
+#: venv/lib/python2.7/site-packages/django/forms/fields.py:887
+#: venv/lib/python2.7/site-packages/django/forms/models.py:1232
+#, python-format
+msgid "Select a valid choice. %(value)s is not one of the available choices."
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/forms/fields.py:888
+#: venv/lib/python2.7/site-packages/django/forms/fields.py:1003
+#: venv/lib/python2.7/site-packages/django/forms/models.py:1231
+msgid "Enter a list of values."
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/forms/fields.py:1004
+msgid "Enter a complete value."
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/forms/fields.py:1218
+msgid "Enter a valid UUID."
+msgstr ""
+
+#. Translators: This is the default suffix added to form field labels
+#: venv/lib/python2.7/site-packages/django/forms/forms.py:84
+msgid ":"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/forms/forms.py:191
+#, python-format
+msgid "(Hidden field %(name)s) %(error)s"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/forms/formsets.py:97
+msgid "ManagementForm data is missing or has been tampered with"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/forms/formsets.py:345
+#, python-format
+msgid "Please submit %d or fewer forms."
+msgid_plural "Please submit %d or fewer forms."
+msgstr[0] ""
+msgstr[1] ""
+
+#: venv/lib/python2.7/site-packages/django/forms/formsets.py:352
+#, python-format
+msgid "Please submit %d or more forms."
+msgid_plural "Please submit %d or more forms."
+msgstr[0] ""
+msgstr[1] ""
+
+#: venv/lib/python2.7/site-packages/django/forms/formsets.py:384
+#: venv/lib/python2.7/site-packages/suit/templates/admin/delete_confirmation.html:18
+#: venv/lib/python2.7/site-packages/suit/templates/admin/delete_confirmation.html:49
+#: venv/lib/python2.7/site-packages/suit/templates/admin/filer/folder/directory_table.html:42
+#: venv/lib/python2.7/site-packages/suit/templates/admin/import_export/import.html:69
+#: venv/lib/python2.7/site-packages/suit/templates/admin/page_submit_line.html:11
+#: venv/lib/python2.7/site-packages/suit/templates/admin/page_submit_line.html:13
+#: venv/lib/python2.7/site-packages/suit/templates/admin/submit_line.html:11
+#: venv/lib/python2.7/site-packages/suit/templates/admin/submit_line.html:14
+msgid "Delete"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/forms/models.py:721
+#, python-format
+msgid "Please correct the duplicate data for %(field)s."
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/forms/models.py:725
+#, python-format
+msgid "Please correct the duplicate data for %(field)s, which must be unique."
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/forms/models.py:731
+#, python-format
+msgid ""
+"Please correct the duplicate data for %(field_name)s which must be unique "
+"for the %(lookup)s in %(date_field)s."
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/forms/models.py:739
+msgid "Please correct the duplicate values below."
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/forms/models.py:1063
+msgid "The inline foreign key did not match the parent instance primary key."
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/forms/models.py:1125
+msgid "Select a valid choice. That choice is not one of the available choices."
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/forms/models.py:1234
+#, python-format
+msgid "\"%(pk)s\" is not a valid value for a primary key."
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/forms/utils.py:172
+#, python-format
+msgid ""
+"%(datetime)s couldn't be interpreted in time zone %(current_timezone)s; it "
+"may be ambiguous or it may not exist."
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/forms/widgets.py:353
+msgid "Currently"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/forms/widgets.py:354
+#: venv/lib/python2.7/site-packages/suit/templates/admin/edit_inline/tabular.html:18
+#: venv/lib/python2.7/site-packages/suit/templates/admin/edit_inline/tabular.html:68
+#: venv/lib/python2.7/site-packages/suit/templates/admin/filer/folder/change_form.html:24
+#: venv/lib/python2.7/site-packages/suit/templates/admin/filer/folder/directory_listing.html:85
+#: venv/lib/python2.7/site-packages/suit/templates/admin/filer/folder/directory_table.html:27
+#: venv/lib/python2.7/site-packages/suit/templates/admin/filer/folder/directory_table.html:43
+#: venv/lib/python2.7/site-packages/suit/templates/admin/index.html:26
+msgid "Change"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/forms/widgets.py:355
+msgid "Clear"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/forms/widgets.py:570
+msgid "Unknown"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/forms/widgets.py:571
+msgid "Yes"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/forms/widgets.py:572
+msgid "No"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/template/defaultfilters.py:867
+msgid "yes,no,maybe"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/template/defaultfilters.py:896
+#: venv/lib/python2.7/site-packages/django/template/defaultfilters.py:908
+#, python-format
+msgid "%(size)d byte"
+msgid_plural "%(size)d bytes"
+msgstr[0] ""
+msgstr[1] ""
+
+#: venv/lib/python2.7/site-packages/django/template/defaultfilters.py:910
+#, python-format
+msgid "%s KB"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/template/defaultfilters.py:912
+#, python-format
+msgid "%s MB"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/template/defaultfilters.py:914
+#, python-format
+msgid "%s GB"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/template/defaultfilters.py:916
+#, python-format
+msgid "%s TB"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/template/defaultfilters.py:918
+#, python-format
+msgid "%s PB"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/utils/dateformat.py:61
+msgid "p.m."
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/utils/dateformat.py:62
+msgid "a.m."
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/utils/dateformat.py:67
+msgid "PM"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/utils/dateformat.py:68
+msgid "AM"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/utils/dateformat.py:153
+msgid "midnight"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/utils/dateformat.py:155
+msgid "noon"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/utils/dates.py:6
+msgid "Monday"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/utils/dates.py:6
+msgid "Tuesday"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/utils/dates.py:6
+msgid "Wednesday"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/utils/dates.py:6
+msgid "Thursday"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/utils/dates.py:6
+msgid "Friday"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/utils/dates.py:7
+msgid "Saturday"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/utils/dates.py:7
+msgid "Sunday"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/utils/dates.py:10
+msgid "Mon"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/utils/dates.py:10
+msgid "Tue"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/utils/dates.py:10
+msgid "Wed"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/utils/dates.py:10
+msgid "Thu"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/utils/dates.py:10
+msgid "Fri"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/utils/dates.py:11
+#, fuzzy
+#| msgid "Status"
+msgid "Sat"
+msgstr "Status"
+
+#: venv/lib/python2.7/site-packages/django/utils/dates.py:11
+msgid "Sun"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/utils/dates.py:18
+msgid "January"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/utils/dates.py:18
+msgid "February"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/utils/dates.py:18
+msgid "March"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/utils/dates.py:18
+msgid "April"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/utils/dates.py:18
+msgid "May"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/utils/dates.py:18
+msgid "June"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/utils/dates.py:19
+msgid "July"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/utils/dates.py:19
+msgid "August"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/utils/dates.py:19
+msgid "September"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/utils/dates.py:19
+msgid "October"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/utils/dates.py:19
+msgid "November"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/utils/dates.py:20
+msgid "December"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/utils/dates.py:23
+msgid "jan"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/utils/dates.py:23
+msgid "feb"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/utils/dates.py:23
+#, fuzzy
+#| msgid "Bar"
+msgid "mar"
+msgstr "Bar"
+
+#: venv/lib/python2.7/site-packages/django/utils/dates.py:23
+#, fuzzy
+#| msgid "Bar"
+msgid "apr"
+msgstr "Bar"
+
+#: venv/lib/python2.7/site-packages/django/utils/dates.py:23
+msgid "may"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/utils/dates.py:23
+msgid "jun"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/utils/dates.py:24
+msgid "jul"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/utils/dates.py:24
+msgid "aug"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/utils/dates.py:24
+msgid "sep"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/utils/dates.py:24
+#, fuzzy
+#| msgid "Project"
+msgid "oct"
+msgstr "Proyecto"
+
+#: venv/lib/python2.7/site-packages/django/utils/dates.py:24
+msgid "nov"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/utils/dates.py:24
+msgid "dec"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/utils/dates.py:31
+msgctxt "abbrev. month"
+msgid "Jan."
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/utils/dates.py:32
+msgctxt "abbrev. month"
+msgid "Feb."
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/utils/dates.py:33
+msgctxt "abbrev. month"
+msgid "March"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/utils/dates.py:34
+msgctxt "abbrev. month"
+msgid "April"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/utils/dates.py:35
+msgctxt "abbrev. month"
+msgid "May"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/utils/dates.py:36
+msgctxt "abbrev. month"
+msgid "June"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/utils/dates.py:37
+msgctxt "abbrev. month"
+msgid "July"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/utils/dates.py:38
+msgctxt "abbrev. month"
+msgid "Aug."
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/utils/dates.py:39
+msgctxt "abbrev. month"
+msgid "Sept."
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/utils/dates.py:40
+msgctxt "abbrev. month"
+msgid "Oct."
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/utils/dates.py:41
+msgctxt "abbrev. month"
+msgid "Nov."
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/utils/dates.py:42
+msgctxt "abbrev. month"
+msgid "Dec."
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/utils/dates.py:45
+msgctxt "alt. month"
+msgid "January"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/utils/dates.py:46
+msgctxt "alt. month"
+msgid "February"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/utils/dates.py:47
+msgctxt "alt. month"
+msgid "March"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/utils/dates.py:48
+msgctxt "alt. month"
+msgid "April"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/utils/dates.py:49
+msgctxt "alt. month"
+msgid "May"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/utils/dates.py:50
+msgctxt "alt. month"
+msgid "June"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/utils/dates.py:51
+msgctxt "alt. month"
+msgid "July"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/utils/dates.py:52
+msgctxt "alt. month"
+msgid "August"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/utils/dates.py:53
+msgctxt "alt. month"
+msgid "September"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/utils/dates.py:54
+msgctxt "alt. month"
+msgid "October"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/utils/dates.py:55
+msgctxt "alt. month"
+msgid "November"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/utils/dates.py:56
+msgctxt "alt. month"
+msgid "December"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/utils/ipv6.py:10
+msgid "This is not a valid IPv6 address."
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/utils/text.py:77
+#, python-format
+msgctxt "String to return when truncating text"
+msgid "%(truncated_text)s..."
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/utils/text.py:246
+msgid "or"
+msgstr ""
+
+#. Translators: This string is used as a separator between list elements
+#: venv/lib/python2.7/site-packages/django/utils/text.py:265
+#: venv/lib/python2.7/site-packages/django/utils/timesince.py:63
+msgid ", "
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/utils/timesince.py:11
+#, python-format
+msgid "%d year"
+msgid_plural "%d years"
+msgstr[0] ""
+msgstr[1] ""
+
+#: venv/lib/python2.7/site-packages/django/utils/timesince.py:12
+#, python-format
+msgid "%d month"
+msgid_plural "%d months"
+msgstr[0] ""
+msgstr[1] ""
+
+#: venv/lib/python2.7/site-packages/django/utils/timesince.py:13
+#, python-format
+msgid "%d week"
+msgid_plural "%d weeks"
+msgstr[0] ""
+msgstr[1] ""
+
+#: venv/lib/python2.7/site-packages/django/utils/timesince.py:14
+#, python-format
+msgid "%d day"
+msgid_plural "%d days"
+msgstr[0] ""
+msgstr[1] ""
+
+#: venv/lib/python2.7/site-packages/django/utils/timesince.py:15
+#, python-format
+msgid "%d hour"
+msgid_plural "%d hours"
+msgstr[0] ""
+msgstr[1] ""
+
+#: venv/lib/python2.7/site-packages/django/utils/timesince.py:16
+#, python-format
+msgid "%d minute"
+msgid_plural "%d minutes"
+msgstr[0] ""
+msgstr[1] ""
+
+#: venv/lib/python2.7/site-packages/django/utils/timesince.py:52
+msgid "0 minutes"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/views/csrf.py:107
+msgid "Forbidden"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/views/csrf.py:108
+msgid "CSRF verification failed. Request aborted."
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/views/csrf.py:112
+msgid ""
+"You are seeing this message because this HTTPS site requires a 'Referer "
+"header' to be sent by your Web browser, but none was sent. This header is "
+"required for security reasons, to ensure that your browser is not being "
+"hijacked by third parties."
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/views/csrf.py:117
+msgid ""
+"If you have configured your browser to disable 'Referer' headers, please re-"
+"enable them, at least for this site, or for HTTPS connections, or for 'same-"
+"origin' requests."
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/views/csrf.py:122
+msgid ""
+"You are seeing this message because this site requires a CSRF cookie when "
+"submitting forms. This cookie is required for security reasons, to ensure "
+"that your browser is not being hijacked by third parties."
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/views/csrf.py:127
+msgid ""
+"If you have configured your browser to disable cookies, please re-enable "
+"them, at least for this site, or for 'same-origin' requests."
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/views/csrf.py:132
+msgid "More information is available with DEBUG=True."
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/views/debug.py:508
+msgid "Welcome to Django"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/views/debug.py:509
+msgid "It worked!"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/views/debug.py:510
+msgid "Congratulations on your first Django-powered page."
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/views/debug.py:511
+msgid ""
+"Of course, you haven't actually done any work yet. Next, start your first "
+"app by running <code>python manage.py startapp [app_label]</code>."
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/views/debug.py:513
+msgid ""
+"You're seeing this message because you have <code>DEBUG = True</code> in "
+"your Django settings file and you haven't configured any URLs. Get to work!"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/views/generic/dates.py:48
+msgid "No year specified"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/views/generic/dates.py:104
+msgid "No month specified"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/views/generic/dates.py:163
+msgid "No day specified"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/views/generic/dates.py:219
+msgid "No week specified"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/views/generic/dates.py:378
+#: venv/lib/python2.7/site-packages/django/views/generic/dates.py:406
+#, python-format
+msgid "No %(verbose_name_plural)s available"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/views/generic/dates.py:660
+#, python-format
+msgid ""
+"Future %(verbose_name_plural)s not available because %(class_name)s."
+"allow_future is False."
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/views/generic/dates.py:694
+#, python-format
+msgid "Invalid date string '%(datestr)s' given format '%(format)s'"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/views/generic/detail.py:55
+#, python-format
+msgid "No %(verbose_name)s found matching the query"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/views/generic/list.py:76
+msgid "Page is not 'last', nor can it be converted to an int."
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/views/generic/list.py:81
+#, python-format
+msgid "Invalid page (%(page_number)s): %(message)s"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/views/generic/list.py:172
+#, python-format
+msgid "Empty list and '%(class_name)s.allow_empty' is False."
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/views/static.py:58
+msgid "Directory indexes are not allowed here."
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/views/static.py:60
+#, python-format
+msgid "\"%(path)s\" does not exist"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/django/views/static.py:100
+#, python-format
+msgid "Index of %(directory)s"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/403.html:4
+msgid "forbidden"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/403.html:6
+#: venv/lib/python2.7/site-packages/suit/templates/404.html:6
+#: venv/lib/python2.7/site-packages/suit/templates/500.html:6
+#: venv/lib/python2.7/site-packages/suit/templates/suit/error_base.html:76
+msgid "error"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/403.html:9
+msgid "We're sorry, but the requested action is forbidden"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/404.html:4
+msgid "Page not found"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/404.html:9
+msgid "We're sorry, but the requested page could not be found."
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/500.html:4
+msgid "Server Error"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/500.html:9
+msgid ""
+"There's been an error. It's been reported to the site administrators via e-"
+"mail and should be fixed shortly. Thanks for your patience."
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/actions.html:14
+#: venv/lib/python2.7/site-packages/suit/templates/admin/filer/actions.html:5
+msgid "Run the selected action"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/actions.html:14
+#: venv/lib/python2.7/site-packages/suit/templates/admin/filer/actions.html:5
+msgid "Go"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/actions.html:22
+#: venv/lib/python2.7/site-packages/suit/templates/admin/filer/actions.html:14
+msgid "Click here to select the objects across all pages"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/actions.html:23
+#, python-format
+msgid ""
+"Select all %(total_count)s\n"
+"                    %(module_name)s"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/actions.html:26
+#: venv/lib/python2.7/site-packages/suit/templates/admin/filer/actions.html:16
+msgid "Clear selection"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/app_index.html:8
+#: venv/lib/python2.7/site-packages/suit/templates/admin/auth/user/change_password.html:19
+#: venv/lib/python2.7/site-packages/suit/templates/admin/base.html:102
+#: venv/lib/python2.7/site-packages/suit/templates/admin/change_form.html:61
+#: venv/lib/python2.7/site-packages/suit/templates/admin/change_list.html:42
+#: venv/lib/python2.7/site-packages/suit/templates/admin/cms/page/change_form.html:46
+#: venv/lib/python2.7/site-packages/suit/templates/admin/cms/page/change_list.html:8
+#: venv/lib/python2.7/site-packages/suit/templates/admin/cms/page/plugin_change_form.html:82
+#: venv/lib/python2.7/site-packages/suit/templates/admin/delete_confirmation.html:7
+#: venv/lib/python2.7/site-packages/suit/templates/admin/delete_selected_confirmation.html:7
+#: venv/lib/python2.7/site-packages/suit/templates/admin/filer/breadcrumbs.html:5
+#: venv/lib/python2.7/site-packages/suit/templates/admin/filer/folder/change_form.html:8
+#: venv/lib/python2.7/site-packages/suit/templates/admin/import_export/base.html:10
+#: venv/lib/python2.7/site-packages/suit/templates/admin/object_history.html:7
+#: venv/lib/python2.7/site-packages/suit/templates/registration/logged_out.html:6
+#: venv/lib/python2.7/site-packages/suit/templates/registration/password_change_form.html:26
+#: venv/lib/python2.7/site-packages/suit/templates/reversion/recover_form.html:8
+#: venv/lib/python2.7/site-packages/suit/templates/reversion/recover_list.html:8
+#: venv/lib/python2.7/site-packages/suit/templates/reversion/revision_form.html:8
+#: venv/lib/python2.7/site-packages/suit/templates/suit/menu.html:10
+msgid "Home"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/app_index.html:11
+#, python-format
+msgid "%(name)s"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/auth/user/add_form.html:6
+msgid ""
+"First, enter a username and password. Then, you'll be able to edit more user "
+"options."
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/auth/user/add_form.html:8
+msgid "Enter a username and password."
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/auth/user/change_password.html:32
+#: venv/lib/python2.7/site-packages/suit/templates/admin/auth/user/change_password.html:75
+#: venv/lib/python2.7/site-packages/suit/templates/admin/base.html:80
+#: venv/lib/python2.7/site-packages/suit/templates/registration/password_change_form.html:19
+msgid "Change password"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/auth/user/change_password.html:45
+#: venv/lib/python2.7/site-packages/suit/templates/admin/change_form.html:153
+#: venv/lib/python2.7/site-packages/suit/templates/admin/change_list.html:86
+#: venv/lib/python2.7/site-packages/suit/templates/admin/cms/page/change_form.html:137
+#: venv/lib/python2.7/site-packages/suit/templates/admin/cms/page/plugin_change_form.html:99
+#: venv/lib/python2.7/site-packages/suit/templates/admin/filer/folder/new_folder_form.html:10
+#: venv/lib/python2.7/site-packages/suit/templates/admin/login.html:27
+#: venv/lib/python2.7/site-packages/suit/templates/registration/password_change_form.html:44
+msgid "Please correct the error below."
+msgid_plural " Please correct the errors below."
+msgstr[0] ""
+msgstr[1] ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/auth/user/change_password.html:48
+#, python-format
+msgid "Enter a new password for the user <strong>%(username)s</strong>."
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/auth/user/change_password.html:54
+#: venv/lib/python2.7/site-packages/suit/templates/admin/login.html:56
+msgid "Password"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/auth/user/change_password.html:64
+#: venv/lib/python2.7/site-packages/suit/templates/registration/password_change_form.html:77
+msgid "Password (again)"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/auth/user/change_password.html:68
+msgid "Enter the same password as above, for verification."
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/base.html:68
+msgid "Welcome,"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/base.html:77
+#: venv/lib/python2.7/site-packages/suit/templates/registration/password_change_form.html:15
+msgid "Documentation"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/base.html:82
+#: venv/lib/python2.7/site-packages/suit/templates/registration/password_change_form.html:21
+msgid "Log out"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/change_form.html:21
+msgid "You have unsaved changes"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/change_form.html:50
+#: venv/lib/python2.7/site-packages/suit/templates/admin/change_form.html:76
+#: venv/lib/python2.7/site-packages/suit/templates/admin/cms/page/change_form.html:53
+#: venv/lib/python2.7/site-packages/suit/templates/admin/cms/page/plugin_change_form.html:85
+#: venv/lib/python2.7/site-packages/suit/templates/admin/index.html:34
+#, fuzzy
+#| msgid "Address"
+msgid "Add"
+msgstr "Dirección"
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/change_form.html:99
+#: venv/lib/python2.7/site-packages/suit/templates/admin/filer/image/change_form.html:7
+msgid "tools"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/change_form.html:109
+#: venv/lib/python2.7/site-packages/suit/templates/admin/cms/page/change_form.html:105
+#: venv/lib/python2.7/site-packages/suit/templates/admin/filer/folder/change_form.html:33
+#: venv/lib/python2.7/site-packages/suit/templates/admin/filer/image/change_form.html:10
+#: venv/lib/python2.7/site-packages/suit/templates/admin/object_history.html:15
+#: venv/lib/python2.7/site-packages/suit/templates/reversion/revision_form.html:16
+msgid "History"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/change_form.html:113
+#: venv/lib/python2.7/site-packages/suit/templates/admin/cms/page/change_form.html:104
+#: venv/lib/python2.7/site-packages/suit/templates/admin/edit_inline/stacked.html:15
+#: venv/lib/python2.7/site-packages/suit/templates/admin/filer/folder/change_form.html:37
+#: venv/lib/python2.7/site-packages/suit/templates/admin/filer/image/change_form.html:15
+msgid "View on site"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/change_form.html:124
+#: venv/lib/python2.7/site-packages/suit/templates/admin/change_list.html:68
+#: venv/lib/python2.7/site-packages/suit/templates/admin/change_list.html:116
+#: venv/lib/python2.7/site-packages/suit/templates/admin/cms/page/change_form.html:108
+#: venv/lib/python2.7/site-packages/suit/templates/admin/cms/page/change_list.html:113
+#: venv/lib/python2.7/site-packages/suit/templates/admin/cms/page/change_list.html:141
+#, python-format
+msgid "Add %(name)s"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/change_form.html:153
+#: venv/lib/python2.7/site-packages/suit/templates/admin/change_list.html:86
+msgid "Please correct the errors below."
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/change_list.html:110
+msgid "Nothing found"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/change_list.html:112
+msgid "Reset search and filters"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/change_list.html:114
+#, python-format
+msgid "%(name_plural)s are not created yet"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/change_list_results.html:19
+#, python-format
+msgid "Sorting priority: %(priority_number)s"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/change_list_results.html:20
+msgid "Toggle sorting"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/change_list_results.html:22
+msgid "Remove from sorting"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/cms/page/change_form.html:4
+msgid "Change a page"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/cms/page/change_form.html:64
+msgid "Confirm delete"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/cms/page/change_form.html:65
+msgid "Remove delete request"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/cms/page/change_form.html:68
+msgid "Confirm page deletion"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/cms/page/change_form.html:93
+#, fuzzy
+#| msgid "Fractionation"
+msgid "actions"
+msgstr "Fraccionamiento"
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/cms/page/change_form.html:97
+#: venv/lib/python2.7/site-packages/suit/templates/admin/cms/page/change_list.html:78
+msgid "Publish"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/cms/page/change_form.html:97
+#: venv/lib/python2.7/site-packages/suit/templates/admin/cms/page/change_form.html:98
+msgid "draft"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/cms/page/change_form.html:98
+#: venv/lib/python2.7/site-packages/suit/templates/admin/import_export/import.html:51
+msgid "Preview"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/cms/page/change_form.html:100
+msgid "Revert to public"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/cms/page/change_form.html:157
+msgid "All permissions"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/cms/page/change_form.html:158
+#: venv/lib/python2.7/site-packages/suit/templates/admin/cms/page/change_form.html:169
+msgid "Loading..."
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/cms/page/change_form.html:168
+msgid "Page states"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/cms/page/change_list.html:3
+msgid "List of pages"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/cms/page/change_list.html:69
+msgid "Successfully moved"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/cms/page/change_list.html:87
+msgid "An error occured. Please reload the page"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/cms/page/change_list.html:110
+#: venv/lib/python2.7/site-packages/suit/templates/reversion/change_list.html:8
+#: venv/lib/python2.7/site-packages/suit/templates/reversion/recover_form.html:14
+#: venv/lib/python2.7/site-packages/suit/templates/reversion/recover_list.html:14
+#, python-format
+msgid "Recover deleted %(name)s"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/cms/page/change_list.html:125
+msgid "Pages on:"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/cms/page/plugin_change_form.html:128
+#: venv/lib/python2.7/site-packages/suit/templates/admin/filer/folder/new_folder_form.html:43
+#: venv/lib/python2.7/site-packages/suit/templates/admin/page_submit_line.html:4
+#: venv/lib/python2.7/site-packages/suit/templates/admin/pagination.html:4
+#: venv/lib/python2.7/site-packages/suit/templates/admin/submit_line.html:4
+msgid "Save"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/cms/page/plugin_change_form.html:129
+msgid "Cancel"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/delete_confirmation.html:26
+#: venv/lib/python2.7/site-packages/suit/templates/admin/filer/delete_confirmation.html:12
+#, python-format
+msgid ""
+"Deleting the %(object_name)s '%(escaped_object)s' would result in deleting "
+"related objects, but your account doesn't have permission to delete the "
+"following types of objects:"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/delete_confirmation.html:36
+#: venv/lib/python2.7/site-packages/suit/templates/admin/filer/delete_confirmation.html:21
+#, python-format
+msgid ""
+"Deleting the %(object_name)s '%(escaped_object)s' would require deleting the "
+"following protected related objects:"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/delete_confirmation.html:51
+#: venv/lib/python2.7/site-packages/suit/templates/admin/filer/delete_confirmation.html:31
+#, python-format
+msgid ""
+"Are you sure you want to delete the %(object_name)s \"%(escaped_object)s\"? "
+"All of the following related items will be deleted:"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/delete_confirmation.html:59
+#: venv/lib/python2.7/site-packages/suit/templates/admin/delete_selected_confirmation.html:61
+#: venv/lib/python2.7/site-packages/suit/templates/admin/filer/delete_confirmation.html:36
+#: venv/lib/python2.7/site-packages/suit/templates/admin/filer/delete_selected_files_confirmation.html:47
+msgid "Yes, I'm sure"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/delete_selected_confirmation.html:15
+msgid "Delete multiple objects"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/delete_selected_confirmation.html:23
+#, python-format
+msgid ""
+"Deleting the selected %(objects_name)s would result in deleting related "
+"objects, but your account doesn't have permission to delete the following "
+"types of objects:"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/delete_selected_confirmation.html:33
+#, python-format
+msgid ""
+"Deleting the selected %(objects_name)s would require deleting the following "
+"protected related objects:"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/delete_selected_confirmation.html:51
+msgid "Confirm deletion"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/delete_selected_confirmation.html:54
+#, python-format
+msgid ""
+"Are you sure you want to delete the selected %(objects_name)s? All of the "
+"following objects and their related items will be deleted:"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/edit_inline/stacked.html:73
+#: venv/lib/python2.7/site-packages/suit/templates/admin/edit_inline/tabular.html:128
+#, python-format
+msgid "Add another %(verbose_name)s"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/edit_inline/stacked.html:76
+#: venv/lib/python2.7/site-packages/suit/templates/admin/edit_inline/tabular.html:131
+msgid "Remove"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/edit_inline/tabular.html:19
+msgid "Delete?"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/filer/actions.html:14
+#, python-format
+msgid "Select all %(total_count)s files and/or folders"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/filer/breadcrumbs.html:5
+msgid "Go back to admin homepage"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/filer/breadcrumbs.html:8
+msgid "Go back to Filer app"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/filer/breadcrumbs.html:8
+#: venv/lib/python2.7/site-packages/suit/templates/admin/filer/folder/change_form.html:12
+#, fuzzy
+#| msgid "File"
+msgid "Filer"
+msgstr "Archivo"
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/filer/breadcrumbs.html:12
+msgid "Go back to root folder"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/filer/breadcrumbs.html:12
+#: venv/lib/python2.7/site-packages/suit/templates/admin/filer/folder/change_form.html:15
+#: venv/lib/python2.7/site-packages/suit/templates/admin/filer/folder/directory_listing.html:79
+msgid "root"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/filer/breadcrumbs.html:17
+#: venv/lib/python2.7/site-packages/suit/templates/admin/filer/breadcrumbs.html:23
+#: venv/lib/python2.7/site-packages/suit/templates/admin/filer/folder/change_form.html:19
+#, python-format
+msgid "Go back to '%(folder_name)s' folder"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/filer/change_form.html:30
+msgid "duplicates"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/filer/delete_selected_files_confirmation.html:11
+msgid ""
+"Deleting the selected files and/or folders would result in deleting related "
+"objects, but your account doesn't have permission to delete the following "
+"types of objects:"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/filer/delete_selected_files_confirmation.html:20
+msgid ""
+"Deleting the selected files and/or folders would require deleting the "
+"following protected related objects:"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/filer/delete_selected_files_confirmation.html:30
+msgid ""
+"<p>Are you sure you want to delete the selected files and/or folders? All of "
+"the following objects and their related items will be deleted:</p>"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/filer/folder/change_form.html:8
+#: venv/lib/python2.7/site-packages/suit/templates/admin/filer/folder/change_form.html:12
+#: venv/lib/python2.7/site-packages/suit/templates/admin/filer/folder/change_form.html:15
+#: venv/lib/python2.7/site-packages/suit/templates/admin/filer/folder/directory_listing.html:79
+msgid "Go back to"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/filer/folder/change_form.html:8
+msgid "admin homepage"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/filer/folder/change_form.html:15
+#: venv/lib/python2.7/site-packages/suit/templates/admin/filer/folder/directory_listing.html:79
+#: venv/lib/python2.7/site-packages/suit/templates/admin/filer/folder/new_folder_form.html:4
+#: venv/lib/python2.7/site-packages/suit/templates/admin/filer/tools/clipboard/clipboard.html:15
+msgid "folder"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/filer/folder/change_form.html:50
+#: venv/lib/python2.7/site-packages/suit/templates/admin/filer/folder/directory_listing.html:80
+#: venv/lib/python2.7/site-packages/suit/templates/admin/filer/folder/directory_listing.html:90
+#: venv/lib/python2.7/site-packages/suit/templates/admin/filer/folder/directory_table.html:23
+msgid "Folder Icon"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/filer/folder/choose_copy_destination.html:12
+msgid ""
+"Your account doesn't have permissions to copy all of the selected files and/"
+"or folders."
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/filer/folder/choose_copy_destination.html:15
+#: venv/lib/python2.7/site-packages/suit/templates/admin/filer/folder/choose_move_destination.html:15
+msgid "There are no destination folders available."
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/filer/folder/choose_copy_destination.html:18
+msgid "There are no files and/or folders available to copy."
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/filer/folder/choose_copy_destination.html:21
+msgid ""
+"The following files and/or folders will be copied to a destination folder "
+"(retaining their tree structure):"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/filer/folder/choose_copy_destination.html:31
+#: venv/lib/python2.7/site-packages/suit/templates/admin/filer/folder/choose_move_destination.html:32
+msgid "Destination folder:"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/filer/folder/choose_copy_destination.html:38
+msgid "Copy"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/filer/folder/choose_images_resize_options.html:12
+msgid ""
+"Your account doesn't have permissions to resize all of the selected images."
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/filer/folder/choose_images_resize_options.html:15
+msgid "There are no images available to resize."
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/filer/folder/choose_images_resize_options.html:18
+msgid "The following images will be resized:"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/filer/folder/choose_images_resize_options.html:29
+msgid "Choose an existing thumbnail option or enter resize parameters:"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/filer/folder/choose_images_resize_options.html:32
+msgid "Choose resize parameters:"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/filer/folder/choose_images_resize_options.html:35
+msgid ""
+"Warning: Images will be resized in-place and originals will be lost. Maybe "
+"first make a copy of them to retain the originals."
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/filer/folder/choose_images_resize_options.html:36
+msgid "Resize"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/filer/folder/choose_move_destination.html:12
+msgid ""
+"Your account doesn't have permissions to move all of the selected files and/"
+"or folders."
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/filer/folder/choose_move_destination.html:18
+msgid "There are no files and/or folders available to move."
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/filer/folder/choose_move_destination.html:21
+msgid ""
+"The following files and/or folders will be moved to a destination folder "
+"(retaining their tree structure):"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/filer/folder/choose_move_destination.html:38
+msgid "Move"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/filer/folder/choose_rename_format.html:12
+msgid ""
+"Your account doesn't have permissions to rename all of the selected files."
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/filer/folder/choose_rename_format.html:15
+msgid "There are no files available to rename."
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/filer/folder/choose_rename_format.html:18
+msgid ""
+"The following files will be renamed (they will stay in their folders and "
+"keep original filename, only displayed filename will be changed):"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/filer/folder/choose_rename_format.html:31
+msgid "Rename"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/filer/folder/directory_listing.html:70
+msgid "Adds a new Folder"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/filer/folder/directory_listing.html:70
+msgid "New Folder"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/filer/folder/directory_listing.html:71
+msgid "upload files"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/filer/folder/directory_listing.html:71
+msgid "Upload"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/filer/folder/directory_listing.html:79
+msgid "Go back to the parent folder"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/filer/folder/directory_listing.html:81
+#: venv/lib/python2.7/site-packages/suit/templates/admin/filer/folder/directory_table.html:30
+#: venv/lib/python2.7/site-packages/suit/templates/admin/filer/tools/search_form.html:19
+#, python-format
+msgid "1 folder"
+msgid_plural "%(counter)s folders"
+msgstr[0] ""
+msgstr[1] ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/filer/folder/directory_listing.html:81
+#: venv/lib/python2.7/site-packages/suit/templates/admin/filer/folder/directory_table.html:30
+#: venv/lib/python2.7/site-packages/suit/templates/admin/filer/tools/search_form.html:20
+#, python-format
+msgid "1 file"
+msgid_plural "%(counter)s files"
+msgstr[0] ""
+msgstr[1] ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/filer/folder/directory_listing.html:85
+msgid "Change current folder details"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/filer/folder/directory_table.html:23
+#: venv/lib/python2.7/site-packages/suit/templates/admin/filer/folder/directory_table.html:27
+#: venv/lib/python2.7/site-packages/suit/templates/admin/filer/folder/directory_table.html:29
+#, python-format
+msgid "Change '%(item_label)s' folder details"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/filer/folder/directory_table.html:30
+#: venv/lib/python2.7/site-packages/suit/templates/admin/filer/folder/directory_table.html:45
+msgid "Owner"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/filer/folder/directory_table.html:37
+msgid "Select this file"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/filer/folder/directory_table.html:39
+#: venv/lib/python2.7/site-packages/suit/templates/admin/filer/folder/directory_table.html:43
+#: venv/lib/python2.7/site-packages/suit/templates/admin/filer/folder/directory_table.html:44
+#, python-format
+msgid "Change '%(item_label)s' details"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/filer/folder/directory_table.html:42
+#, python-format
+msgid "Delete '%(item_label)s'"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/filer/folder/directory_table.html:45
+msgid "Permissions"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/filer/folder/directory_table.html:45
+msgid "disabled"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/filer/folder/directory_table.html:45
+msgid "enabled"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/filer/folder/directory_table.html:49
+msgid "Move to clipboard"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/filer/folder/directory_table.html:57
+msgid "there are no files or subfolders"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/filer/folder/directory_table.html:64
+msgid "previous"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/filer/folder/directory_table.html:68
+#, python-format
+msgid ""
+"\n"
+"            Page %(number)s of %(num_pages)s\n"
+"            "
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/filer/folder/directory_table.html:74
+msgid "next"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/filer/folder/new_folder_form.html:4
+msgid "Add new"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/filer/image/change_form.html:31
+msgid "Full size preview"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/filer/tools/clipboard/clipboard.html:4
+msgid "Clipboard"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/filer/tools/clipboard/clipboard.html:15
+msgid "discard"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/filer/tools/clipboard/clipboard.html:15
+msgid "Move all clipboard files to"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/filer/tools/clipboard/clipboard.html:15
+msgid "unfiled files"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/filer/tools/clipboard/clipboard.html:24
+msgid "Paste all items here"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/filer/tools/clipboard/clipboard.html:63
+msgid "the clipboard is empty"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/filer/tools/clipboard/clipboard_item_rows.html:10
+msgid "upload failed"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/filer/tools/search_form.html:11
+msgid "Enter your search phrase here"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/filer/tools/search_form.html:12
+#: venv/lib/python2.7/site-packages/suit/templates/admin/search_form.html:26
+msgid "Search"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/filer/tools/search_form.html:12
+msgid "Click here to"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/filer/tools/search_form.html:12
+msgid "run search for entered phrase"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/filer/tools/search_form.html:15
+msgid "Check it to"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/filer/tools/search_form.html:15
+msgid "limit the search to current folder"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/filer/tools/search_form.html:19
+msgid "found"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/filer/tools/search_form.html:20
+msgid "cancel search"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/import_export/change_list_export.html:5
+#: venv/lib/python2.7/site-packages/suit/templates/admin/import_export/change_list_import_export.html:6
+#: venv/lib/python2.7/site-packages/suit/templates/admin/import_export/export.html:5
+#: venv/lib/python2.7/site-packages/suit/templates/admin/import_export/export.html:12
+msgid "Export"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/import_export/change_list_import.html:5
+#: venv/lib/python2.7/site-packages/suit/templates/admin/import_export/change_list_import_export.html:5
+#: venv/lib/python2.7/site-packages/suit/templates/admin/import_export/import.html:6
+#: venv/lib/python2.7/site-packages/suit/templates/admin/import_export/import.html:25
+msgid "Import"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/import_export/import.html:17
+msgid "This importer will import the following fields: "
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/import_export/import.html:34
+msgid "Errors"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/import_export/import.html:42
+msgid "Line number"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/import_export/import.html:65
+msgid "New"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/import_export/import.html:67
+msgid "Skipped"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/import_export/import.html:71
+msgid "Update"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/import_export/import.html:90
+msgid "Confirm import"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/index.html:19
+#, python-format
+msgid "Models available in the %(name)s application."
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/index.html:45
+msgid "You don't have permission to edit anything."
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/index.html:54
+msgid "My Actions"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/index.html:59
+msgid "None available"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/index.html:68
+msgid "added"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/index.html:69
+msgid "changed"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/index.html:70
+msgid "deleted"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/index.html:76
+msgid "Unknown content"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/login.html:64
+msgid "Forgotten your password or username?"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/login.html:68
+msgid "Log in"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/object_history.html:27
+#: venv/lib/python2.7/site-packages/suit/templates/reversion/object_history.html:15
+#: venv/lib/python2.7/site-packages/suit/templates/reversion/recover_list.html:27
+msgid "Date/time"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/object_history.html:28
+#: venv/lib/python2.7/site-packages/suit/templates/reversion/object_history.html:16
+msgid "User"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/object_history.html:29
+msgid "Action"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/object_history.html:43
+#: venv/lib/python2.7/site-packages/suit/templates/reversion/object_history.html:36
+msgid ""
+"This object doesn't have a change history. It probably wasn't added via this "
+"admin site."
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/page_submit_line.html:5
+#: venv/lib/python2.7/site-packages/suit/templates/admin/submit_line.html:5
+msgid "Save and continue editing"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/page_submit_line.html:6
+#: venv/lib/python2.7/site-packages/suit/templates/admin/submit_line.html:6
+msgid "Save as new"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/page_submit_line.html:7
+#: venv/lib/python2.7/site-packages/suit/templates/admin/submit_line.html:7
+msgid "Save and add another"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/page_submit_line.html:21
+#: venv/lib/python2.7/site-packages/suit/templates/admin/page_submit_line.html:23
+#, python-format
+msgid "Delete %(language)s translation"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/pagination.html:26
+msgid "Show all"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/search_form.html:8
+#, fuzzy
+#| msgid "Keywords"
+msgid "keyword"
+msgstr "Palabras Clave"
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/search_form.html:29
+#, python-format
+msgid "%(counter)s result"
+msgid_plural "%(counter)s results"
+msgstr[0] ""
+msgstr[1] ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/admin/search_form.html:31
+#, python-format
+msgid "%(full_result_count)s total"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/registration/logged_out.html:9
+msgid "Thanks for spending some quality time with the Web site today."
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/registration/logged_out.html:12
+msgid "Log in again"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/registration/password_change_form.html:28
+#: venv/lib/python2.7/site-packages/suit/templates/registration/password_change_form.html:32
+msgid "Password change"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/registration/password_change_form.html:40
+msgid ""
+"Please enter your old password, for security's sake, and then enter your new "
+"password twice so we can verify you typed it in correctly."
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/registration/password_change_form.html:55
+msgid "Old password"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/registration/password_change_form.html:66
+msgid "New password"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/registration/password_change_form.html:88
+msgid "Change my password"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/reversion/object_history.html:8
+msgid ""
+"Choose a date from the list below to revert to a previous version of this "
+"object."
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/reversion/object_history.html:17
+msgid "Comment"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/reversion/recover_form.html:25
+msgid "Press the save button below to recover this version of the object."
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/reversion/recover_list.html:21
+msgid ""
+"Choose a date from the list below to recover a deleted version of an object."
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/reversion/recover_list.html:41
+msgid "There are no deleted objects to recover."
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/reversion/revision_form.html:18
+#, python-format
+msgid "Revert %(verbose_name)s"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/reversion/revision_form.html:27
+msgid "Press the save button below to revert to this version of the object."
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/suit/error_base.html:87
+msgid "Close window"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/suit/error_base.html:90
+msgid "Go back"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/templates/suit/error_base.html:93
+msgid "Go to admin home"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/widgets.py:104
+msgid "Date:"
+msgstr ""
+
+#: venv/lib/python2.7/site-packages/suit/widgets.py:118
+msgid "Time:"
+msgstr ""

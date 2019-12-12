@@ -15,534 +15,684 @@
   {% endif %}
 {% endblock %}
 {% block content %}
-	<div class="project-detail-section">
-		<div class="project-cover cover" style="background-image: url('{{ project.photo.url }}')">
+<div class="project-detail-section">
+  <div class="project-cover cover" style="background-image: url('{{ project.photo.url }}')">
 			<span class="project-name">
 				{{ project.name|lower }}
 			</span>
-		</div>
-		<div class="project-overview">
-			<div class="project-logo">
-				{% if project.logo %}
-				<img src="{{ project.logo.url }}" >
-				{% endif %}
-			</div>
-			<div class="project-text">
-				<p class="project-description">
-					{{ project.description }}
-				</p>
-				<div class="project-characteristics">
-					<p>
-						{% if project.category == "Casa - Habitacion" %}
-						<span class="icons icon-house-room"></span>
-						{% elif project.category == "Departamento" %}
-						<span class="icons icon-department"></span>
-						{% elif project.category == "Oficina" %}
-						<span class="icons icon-office"></span>
-						{% elif project.category == "Comercial" %}
-						<span class="icons icon-department"></span>
-						{% elif project.category == "Fraccionamiento" %}
-						<span class="icons icon-house-room"></span>
-						{% endif %}
-						<span class="characteristic-text">{{project.category}}</span>
-					</p>
-					<p>
-						{% if project.status == "En venta" %}
-						<span class="icons icon-on-sale"></span>
-						{% elif project.status == "Pre-venta" %}
-						<span class="icons icon-presale"></span>
-						{% elif project.status == "Vendido" %}
-						<span class="icons icon-sold"></span>
-						{% elif project.status == "En construcción" %}
-						<span class="icons icon-sold"></span>
-						{% elif project.status == "Terminado" %}
-						<span class="icons icon-sold"></span>
-						{% endif %}
-						<span class="characteristic-text">{{project.status}}</span>
-					</p>
-				</div>
-			</div>
-		</div>
+  </div>
+  <div class="project-overview">
+    <div class="project-logo">
+      {% if project.logo %}
+        <img src="{{ project.logo.url }}">
+      {% endif %}
+    </div>
+    <div class="project-text">
+      <p class="project-description">
+        {{ project.description }}
+      </p>
+      <div class="project-characteristics">
+        <p>
+          {% if project.category == "Casa - Habitacion" %}
+            <span class="icons icon-house-room"></span>
+          {% elif project.category == "Departamento" %}
+            <span class="icons icon-department"></span>
+          {% elif project.category == "Oficina" %}
+            <span class="icons icon-office"></span>
+          {% elif project.category == "Comercial" %}
+            <span class="icons icon-department"></span>
+          {% elif project.category == "Fraccionamiento" %}
+            <span class="icons icon-house-room"></span>
+          {% endif %}
+          <span class="characteristic-text">{{ project.category }}</span>
+        </p>
+        <p>
+          {% if project.status == "En venta" %}
+            <span class="icons icon-on-sale"></span>
+          {% elif project.status == "Pre-venta" %}
+            <span class="icons icon-presale"></span>
+          {% elif project.status == "Vendido" %}
+            <span class="icons icon-sold"></span>
+          {% elif project.status == "En construcción" %}
+            <span class="icons icon-sold"></span>
+          {% elif project.status == "Terminado" %}
+            <span class="icons icon-sold"></span>
+          {% endif %}
+          <span class="characteristic-text">{{ project.status }}</span>
+        </p>
+      </div>
+    </div>
+  </div>
 
-		<div class="project-video-section">
-			{% if project.video %}
-			Conoce más acerca del desarrollo
-			<div class="video-container">
-		    <div class="embed-responsive embed-responsive-16by9">
-		      <iframe src="{{ project.video }}" class="embed-responsive-item"></iframe>
-		    </div>
-		  </div>
-		  {% endif %}
-		</div>
+  <div class="project-video-section">
+    {% if project.video %}
+      Conoce más acerca del desarrollo
+      <div class="video-container">
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe src="{{ project.video }}" class="embed-responsive-item"></iframe>
+        </div>
+      </div>
+    {% endif %}
+  </div>
 
-		<div class="project-characteristics-container">
-			<div class="characteristics">
-				<span class="title">acerca de</span>
-				<ul class="characteristics-list">
-					{% if project.number_departaments > 0 %}
-					<li class="characteristic-item">
-						<span class="icons icon-department"></span>
-						<span>
-            {% if project.building == 'departaments' %}
-              {{ project.number_departaments }} Departamentos.
-            {% elif project.building == 'offices' %}
-              {{ project.number_departaments }} Oficinas.
-            {% elif project.building == 'houses' %}
-              {{ project.number_departaments }} Casas.
-            {% endif %}
+  <div class="project-characteristics-container">
+    <div class="characteristics">
+      <span class="title">acerca de</span>
+      <ul class="characteristics-list">
+        {% if project.number_departaments > 0 %}
+          <li class="characteristic-item">
+            <span class="icons icon-department"></span>
+            <span>
+              {% if project.building == 'departaments' %}
+                {{ project.number_departaments }} Departamentos.
+              {% elif project.building == 'offices' %}
+                {{ project.number_departaments }} Oficinas.
+              {% elif project.building == 'houses' %}
+                {{ project.number_departaments }} Casas.
+              {% endif %}
 						</span>
-					</li>
-					{% endif %}
-					{% if project.construction_m2 > 0 %}
-					<li class="characteristic-item">
-						<span class="icons icon-building-size"></span>
-						<span>
+          </li>
+        {% endif %}
+        {% if project.construction_m2 > 0 %}
+          <li class="characteristic-item">
+            <span class="icons icon-building-size"></span>
+            <span>
 						{{ project.construction_m2 }} m2 de construcción.
 						</span>
-					</li>
-					{% endif %}
-					{% if project.parking_places > 0 %}
-					<li class="characteristic-item">
-						<span class="icons icon-parking-lot"></span>
-						<span>
+          </li>
+        {% endif %}
+        {% if project.parking_places > 0 %}
+          <li class="characteristic-item">
+            <span class="icons icon-parking-lot"></span>
+            <span>
 						{% if project.parking_places == 1 %}
-						1 cajón de estacionamiento.
-						{% else %}
-						{{ project.parking_places }} cajones de estacionamiento.
-						{% endif %}
+              1 cajón de estacionamiento.
+            {% else %}
+              {{ project.parking_places }} cajones de estacionamiento.
+            {% endif %}
 						</span>
-					</li>
-					{% endif %}
-					{% if project.guardhouse %}
-					<li class="characteristic-item">
-						<span class="icons icon-guardhouse"></span>
-						<span>
-						Caseta de vigilancia.
-						</span>
-					</li>
-					{% endif %}
-					{% if project.waiting_area %}
-					<li class="characteristic-item">
-						<span class="icons icon-living-room"></span>
-						<span>
-						Área de espera para visitas.
-						</span>
-					</li>
-					{% endif %}
-					{% if project.common_area %}
-					<li class="characteristic-item">
-						<span class="icons icon-illumination"></span>
-						<span>
-						Área común con iluminación LED.
-						</span>
-					</li>
-					{% endif %}
-					{% if project.dumpster_area %}
-					<li class="characteristic-item">
-						<span class="icons icon-dustbin-area"></span>
-						<span>
-						Área para depósito de basura.
-						</span>
-					</li>
-					{% endif %}
-					{% if project.roof_garden %}
-					<li class="characteristic-item">
-						<span class="icons icon-roof-garden"></span>
-						<span>
-						Roof Garden.
-						</span>
-					</li>
-					{% endif %}
-          {% if project.lobby %}
-					<li class="characteristic-item">
+          </li>
+        {% endif %}
+        {% if project.guardhouse %}
+          <li class="characteristic-item">
+            <span class="icons icon-guardhouse"></span>
+            <span>Caseta de vigilancia.</span>
+          </li>
+        {% endif %}
+        {% if project.waiting_area %}
+          <li class="characteristic-item">
+            <span class="icons icon-living-room"></span>
+            <span>Área de espera para visitas.</span>
+          </li>
+        {% endif %}
+        {% if project.common_area %}
+          <li class="characteristic-item">
+            <span class="icons icon-illumination"></span>
+            <span>Área común con iluminación LED.</span>
+          </li>
+        {% endif %}
+        {% if project.dumpster_area %}
+          <li class="characteristic-item">
+            <span class="icons icon-dustbin-area"></span>
+            <span>Área para depósito de basura.</span>
+          </li>
+        {% endif %}
+        {% if project.roof_garden %}
+          <li class="characteristic-item">
+            <span class="icons icon-roof-garden"></span>
+            <span>Roof Garden.</span>
+          </li>
+        {% endif %}
+        {% if project.lobby %}
+          <li class="characteristic-item">
             <img src="{% static 'img/icons/lobby.png' %}" style="margin-right: 29px; height: 26px;">
-						<span>
-						Lobby.
-						</span>
-					</li>
-					{% endif %}
-          {% if project.multiple_room %}
-          <li class="characteristic-item">
-            <img src="{% static 'img/icons/salon-multi-usos.png' %}" style="margin-right: 23px; height: 17px">
-            <span>
-            Salón de usos multiples
-            </span>
+            <span>Lobby.</span>
           </li>
-          {% endif %}
-          {% if project.closed_circuit %}
+        {% endif %}
+        {% if project.multiple_room %}
           <li class="characteristic-item">
-            <img src="{% static 'img/icons/circuito-cerrado.png' %}" style="margin-right: 30px; height: 26px">
-            <span>
-            Circuito cerrado.
-            </span>
+            <img src="{% static 'img/icons/salon-multi-usos.png' %}"
+                 style="margin-right: 23px; height: 17px">
+            <span>Salón de usos multiples</span>
           </li>
-          {% endif %}
-          {% if project.undergroun_services %}
+        {% endif %}
+        {% if project.closed_circuit %}
           <li class="characteristic-item">
-            <img src="{% static 'img/icons/bajo-tierra.png' %}" style="margin-right: 36px; height: 26px" alt="">
-            <span>
-            Todos los servicios subterraneos
-            </span>
+            <img src="{% static 'img/icons/circuito-cerrado.png' %}"
+                 style="margin-right: 30px; height: 26px">
+            <span>Circuito cerrado.</span>
           </li>
-          {% endif %}
-          {% if project.green_areas %}
+        {% endif %}
+        {% if project.undergroun_services %}
           <li class="characteristic-item">
-            <img src="{% static 'img/icons/areas-verdes.png' %}" style="margin-right: 26px; height: 23px" alt="">
-            <span>
-            Áreas Verdes
-            </span>
+            <img src="{% static 'img/icons/bajo-tierra.png' %}" style="margin-right: 36px; height: 26px"
+                 alt="">
+            <span>Todos los servicios subterraneos</span>
           </li>
-          {% endif %}
-          {% if project.access_gate %}
+        {% endif %}
+        {% if project.green_areas %}
           <li class="characteristic-item">
-            <img src="{% static 'img/icons/puertas-acceso.png' %}" style="margin-right: 27px; height: 21px" alt="">
-            <span>
-            Portón de acceso
-            </span>
+            <img src="{% static 'img/icons/areas-verdes.png' %}" style="margin-right: 26px; height: 23px"
+                 alt="">
+            <span>Áreas Verdes</span>
           </li>
-          {% endif %}
-          {% if project.concrete_paving %}
+        {% endif %}
+        {% if project.access_gate %}
           <li class="characteristic-item">
-            <img src="{% static 'img/icons/concreto.png' %}" style="margin-right: 20px; height: 26px" alt="">
-            <span>
-            Pavimento de concreto hidráulico
-            </span>
+            <img src="{% static 'img/icons/puertas-acceso.png' %}" style="margin-right: 27px; height: 21px"
+                 alt="">
+            <span>Portón de acceso</span>
           </li>
-          {% endif %}
-          {% if project.club_house %}
+        {% endif %}
+        {% if project.concrete_paving %}
           <li class="characteristic-item">
-            <img src="{% static 'img/icons/casa-club.png' %}" style="margin-right: 27px; height: 24px" alt="">
-            <span>
-            Casa club
-            </span>
+            <img src="{% static 'img/icons/concreto.png' %}" style="margin-right: 20px; height: 26px"
+                 alt="">
+            <span>Pavimento de concreto hidráulico</span>
           </li>
-          {% endif %}
-          {% if project.elevator %}
+        {% endif %}
+        {% if project.club_house %}
           <li class="characteristic-item">
-            <img src="{% static 'img/icons/puertas-acceso.png' %}" style="margin-right: 26px; height: 20px" alt="">
-            <span>
-            Elevador
-            </span>
+            <img src="{% static 'img/icons/casa-club.png' %}" style="margin-right: 27px; height: 24px"
+                 alt="">
+            <span>Casa club</span>
           </li>
+        {% endif %}
+        {% if project.elevator %}
+          <li class="characteristic-item">
+            <img src="{% static 'img/icons/puertas-acceso.png' %}" style="margin-right: 26px; height: 20px"
+                 alt="">
+            <span>Elevador</span>
+          </li>
+        {% endif %}
+        {% if project.solar_panel %}
+          <li class="characteristic-item">
+            <span class="icons icon-sun"></span>
+            <span>Paneles Solares</span>
+          </li>
+        {% endif %}
+        {% if project.solar_panel %}
+          <li class="characteristic-item">
+            <span class="icons icon-droplet"></span>
+            <span>Planta de Tratamiento de Aguas</span>
+          </li>
+        {% endif %}
+        {% if project.indoor_garden %}
+          <li class="characteristic-item">
+            <span class="icons icon-leaf"></span>
+            <span>Jardin Interior</span>
+          </li>
+        {% endif %}
+        {% if project.car_ramp %}
+          <li class="characteristic-item">
+            <span class="icons icon-parking-lot"></span>
+            <span>Rampas Para Carros</span>
+          </li>
+        {% endif %}
+        {% if project.warehouse %}
+          <li class="characteristic-item">
+            <span class="icons icon-house-room"></span>
+            <span>Bodegas</span>
+          </li>
+        {% endif %}
+        {% if project.extra_1 %}
+          <li class="characteristic-item">
+            <span class="icons icon-plus"></span>
+            <span>{{ project.extra_1 }}</span>
+          </li>
+        {% endif %}
+        {% if project.extra_2 %}
+          <li class="characteristic-item">
+            <span class="icons icon-plus"></span>
+            <span>{{ project.extra_2 }}</span>
+          </li>
+        {% endif %}
+        {% if project.extra_3 %}
+          <li class="characteristic-item">
+            <span class="icons icon-plus"></span>
+            <span>{{ project.extra_3 }}</span>
+          </li>
+        {% endif %}
+      </ul>
+    </div>
+    <div class="cover" style="background-image: url('{{ project.about_image.url }}')"></div>
+  </div>
+  {% if project.projectamenities %}
+    <div class="project-characteristics-container">
+      <div class="cover" style="background-image: url('{{ project.projectamenities.photo.url }}')"></div>
+      <div class="characteristics">
+        <span class="title">Amenidades</span>
+        <ul class="characteristics-list">
+          {% if project.projectamenities.swimming_pool %}
+            <li class="characteristic-item">
+              <span class="icons icon-silueta-de-natacion"></span>
+              <span>Alberca</span>
+            </li>
           {% endif %}
-				</ul>
-			</div>
-			<div class="cover" style="background-image: url('{{ project.about_image.url }}')"></div>
-		</div>
-		{% if photos|length == 0 %}
-		<span class="department-type-title no-carousel">
-		{% elif photos|length == 1 %}
-		<div class="project-thumbnails">
+          {% if project.projectamenities.jacuzzi %}
+            <li class="characteristic-item">
+              <span class="icons icon-jacuzzi"></span>
+              <span>Jacuzzi</span>
+            </li>
+          {% endif %}
+          {% if project.projectamenities.water_mirror %}
+            <li class="characteristic-item">
+              <span class="icons icon-espejo"></span>
+              <span>Espejo de Agua</span>
+            </li>
+          {% endif %}
+          {% if project.projectamenities.gym %}
+            <li class="characteristic-item">
+              <span class="icons icon-pesa"></span>
+              <span>Gimnasio</span>
+            </li>
+          {% endif %}
+          {% if project.projectamenities.yoga_area %}
+            <li class="characteristic-item">
+              <span class="icons icon-postura-de-yoga"></span>
+              <span>Area de Yoga</span>
+            </li>
+          {% endif %}
+          {% if project.projectamenities.rooftop %}
+            <li class="characteristic-item">
+              <span class="icons icon-terraza"></span>
+              <span>Rooftop</span>
+            </li>
+          {% endif %}
+          {% if project.projectamenities.roofgarden %}
+            <li class="characteristic-item">
+              <span class="icons icon-roof-garden"></span>
+              <span>Roofgarden</span>
+            </li>
+          {% endif %}
+          {% if project.projectamenities.grill_area %}
+            <li class="characteristic-item">
+              <span class="icons icon-parrilla"></span>
+              <span>Area de Asadores</span>
+            </li>
+          {% endif %}
+          {% if project.projectamenities.waiting_area %}
+            <li class="characteristic-item">
+              <span class="icons icon-signo-de-sala-de-espera"></span>
+              <span>Area de Espera</span>
+            </li>
+          {% endif %}
+          {% if project.projectamenities.reading_area %}
+            <li class="characteristic-item">
+              <span class="icons icon-libro-abierto"></span>
+              <span>Area de Lectura</span>
+            </li>
+          {% endif %}
+          {% if project.projectamenities.bicycle_area %}
+            <li class="characteristic-item">
+              <span class="icons icon-ciclista"></span>
+              <span>Area para Bicicletas</span>
+            </li>
+          {% endif %}
+          {% if project.extra_1 %}
+          <li class="characteristic-item">
+            <span class="icons icon-plus"></span>
+            <span>{{ project.extra_1 }}</span>
+          </li>
+        {% endif %}
+        {% if project.extra_2 %}
+          <li class="characteristic-item">
+            <span class="icons icon-plus"></span>
+            <span>{{ project.extra_2 }}</span>
+          </li>
+        {% endif %}
+        {% if project.extra_3 %}
+          <li class="characteristic-item">
+            <span class="icons icon-plus"></span>
+            <span>{{ project.extra_3 }}</span>
+          </li>
+        {% endif %}
+        </ul>
+      </div>
+    </div>
+  {% endif %}
+  {% if photos|length == 0 %}
+    <span class="department-type-title no-carousel">
+  {% elif photos|length == 1 %}
+    <div class="project-thumbnails">
 			<div class="project-thumbnail-item cover" style="background-image: url('{{ photos.0.photo.url }}')"></div>
 			<div class="project-thumbnail-item" style="background-color: #dedede"></div>
 		</div>
-		<span class="department-type-title">
-		{% else %}
-		<div id="project-carousel">
+    <span class="department-type-title">
+  {% else %}
+    <div id="project-carousel">
 			{% for photo in photos %}
-			<div class="project-thumbnail-item cover" style="background-image: url('{{photo.photo.url}}')"></div>
-			{% endfor %}
+        <div class="project-thumbnail-item cover" style="background-image: url('{{ photo.photo.url }}')"></div>
+      {% endfor %}
 		</div>
-		<span class="department-type-title">
-		{% endif %}
-    {% if project.building == 'departaments' %}
-      departamento tipo
-		</span>
-		<div class="department-info-container">
+    <span class="department-type-title">
+  {% endif %}
+  {% if project.building == 'departaments' %}
+    departamento tipo
+    </span>
+    <div class="department-info-container">
 			<div class="department-info">
 				<span class="title">Cada departamento incluye:</span>
 				<ul class="department-characteristics-list">
+          {% if project.departament.studio %}
+            <li class="department-characteristic-item">
+							Studio
+						</li>
+          {% endif %}
+          {% if project.departament.one_room %}
+            <li class="department-characteristic-item">
+							1 Recamara
+						</li>
+          {% endif %}
+          {% if project.departament.two_rooms %}
+            <li class="department-characteristic-item">
+							2 Recamaras {% if project.departament.lock_off %}(Con Lock Off){% endif %}
+						</li>
+          {% endif %}
+          {% if project.departament.three_rooms %}
+            <li class="department-characteristic-item">
+							3 Recamaras {% if project.departament.lock_off %}(Con Lock Off){% endif %}
+						</li>
+          {% endif %}
+          {% if project.departament.penthouse %}
+            <li class="department-characteristic-item">
+							Penthouse {% if project.departament.lock_off %}(Con Lock Off){% endif %}
+						</li>
+          {% endif %}
 					{% if project.departament.bedrooms_with_dress > 0 %}
-						<li class="department-characteristic-item">
+            <li class="department-characteristic-item">
 							Recámaras con vestidor: {{ project.departament.bedrooms_with_dress }}
 						</li>
-					{% endif %}
+          {% endif %}
           {% if project.departament.bedrooms_with_closet > 0 %}
-						<li class="department-characteristic-item">
+            <li class="department-characteristic-item">
 							Recámaras con clóset: {{ project.departament.bedrooms_with_closet }}
 						</li>
-					{% endif %}
+          {% endif %}
           {% if project.departament.complete_bathrooms > 0 %}
-						<li class="department-characteristic-item">
+            <li class="department-characteristic-item">
 							Baños completos: {{ project.departament.complete_bathrooms }}
 						</li>
-					{% endif %}
+          {% endif %}
           {% if project.departament.half_bathrooms > 0 %}
-						<li class="department-characteristic-item">
+            <li class="department-characteristic-item">
 							Medios baños: {{ project.departament.half_bathrooms }}
 						</li>
-					{% endif %}
+          {% endif %}
           {% if project.departament.living_room %}
-						<li class="department-characteristic-item">Sala</li>
-					{% endif %}
+            <li class="department-characteristic-item">Sala</li>
+          {% endif %}
           {% if project.departament.dinning_room %}
-						<li class="department-characteristic-item">Comedor</li>
-					{% endif %}
+            <li class="department-characteristic-item">Comedor</li>
+          {% endif %}
           {% if project.departament.integral_kitchen %}
-						<li class="department-characteristic-item">Cocina integral</li>
-					{% endif %}
-					{% if project.departament.kitchen_cupboard %}
-						<li class="department-characteristic-item">Cocina alacena</li>
-					{% endif %}
+            <li class="department-characteristic-item">Cocina integral</li>
+          {% endif %}
+          {% if project.departament.kitchen_cupboard %}
+            <li class="department-characteristic-item">Cocina alacena</li>
+          {% endif %}
           {% if project.departament.terrace %}
-						<li class="department-characteristic-item">Terraza</li>
-					{% endif %}
-					{% if project.departament.service_yard %}
-						<li class="department-characteristic-item">Patio de servicio</li>
-					{% endif %}
-					{% if project.departament.linen_closet %}
-						<li class="department-characteristic-item">Clóset de blancos</li>
-					{% endif %}
+            <li class="department-characteristic-item">Terraza</li>
+          {% endif %}
+          {% if project.departament.service_yard %}
+            <li class="department-characteristic-item">Patio de servicio</li>
+          {% endif %}
+          {% if project.departament.linen_closet %}
+            <li class="department-characteristic-item">Clóset de blancos</li>
+          {% endif %}
           {% if project.departament.garden %}
-						<li class="department-characteristic-item">Jardin</li>
-					{% endif %}
+            <li class="department-characteristic-item">Jardin</li>
+          {% endif %}
           {% if project.departament.terrace %}
-						<li class="department-characteristic-item">Terraza</li>
-					{% endif %}
+            <li class="department-characteristic-item">Terraza</li>
+          {% endif %}
           {% if project.departament.tv_room %}
-						<li class="department-characteristic-item">Cuarto de T.V</li>
-					{% endif %}
+            <li class="department-characteristic-item">Cuarto de T.V</li>
+          {% endif %}
           {% if project.departament.study %}
-						<li class="department-characteristic-item">Estudio</li>
-					{% endif %}
+            <li class="department-characteristic-item">Estudio</li>
+          {% endif %}
           {% if project.departament.room_service %}
-						<li class="department-characteristic-item">Cuarto de servicio</li>
-					{% endif %}
+            <li class="department-characteristic-item">Cuarto de servicio</li>
+          {% endif %}
 
 				</ul>
 			</div>
 			<div class="department-brochure-section">
 			 	{% if project.brochure.id %}
-				<span>Descarga nuestro brochure para conocer mejor el desarrollo</span>
-				{% else %}
-				<span>Regístrate para recibir noticias sobre este desarrollo</span>
-				{% endif %}
-				<form id="download-brochure-form">
+          <span>Descarga nuestro brochure para conocer mejor el desarrollo</span>
+        {% else %}
+          <span>Regístrate para recibir noticias sobre este desarrollo</span>
+        {% endif %}
+        <form id="download-brochure-form">
 					{% csrf_token %}
 					<input type="email" name="email" id="download-brochure-email" placeholder="Correo electrónico">
-					<input type="hidden" name="source" value="{{project.name}}">
+					<input type="hidden" name="source" value="{{ project.name }}">
         	<span id="download-brochure-span" style="display:block;"></span>
-					{% if project.brochure.id %}
-					<button id="download-brochure-button" class="bricksa-button inverse">descargar</button>
-					{% else %}
-					<button id="download-brochure-button" class="bricksa-button inverse">enviar</button>
-					{% endif %}
+          {% if project.brochure.id %}
+            <button id="download-brochure-button" class="bricksa-button inverse">descargar</button>
+          {% else %}
+            <button id="download-brochure-button" class="bricksa-button inverse">enviar</button>
+          {% endif %}
 				</form>
 			</div>
 		</div>
-    {% elif project.building == 'offices' %}
-       oficina tipo
-		</span>
-		<div class="department-info-container">
+  {% elif project.building == 'offices' %}
+    oficina tipo
+    </span>
+    <div class="department-info-container">
 			<div class="department-info">
 				<span class="title">Cada oficina incluye:</span>
 				<ul class="department-characteristics-list">
 					{% if project.office.office_floors > 0 %}
-						<li class="department-characteristic-item">
+            <li class="department-characteristic-item">
 							Pisos de oficinas: {{ project.office.office_floors }}
 						</li>
-					{% endif %}
+          {% endif %}
           {% if project.office.bathrooms_per_level > 0 %}
-						<li class="department-characteristic-item">
+            <li class="department-characteristic-item">
 							Baños por nivel: {{ project.office.bathrooms_per_level }}
 						</li>
-					{% endif %}
+          {% endif %}
           {% if project.office.elevator %}
-						<li class="department-characteristic-item">Elevador</li>
-					{% endif %}
+            <li class="department-characteristic-item">Elevador</li>
+          {% endif %}
 				</ul>
 			</div>
 			<div class="department-brochure-section">
 			 	{% if project.brochure.id %}
-				<span>Descarga nuestro brochure para conocer mejor el desarrollo</span>
-				{% else %}
-				<span>Regístrate para recibir noticias sobre este desarrollo</span>
-				{% endif %}
-				<form id="download-brochure-form">
+          <span>Descarga nuestro brochure para conocer mejor el desarrollo</span>
+        {% else %}
+          <span>Regístrate para recibir noticias sobre este desarrollo</span>
+        {% endif %}
+        <form id="download-brochure-form">
 					{% csrf_token %}
 					<input type="email" name="email" id="download-brochure-email" placeholder="Correo electrónico">
-					<input type="hidden" name="source" value="{{project.name}}">
+					<input type="hidden" name="source" value="{{ project.name }}">
         	<span id="download-brochure-span" style="display:block;"></span>
-					{% if project.brochure.id %}
-					<button id="download-brochure-button" class="bricksa-button inverse">descargar</button>
-					{% else %}
-					<button id="download-brochure-button" class="bricksa-button inverse">enviar</button>
-					{% endif %}
+          {% if project.brochure.id %}
+            <button id="download-brochure-button" class="bricksa-button inverse">descargar</button>
+          {% else %}
+            <button id="download-brochure-button" class="bricksa-button inverse">enviar</button>
+          {% endif %}
 				</form>
 			</div>
 		</div>
-    {% elif project.building == 'houses' %}
-       casa tipo
-		</span>
-		<div class="department-info-container">
-			<div class="department-info">
-				<span class="title">Cada casa incluye:</span>
-				<ul class="department-characteristics-list">
-					{% if project.house.bedrooms_with_closet > 0 %}
-						<li class="department-characteristic-item">
-							Recamaras con closet: {{ project.house.bedrooms_with_closet }}
-						</li>
-					{% endif %}
-          {% if project.house.bedrooms_with_dress > 0 %}
-						<li class="department-characteristic-item">
-							Recamaras con vestidor: {{ project.house.bedrooms_with_dress }}
-						</li>
-					{% endif %}
-          {% if project.house.complete_bathrooms > 0 %}
-						<li class="department-characteristic-item">
-							Baños completos: {{ project.house.complete_bathrooms }}
-						</li>
-					{% endif %}
-          {% if project.house.half_bathrooms > 0 %}
-						<li class="department-characteristic-item">
-							Medios baños: {{ project.house.half_bathrooms }}
-						</li>
-					{% endif %}
-          {% if project.house.living_room %}
-						<li class="department-characteristic-item">Sala</li>
-					{% endif %}
-          {% if project.house.dinning_room %}
-						<li class="department-characteristic-item">Comedor</li>
-					{% endif %}
-          {% if project.house.beforedinning_room %}
-						<li class="department-characteristic-item">Antecomedor</li>
-					{% endif %}
-          {% if project.house.integral_kitchen %}
-						<li class="department-characteristic-item">Cocina integral</li>
-					{% endif %}
-          {% if project.house.kitchen_cupboard %}
-						<li class="department-characteristic-item">Alacena</li>
-					{% endif %}
-          {% if project.house.study %}
-						<li class="department-characteristic-item">Estudio</li>
-					{% endif %}
-          {% if project.house.bar %}
-						<li class="department-characteristic-item">Bar</li>
-					{% endif %}
-          {% if project.house.cellar %}
-						<li class="department-characteristic-item">Cava</li>
-					{% endif %}
-          {% if project.house.balcony %}
-						<li class="department-characteristic-item">Balcon</li>
-					{% endif %}
-          {% if project.house.deck %}
-						<li class="department-characteristic-item">Deck</li>
-					{% endif %}
-          {% if project.house.deck_with_gas_fireplace %}
-						<li class="department-characteristic-item">Deck con chimenea de gas</li>
-					{% endif %}
-          {% if project.house.terrace %}
-						<li class="department-characteristic-item">Terraza</li>
-					{% endif %}
-          {% if project.house.swimming_pool %}
-						<li class="department-characteristic-item">Alberca</li>
-					{% endif %}
-          {% if project.house.jacuzzi %}
-						<li class="department-characteristic-item">Jacuzzi</li>
-					{% endif %}
-          {% if project.house.bathroom_with_tub %}
-						<li class="department-characteristic-item">Baño con tina</li>
-					{% endif %}
-          {% if project.house.game_room %}
-						<li class="department-characteristic-item">Cuarto de juegos</li>
-					{% endif %}
-          {% if project.house.guest_room %}
-						<li class="department-characteristic-item">Cuarto de visitas</li>
-					{% endif %}
-          {% if project.house.guest_bathroom %}
-						<li class="department-characteristic-item">Baño de visitas</li>
-					{% endif %}
-          {% if project.house.service_bathroom %}
-						<li class="department-characteristic-item">Baño de servicio</li>
-					{% endif %}
-          {% if project.house.interior_garden %}
-						<li class="department-characteristic-item">Jardín interior</li>
-					{% endif %}
-          {% if project.house.service_yard %}
-						<li class="department-characteristic-item">Patio de servicio</li>
-					{% endif %}
-          {% if project.house.room_service %}
-						<li class="department-characteristic-item">Cuarto de servicio</li>
-					{% endif %}
-          {% if project.house.floor_heating_system %}
-						<li class="department-characteristic-item">Sistema de calefacción por piso</li>
-					{% endif %}
-          {% if project.house.warehouse %}
-						<li class="department-characteristic-item">Bodega</li>
-					{% endif %}
-          {% if project.house.water_glass > 0 %}
-						<li class="department-characteristic-item">
-							Espejos de agua: {{ project.house.water_glass }}
-						</li>
-					{% endif %}
-				</ul>
-			</div>
-			<div class="department-brochure-section">
-			 	{% if project.brochure.id %}
-				<span>Descarga nuestro brochure para conocer mejor el desarrollo</span>
-				{% else %}
-				<span>Regístrate para recibir noticias sobre este desarrollo</span>
-				{% endif %}
-				<form id="download-brochure-form">
-					{% csrf_token %}
-					<input type="email" name="email" id="download-brochure-email" placeholder="Correo electrónico">
-					<input type="hidden" name="source" value="{{project.name}}">
-        	<span id="download-brochure-span" style="display:block;"></span>
-					{% if project.brochure.id %}
-					<button id="download-brochure-button" class="bricksa-button inverse">descargar</button>
-					{% else %}
-					<button id="download-brochure-button" class="bricksa-button inverse">enviar</button>
-					{% endif %}
-				</form>
-			</div>
-		</div>
-    {% else %}
+  {% elif project.building == 'houses' %}
+    casa tipo
     </span>
-    {% endif %}
-		{% if project.google_maps_link %}
-		<div class="location-title-container">
-			<span class="location-title">ubicación</span>
-		</div>
-		<div class="location-container">
-			<div class="google-map">
-				<div class="embed-responsive map-container">
-				{% autoescape off %}
-				{{ project.google_maps_link }}
-				{% endautoescape %}
-				</div>
-			</div>
-			<div class="text-container">
-				<img src="{% static 'img/logos/brick-white-short-logo.png' %}" alt="">
-        <div class="project-social-networks">
-          {% if project.socialnetworks.facebook|length > 0%}
-          <a target="_blank" class="project-social-link fa fa-facebook" href="{{ project.socialnetworks.facebook }}"></a>
+    <div class="department-info-container">
+      <div class="department-info">
+        <span class="title">Cada casa incluye:</span>
+        <ul class="department-characteristics-list">
+          {% if project.house.bedrooms_with_closet > 0 %}
+            <li class="department-characteristic-item">
+              Recamaras con closet: {{ project.house.bedrooms_with_closet }}
+            </li>
           {% endif %}
-          {% if project.socialnetworks.twitter|length > 0%}
-          <a target="_blank" class="project-social-link fa fa-twitter" href="{{ project.socialnetworks.twitter }}"></a>
+          {% if project.house.bedrooms_with_dress > 0 %}
+            <li class="department-characteristic-item">
+              Recamaras con vestidor: {{ project.house.bedrooms_with_dress }}
+            </li>
           {% endif %}
-          {% if project.socialnetworks.instagram|length > 0%}
-          <a target="_blank" class="project-social-link fa fa-instagram" href="{{ project.socialnetworks.instagram }}"></a>
+          {% if project.house.complete_bathrooms > 0 %}
+            <li class="department-characteristic-item">
+              Baños completos: {{ project.house.complete_bathrooms }}
+            </li>
           {% endif %}
-        </div>
-				<span>
+          {% if project.house.half_bathrooms > 0 %}
+            <li class="department-characteristic-item">
+              Medios baños: {{ project.house.half_bathrooms }}
+            </li>
+          {% endif %}
+          {% if project.house.living_room %}
+            <li class="department-characteristic-item">Sala</li>
+          {% endif %}
+          {% if project.house.dinning_room %}
+            <li class="department-characteristic-item">Comedor</li>
+          {% endif %}
+          {% if project.house.beforedinning_room %}
+            <li class="department-characteristic-item">Antecomedor</li>
+          {% endif %}
+          {% if project.house.integral_kitchen %}
+            <li class="department-characteristic-item">Cocina integral</li>
+          {% endif %}
+          {% if project.house.kitchen_cupboard %}
+            <li class="department-characteristic-item">Alacena</li>
+          {% endif %}
+          {% if project.house.study %}
+            <li class="department-characteristic-item">Estudio</li>
+          {% endif %}
+          {% if project.house.bar %}
+            <li class="department-characteristic-item">Bar</li>
+          {% endif %}
+          {% if project.house.cellar %}
+            <li class="department-characteristic-item">Cava</li>
+          {% endif %}
+          {% if project.house.balcony %}
+            <li class="department-characteristic-item">Balcon</li>
+          {% endif %}
+          {% if project.house.deck %}
+            <li class="department-characteristic-item">Deck</li>
+          {% endif %}
+          {% if project.house.deck_with_gas_fireplace %}
+            <li class="department-characteristic-item">Deck con chimenea de gas</li>
+          {% endif %}
+          {% if project.house.terrace %}
+            <li class="department-characteristic-item">Terraza</li>
+          {% endif %}
+          {% if project.house.swimming_pool %}
+            <li class="department-characteristic-item">Alberca</li>
+          {% endif %}
+          {% if project.house.jacuzzi %}
+            <li class="department-characteristic-item">Jacuzzi</li>
+          {% endif %}
+          {% if project.house.bathroom_with_tub %}
+            <li class="department-characteristic-item">Baño con tina</li>
+          {% endif %}
+          {% if project.house.game_room %}
+            <li class="department-characteristic-item">Cuarto de juegos</li>
+          {% endif %}
+          {% if project.house.guest_room %}
+            <li class="department-characteristic-item">Cuarto de visitas</li>
+          {% endif %}
+          {% if project.house.guest_bathroom %}
+            <li class="department-characteristic-item">Baño de visitas</li>
+          {% endif %}
+          {% if project.house.service_bathroom %}
+            <li class="department-characteristic-item">Baño de servicio</li>
+          {% endif %}
+          {% if project.house.interior_garden %}
+            <li class="department-characteristic-item">Jardín interior</li>
+          {% endif %}
+          {% if project.house.service_yard %}
+            <li class="department-characteristic-item">Patio de servicio</li>
+          {% endif %}
+          {% if project.house.room_service %}
+            <li class="department-characteristic-item">Cuarto de servicio</li>
+          {% endif %}
+          {% if project.house.floor_heating_system %}
+            <li class="department-characteristic-item">Sistema de calefacción por piso</li>
+          {% endif %}
+          {% if project.house.warehouse %}
+            <li class="department-characteristic-item">Bodega</li>
+          {% endif %}
+          {% if project.house.water_glass > 0 %}
+            <li class="department-characteristic-item">
+              Espejos de agua: {{ project.house.water_glass }}
+            </li>
+          {% endif %}
+        </ul>
+      </div>
+      <div class="department-brochure-section">
+        {% if project.brochure.id %}
+          <span>Descarga nuestro brochure para conocer mejor el desarrollo</span>
+        {% else %}
+          <span>Regístrate para recibir noticias sobre este desarrollo</span>
+        {% endif %}
+        <form id="download-brochure-form">
+          {% csrf_token %}
+          <input type="email" name="email" id="download-brochure-email" placeholder="Correo electrónico">
+          <input type="hidden" name="source" value="{{ project.name }}">
+          <span id="download-brochure-span" style="display:block;"></span>
+          {% if project.brochure.id %}
+            <button id="download-brochure-button" class="bricksa-button inverse">descargar</button>
+          {% else %}
+            <button id="download-brochure-button" class="bricksa-button inverse">enviar</button>
+          {% endif %}
+        </form>
+      </div>
+    </div>
+  {% else %}
+    </span>
+  {% endif %}
+  {% if project.google_maps_link %}
+  <div class="location-title-container">
+    <span class="location-title">ubicación</span>
+  </div>
+  <div class="location-container">
+    <div class="google-map">
+      <div class="embed-responsive map-container">
+        {% autoescape off %}
+        {{ project.google_maps_link }}
+        {% endautoescape %}
+      </div>
+    </div>
+    <div class="text-container">
+      <img src="{% static 'img/logos/brick-white-short-logo.png' %}" alt="">
+      <div class="project-social-networks">
+        {% if project.socialnetworks.facebook|length > 0 %}
+          <a target="_blank" class="project-social-link fa fa-facebook"
+             href="{{ project.socialnetworks.facebook }}"></a>
+        {% endif %}
+        {% if project.socialnetworks.twitter|length > 0 %}
+          <a target="_blank" class="project-social-link fa fa-twitter"
+             href="{{ project.socialnetworks.twitter }}"></a>
+        {% endif %}
+        {% if project.socialnetworks.instagram|length > 0 %}
+          <a target="_blank" class="project-social-link fa fa-instagram"
+             href="{{ project.socialnetworks.instagram }}"></a>
+        {% endif %}
+      </div>
+      <span>
 					{{ project.address }}
 				</span>
-			</div>
-		</div>
-		{% endif %}
-		<div class="contact-container">
-			<span>Contacta a un asesor para mayor información</span>
-			<a href="{% url 'landing:contact' %}" class="bricksa-button inverse">contacto</a>
-		</div>
+    </div>
+  </div>
+  {% endif %}
+  <div class="contact-container">
+    <span>Contacta a un asesor para mayor información</span>
+    <a href="{% url 'landing:contact' %}" class="bricksa-button inverse">contacto</a>
+  </div>
 
-	</div>
+</div>
 {% endblock %}
 {% block after_scripts %}
-<script>
-	{% if project.brochure.id %}
-  addBrochureListener('Brochure-{{project.name}}', {{project.brochure.id}});
-  {% else %}
-  addBrochureListener('Brochure-{{project.name}}', 0);
-  {% endif %}
-</script>
+  <script>
+      {% if project.brochure.id %}
+          addBrochureListener('Brochure-{{project.name}}', {{project.brochure.id}});
+      {% else %}
+          addBrochureListener('Brochure-{{project.name}}', 0);
+      {% endif %}
+  </script>
 {% endblock %}

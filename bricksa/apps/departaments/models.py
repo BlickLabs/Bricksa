@@ -12,6 +12,7 @@ class Departament(models.Model):
         Project,
         verbose_name=_('Project')
     )
+
     bedrooms_with_dress = models.IntegerField(
         _('Bedrooms with dress'),
         blank=False,
@@ -35,6 +36,42 @@ class Departament(models.Model):
         blank=False,
         null=False,
         default=0
+    )
+    studio = models.BooleanField(
+        _('Studio'),
+        blank=False,
+        null=False,
+        default=False
+    )
+    one_room = models.BooleanField(
+        _('One Room'),
+        blank=False,
+        null=False,
+        default=False
+    )
+    two_rooms = models.BooleanField(
+        _('Two Rooms'),
+        blank=False,
+        null=False,
+        default=False
+    )
+    three_rooms = models.BooleanField(
+        _('Three Rooms'),
+        blank=False,
+        null=False,
+        default=False
+    )
+    penthouse = models.BooleanField(
+        _('Penthouse'),
+        blank=False,
+        null=False,
+        default=False
+    )
+    lock_off = models.BooleanField(
+        _('Lock Off'),
+        blank=False,
+        null=False,
+        default=False
     )
     living_room = models.BooleanField(
         _('Living room'),
