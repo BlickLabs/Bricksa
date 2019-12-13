@@ -26,9 +26,21 @@ class Project(models.Model):
         upload_to='project_logos'
     )
     photo = models.ImageField(
-        _('Photo'),
+        _('Foto Escritorio'),
         blank=False,
         null=False,
+        upload_to='project_photos'
+    )
+    tablet = models.ImageField(
+        _('Foto Tablet'),
+        blank=True,
+        null=True,
+        upload_to='project_photos'
+    )
+    mobile = models.ImageField(
+        _('Foto Celular'),
+        blank=True,
+        null=True,
         upload_to='project_photos'
     )
     thumbnail_1 = models.ImageField(

@@ -696,3 +696,47 @@
       {% endif %}
   </script>
 {% endblock %}
+
+{% block before_scripts %}
+  <script type="text/javascript">
+    cover = $('#project-cover');
+
+    function check_image() {
+      // Mobile Portrait
+      if (window.matchMedia("(min-width: 320px)").matches && window.matchMedia("(max-width: 480px)").matches) {
+        {% if project.mobile %}
+        cover.css('background-image', "url('{{ project.mobile.url }}')");
+        {% endif %}
+      }
+
+      // Mobile Landscape
+      if (window.matchMedia("(min-width: 481px)").matches && window.matchMedia("(max-width: 767px)").matches) {
+        cover.css('background-image', "url('{{ banner.photo.url }}')");
+      }
+
+      // Tablet Landscape
+      if (window.matchMedia("(min-width: 767px)").matches && window.matchMedia("(max-width: 1024px)").matches && window.matchMedia("(orientation: landscape)").matches) {
+        cover.css('background-image', "url('{{ banner.photo.url }}')");
+      }
+
+      // Tablet Portrait
+      if (window.matchMedia("(min-width: 768px)").matches && window.matchMedia("(max-width: 1024px)").matches) {
+        {% if project.tablet %}
+          cover.css('background-image', "url('{{ project.tablet.url }}')");
+        {% endif %}
+      }
+
+      // Desktop
+      if (window.matchMedia("(min-width: 1024px)").matches) {
+        cover.css('background-image', "url('{{ project.photo.url }}')");
+      }
+    }
+
+    check_image()
+    $(window).resize(function () {
+      check_image()
+    });
+
+
+  </script>
+{% endblock %}

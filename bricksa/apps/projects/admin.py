@@ -21,7 +21,7 @@ class ProjectAdmin(admin.ModelAdmin):
            )
         }),
         (_('Detail Information'), {
-            'fields': ('photo', 'logo', 'description', 'video','google_maps_link'
+            'fields': ('photo', 'tablet', 'mobile', 'logo', 'description', 'video','google_maps_link'
             )
         }),
         (_('Specific information'), {
